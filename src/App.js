@@ -17,6 +17,12 @@ function App() {
           options={{
             smooth: true,
             // ... all available Locomotive Scroll instance options
+            smartphone: {
+              smooth: true,
+            },
+            tablet: {
+              smooth: true,
+            },
           }}
           watch={
             [
@@ -26,7 +32,7 @@ function App() {
             ]
           }
           containerRef={containerRef}>
-          <main className="App" ref={containerRef}>
+          <main className="App" data-scroll-container ref={containerRef}>
             <Home />
           </main>
         </LocomotiveScrollProvider>

@@ -20,6 +20,8 @@ const DarkOverlay = styled.div`
   bottom: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  height: 100vh;
   z-index: 1;
   background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.8)`};
 `;
@@ -31,8 +33,8 @@ const Title = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
-
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   color: ${(props) => props.theme.text};
@@ -41,7 +43,21 @@ const Title = styled.div`
     font-family: "Rajdhani", sans-serif;
     font-size: ${(props) => props.theme.fontBig};
     text-align: center;
+
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
+  }
+  h2 {
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-size: ${(props) => props.theme.fontlg};
+    text-align: center;
+    text-shadow: 1px 1px 1px ${(props) => props.theme.body};
+    text-transform: lowercase;
+    font-weight: 300;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
   }
 `;
 
@@ -50,7 +66,20 @@ const CoverVideo = () => {
     <VideoContainer>
       <DarkOverlay />
       <Title>
-        <h1>upvisionMedia</h1>
+        <div>
+          <h1 data-scroll data-scroll-delay="0.15" data-scroll-speed="4">
+            up
+          </h1>
+          <h1 data-scroll data-scroll-delay="0.10" data-scroll-speed="4">
+            vision
+          </h1>
+          <h1 data-scroll data-scroll-delay="0.5" data-scroll-speed="4">
+            Media
+          </h1>
+        </div>
+        <h2 data-scroll data-scroll-delay="0.5" data-scroll-speed="4">
+          Turning Ideas into Web Realities
+        </h2>
       </Title>
       <video src={MainVideo} type="video/mp4" autoPlay muted loop />
     </VideoContainer>
