@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   width: 80vw;
   margin: 0 auto;
   position: relative;
