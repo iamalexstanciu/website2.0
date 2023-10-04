@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MainVideo from "../assets/video/cover1.mp4";
+import { motion } from "framer-motion";
 
 const VideoContainer = styled.section`
   width: 100%;
@@ -60,6 +61,8 @@ const Title = styled.div`
     flex-direction: row;
   }
 `;
+
+
 
 const CoverVideo = () => {
   return (
