@@ -2,21 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LogoHeader from "../assets/images/logo.png";
+import { motion } from "framer-motion";
 
 const Container = styled.div`
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-
-  width: 50%;
-  z-index: 5;
+  img {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 10%;
+    z-index: 5;
+  }
 `;
 
 const Logo = () => {
   return (
     <Container>
       <Link to="/">
-        <svg xmlns="" />
+        <motion.path
+          initial={{
+            opacity: 0,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 2,
+            ease: "easeInOut",
+          }}>
+          <img src={LogoHeader} alt="upvisionmedia" />
+        </motion.path>
       </Link>
     </Container>
   );
