@@ -6,6 +6,7 @@ import { useRef } from "react";
 import Home from "./sections/Home";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
+import Services from "./sections/Services";
 
 function App() {
   const containerRef = useRef(null);
@@ -36,6 +37,7 @@ function App() {
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
               <Home />
+              <Services />
             </main>
           </AnimatePresence>
         </LocomotiveScrollProvider>
