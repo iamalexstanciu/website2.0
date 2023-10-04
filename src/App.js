@@ -2,6 +2,8 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./style/GlobalStyle";
 import { dark } from "../src/style/Themes.js";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
+
+import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 import { useRef } from "react";
 import Home from "./sections/Home";
 import "locomotive-scroll/dist/locomotive-scroll.css";
@@ -37,6 +39,7 @@ function App() {
           containerRef={containerRef}>
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
+              <ScrollTriggerProxy />
               <Home />
               <Services />
               <Portfolio />

@@ -6,9 +6,13 @@
         "fontlg",
         "fontmd",
         "fontsource",
+        "fontxl",
+        "fontxxl",
         "fontxxxl",
+        "gsap",
         "maru",
         "Rajdhani",
+        "scroller",
         "upvision"
     ]
 }
