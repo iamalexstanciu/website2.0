@@ -2,10 +2,9 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  min-height: 100vh;
+  height: 100vh;
   width: 80vw;
   margin: 0 auto;
-
   position: relative;
 
   display: flex;
@@ -33,6 +32,7 @@ const Title = styled.h1`
 
 const LeftSide = styled.div`
   width: 50%;
+  font-family: "Rajdhani", sans-serif;
   font-size: ${(props) => props.theme.fontlg};
   font-weight: 300;
   position: relative;
@@ -42,18 +42,68 @@ const LeftSide = styled.div`
 
 const RightSide = styled.div`
   width: 50%;
+  position: relative;
+  /* min-height: 100vh; */
+
+  img {
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+  }
+
+  .small-img-1 {
+    width: 40%;
+    position: absolute;
+    right: 95%;
+    bottom: 10%;
+  }
+  .small-img-2 {
+    width: 40%;
+    position: absolute;
+    left: 80%;
+    top: 30%;
+  }
+  @media (max-width: 64em) {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+
+    .small-img-1 {
+      width: 30%;
+      height: auto;
+      left: 5%;
+      bottom: 10%;
+    }
+    .small-img-2 {
+      width: 30%;
+      height: auto;
+
+      position: absolute;
+      left: 60%;
+      bottom: 20%;
+    }
+  }
 `;
 
 const Services = () => {
   return (
-    <Section>
+    <Section id="fixed-target">
       <Title
         data-scroll
         data-scroll-speed="-2"
         data-scroll-direction="horizontal">
         Services
       </Title>
-      <LeftSide>
+      <LeftSide
+        data-scroll
+        data-scroll-sticky
+        data-scroll-target="#fixed-target">
         Website Development: At our web development agency, we specialize in
         creating stunning and highly functional websites tailored to your unique
         needs. Our expert team of designers and developers work closely with you
@@ -81,7 +131,26 @@ const Services = () => {
         your website's search engine rankings, as mobile-friendliness is a key
         factor in search algorithms.
       </LeftSide>
-      <RightSide>Images</RightSide>
+      <RightSide>
+        <img
+          src="https://images.unsplash.com/photo-1688646545293-2755ea04cd8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          alt="first services"
+        />
+        <img
+          className="small-img-1"
+          data-scroll
+          data-scroll-speed="-2"
+          src="https://images.unsplash.com/photo-1666698809123-44e998e93f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
+          alt="second services"
+        />
+        <img
+          className="small-img-2"
+          data-scroll
+          data-scroll-speed="5"
+          src="https://images.unsplash.com/photo-1688646551016-2db5e02f5c07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
+          alt="third services"
+        />
+      </RightSide>
     </Section>
   );
 };
