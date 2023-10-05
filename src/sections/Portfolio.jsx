@@ -14,14 +14,12 @@ import Img7 from "../assets/images/project4.1.png";
 
 const Section = styled.div`
   min-height: 100vh;
-  /* height: auto; */
   width: 100%;
   margin: 0 auto;
-  /* height: 300vh; */
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 
   position: relative;
   /* background-color: ${(props) => props.theme.text}; */
@@ -62,6 +60,8 @@ const Text = styled.div`
 
   p {
     position: relative;
+    font-size: ${(props) => props.theme.fontlg};
+    font-weight: 300;
     margin: 0 auto;
     top: 25%;
   }
@@ -71,169 +71,80 @@ const Text = styled.div`
   }
 `;
 
-const Overlay = styled.div`
+const RightSide = styled.div`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30vw;
-  height: 90vh;
-  box-shadow: 0 0 0 5vw ${(props) => props.theme.text};
-  border: 3px solid black;
+  min-height: 100vh;
+  padding-left: 30%;
 
-  z-index: 11;
-
-  @media (max-width: 70em) {
-    width: 40vw;
-
-    height: 80vh;
-  }
-
-  @media (max-width: 64em) {
-    width: 50vw;
-    box-shadow: 0 0 0 60vw ${(props) => props.theme.text};
-
-    height: 80vh;
-  }
-  @media (max-width: 48em) {
-    width: 60vw;
-
-    height: 80vh;
-  }
-  @media (max-width: 30em) {
-    width: 80vw;
-
-    height: 60vh;
-  }
-`;
-
-const Container = styled.div`
-  position: absolute;
-  top: 0%;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  width: 25vw;
-  height: auto;
-  /* background-color: yellow; */
-
+  width: 65%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
-  @media (max-width: 64em) {
-    width: 30vw;
-  }
-  @media (max-width: 48em) {
-    width: 40vw;
-  }
-  @media (max-width: 30em) {
-    width: 60vw;
-  }
+  background-color: ${(props) => props.theme.grey};
 `;
-
-const Item = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 5rem 0;
-
-  h2 {
-  }
-
-  img {
-    width: 100%;
-    height: auto;
-    z-index: 5;
-  }
-`;
-
-const Photos = ({ img, name }) => {
-  return (
-    <Item>
-      <img src={img} alt={name} />
-      <h2>{name}</h2>
-    </Item>
-  );
-};
 
 const Portfolio = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const ref = useRef(null);
 
-  const ScrollingRef = useRef(null);
+  const ref = useRef(null);
+  const horRef = useRef(null);
 
   useLayoutEffect(() => {
-      let element = ref.current;
-      
+    let element = ref.current;
+    let scrollElement = horRef.current;
 
-    let scrollingElement = ScrollingRef.current;
+    let pinWrapWidth = scrollElement.offsetWidth;
+
     let t1 = gsap.timeline();
+
     setTimeout(() => {
-      let mainHeight = scrollingElement.scrollHeight;
-      element.style.height = `calc(${mainHeight / 4}px)`;
       t1.to(element, {
         scrollTrigger: {
           trigger: element,
           start: "top top",
-          end: "bottom+=100% top-=100%",
-          scroller: ".App", //locomotive-scroll
-          scrub: 1,
+          end: pinWrapWidth,
+          scroller: ".App",
+          scrub: true,
           pin: true,
-          // markers: true,
+          markers: true,
         },
+
+        // increase scrolling height of this section same as the scrolling element width
+
+        height: `${scrollElement.scrollWidth}px`,
         ease: "none",
       });
 
-      t1.fromTo(
-        scrollingElement,
-        {
-          y: "0",
+      // Horizontal Scrolling
+      t1.to(scrollElement, {
+        scrollTrigger: {
+          trigger: scrollElement,
+          start: "top top",
+          end: pinWrapWidth,
+          scroller: ".App",
+          scrub: true,
+          markers: true,
         },
-        {
-          y: "-100%",
-          scrollTrigger: {
-            // id: `section-${index + 1}`,
-            trigger: scrollingElement,
-            start: "top top",
-            end: "bottom top",
-            scroller: ".App",
-            scrub: 1,
-            // markers: true,
-          },
-        }
-      );
 
+        // increase scrolling height of this section same as the scrolling element width
+
+        x: pinWrapWidth,
+        ease: "none",
+      });
       ScrollTrigger.refresh();
     }, 1000);
-    ScrollTrigger.refresh();
-
-    return () => {
-      t1.kill();
-      ScrollTrigger.kill();
-    };
+    return () => {};
   }, []);
 
   return (
     <Section>
-      <Overlay />
       <Title
         data-scroll
         data-scroll-speed="-2"
         data-scroll-direction="horizontal">
         Portfolio
       </Title>
-
-      <Container ref={ScrollingRef}>
-        <Photos img={Img1} name="Denim" />
-        <Photos img={Img2} name="Cool Dresses" />
-        <Photos img={Img3} name="Jackets" />
-        <Photos img={Img4} name="T-shirts" />
-        <Photos img={Img5} name="T-shirts" />
-        <Photos img={Img6} name="T-shirts" />
-        <Photos img={Img7} name="T-shirts" />
-      </Container>
 
       <Text data-scroll data-scroll-speed="-4">
         <p>
@@ -256,6 +167,16 @@ const Portfolio = () => {
           masterpieces.
         </p>
       </Text>
+
+      <RightSide ref={horRef}>
+        <img src={Img1} alt="project presentation client" />
+        <img src={Img2} alt="project presentation client" />
+        <img src={Img3} alt="project presentation client" />
+        <img src={Img4} alt="project presentation client" />
+        <img src={Img5} alt="project presentation client" />
+        <img src={Img6} alt="project presentation client" />
+        <img src={Img7} alt="project presentation client" />
+      </RightSide>
     </Section>
   );
 };

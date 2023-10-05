@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 
 const NavContainer = styled.div`
-  position: absolute;
+  position: fixed;
   /* left: 50%; */
   top: ${(props) => (props.click ? "0" : `-${props.theme.navHeight}`)};
   transition: all 0.3s ease;
@@ -61,7 +61,7 @@ const MenuBtn = styled.li`
 const MenuItems = styled(motion.ul)`
   position: relative;
   height: ${(props) => props.theme.navHeight};
-  background-color: ${(props) => props.theme.body};
+  
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: space-around;

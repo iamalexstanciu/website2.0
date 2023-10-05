@@ -37,9 +37,9 @@ function App() {
             ]
           }
           containerRef={containerRef}>
+          <ScrollTriggerProxy />
           <AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
-              <ScrollTriggerProxy />
               <Home />
               <Services />
               <Portfolio />
