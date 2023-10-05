@@ -48,22 +48,10 @@ const RightSide = styled.div`
 
   img {
     width: 100%;
-    height: auto;
+    height: 100vh;
     opacity: 0.9;
   }
 
-  .small-img-1 {
-    width: 40%;
-    position: absolute;
-    right: 95%;
-    bottom: 10%;
-  }
-  .small-img-2 {
-    width: 40%;
-    position: absolute;
-    left: 80%;
-    top: 30%;
-  }
   @media (max-width: 64em) {
     width: 100%;
     display: flex;
@@ -73,21 +61,6 @@ const RightSide = styled.div`
       width: 100%;
       height: 100vh;
       object-fit: cover;
-    }
-
-    .small-img-1 {
-      width: 30%;
-      height: auto;
-      left: 5%;
-      bottom: 10%;
-    }
-    .small-img-2 {
-      width: 30%;
-      height: auto;
-
-      position: absolute;
-      left: 60%;
-      bottom: 20%;
     }
   }
 `;
@@ -131,18 +104,8 @@ const Services = () => {
       </LeftSide>
       <RightSide>
         <img
-          src="https://images.unsplash.com/photo-1688646545293-2755ea04cd8e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-          alt="first services"
-        />
-        <img
-          className="small-img-1"
           src="https://images.unsplash.com/photo-1666698809123-44e998e93f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
           alt="second services"
-        />
-        <img
-          className="small-img-2"
-          src="https://images.unsplash.com/photo-1688646551016-2db5e02f5c07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
-          alt="third services"
         />
       </RightSide>
     </Section>

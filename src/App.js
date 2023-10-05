@@ -3,15 +3,24 @@ import GlobalStyle from "./style/GlobalStyle";
 import { dark } from "../src/style/Themes.js";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Home from "./sections/Home";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
 import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
+import Loader from "./components/Loader";
 
 function App() {
   const containerRef = useRef(null);
+
+  const [Loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoaded(true);
+    }, 3000);
+  }, []);
 
   return (
     <>
@@ -36,14 +45,17 @@ function App() {
             ]
           }
           containerRef={containerRef}>
-          <ScrollTriggerProxy />
-          <AnimatePresence>
-            <main className="App" data-scroll-container ref={containerRef}>
+          <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
+          <main className="App" data-scroll-container ref={containerRef}>
+            <ScrollTriggerProxy />
+            <AnimatePresence>
+              {Loaded ? null : <Loader />}
+
               <Home />
               <Services />
               <Portfolio />
-            </main>
-          </AnimatePresence>
+            </AnimatePresence>
+          </main>
         </LocomotiveScrollProvider>
       </ThemeProvider>
     </>

@@ -16,15 +16,15 @@ import _ScrollTrigger from "gsap/ScrollTrigger";
 
 const Section = styled.div`
   min-height: 100vh;
+  height: auto;
   width: 100%;
   margin: 0 auto;
-
+  overflow: hidden;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
 
   position: relative;
-  /* background-color: ${(props) => props.theme.text}; */
 `;
 
 const Title = styled(motion.h1)`
@@ -107,13 +107,12 @@ const Item = styled(motion.div)`
 
 const Product = ({ img, title = "" }) => {
   return (
-    // x: 100, y: -100
     <Item
       initial={{ filter: "grayscale(100%)" }}
       whileInView={{ filter: "grayscale(0%)" }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false, amount: "all" }}>
-      <img width="400" height="600" src={img} alt={title} />
+      <img src={img} alt={title} />
       <h1>{title}</h1>
     </Item>
   );
@@ -123,50 +122,51 @@ const Portfolio = () => {
   gsap.registerPlugin(_ScrollTrigger);
 
   const ref = useRef(null);
-  const horizontalRef = useRef(null);
+  const Horizontalref = useRef(null);
 
   useLayoutEffect(() => {
     let element = ref.current;
-    let scrollingElement = horizontalRef.current;
+    let scrollingElement = Horizontalref.current;
     let pinWrapWidth = scrollingElement.offsetWidth;
 
-    let t1 = gsap.timeline();
-    try {
-      setTimeout(() => {
-        t1.to(element, {
-          scrollTrigger: {
-            trigger: element,
-            start: "top top",
-            end: pinWrapWidth,
-            scroller: ".App",
-            scrub: true,
-            pin: true,
-            markers: true,
-          },
-          height: `${scrollingElement.scrollWidth}px`,
-          ease: "none",
-        });
+    let tl = gsap.timeline();
+    setTimeout(() => {
+      tl.to(element, {
+        scrollTrigger: {
+          trigger: element,
+          start: "top top",
+          end: `${pinWrapWidth} bottom`,
+          scroller: ".App", //locomotive-scroll
+          scrub: 1,
+          pin: true,
+        },
+        height: `${scrollingElement.scrollWidth}px`,
+        ease: "none",
+      });
+      tl.to(scrollingElement, {
+        scrollTrigger: {
+          trigger: scrollingElement,
+          start: "top top",
+          end: `${pinWrapWidth} bottom`,
+          scroller: ".App", //locomotive-scroll
+          scrub: 1,
+        },
+        x: -pinWrapWidth,
 
-        t1.to(scrollingElement, {
-          scrollTrigger: {
-            trigger: scrollingElement,
-            start: "top top",
-            end: pinWrapWidth,
-            scroller: ".App",
-            scrub: true,
-            pin: true,
-            markers: true,
-          },
-          x: -pinWrapWidth,
-          ease: "none",
-        });
-        ScrollTrigger.refresh();
-      }, 1000);
-    } catch (e) {}
-  });
+        ease: "none",
+      });
+      ScrollTrigger.refresh();
+    }, 1000);
+    ScrollTrigger.refresh();
+
+    return () => {
+      tl.kill();
+      // ScrollerTrigger.kill(); throws me an error
+    };
+  }, []);
 
   return (
-    <Section ref={ref}>
+    <Section ref={ref} id="portfolio">
       <Title
         data-scroll
         data-scroll-speed="-2"
@@ -196,7 +196,7 @@ const Portfolio = () => {
         </p>
       </Text>
 
-      <RightSide ref={horizontalRef}>
+      <RightSide ref={Horizontalref}>
         <Product img={Img1} title="AFA Trasporti" />
         <Product img={Img2} title="AFA Trasporti" />
         <Product img={Img3} title="Confort Uno Mobili" />
