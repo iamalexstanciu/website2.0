@@ -2,7 +2,6 @@ import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./style/GlobalStyle";
 import { dark } from "../src/style/Themes.js";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-
 import ScrollTriggerProxy from "./components/ScrollTriggerProxy";
 import { useRef } from "react";
 import Home from "./sections/Home";

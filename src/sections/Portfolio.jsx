@@ -73,7 +73,6 @@ const Text = styled.div`
 `;
 
 const RightSide = styled.div`
-  /* width: 65%; */
   position: absolute;
   padding-left: 30%;
   background-color: ${(props) => props.theme.grey};
