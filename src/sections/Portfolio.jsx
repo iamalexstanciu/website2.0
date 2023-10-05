@@ -12,6 +12,7 @@ import Img5 from "../assets/images/project3.jpg";
 import Img6 from "../assets/images/project3.1.jpg";
 import Img7 from "../assets/images/project4.png";
 import Img8 from "../assets/images/project4.1.png";
+import _ScrollTrigger from "gsap/ScrollTrigger";
 
 const Section = styled.div`
   min-height: 100vh;
@@ -119,10 +120,53 @@ const Product = ({ img, title = "" }) => {
 };
 
 const Portfolio = () => {
- 
+  gsap.registerPlugin(_ScrollTrigger);
+
+  const ref = useRef(null);
+  const horizontalRef = useRef(null);
+
+  useLayoutEffect(() => {
+    let element = ref.current;
+    let scrollingElement = horizontalRef.current;
+    let pinWrapWidth = scrollingElement.offsetWidth;
+
+    let t1 = gsap.timeline();
+    try {
+      setTimeout(() => {
+        t1.to(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top top",
+            end: pinWrapWidth,
+            scroller: ".App",
+            scrub: true,
+            pin: true,
+            markers: true,
+          },
+          height: `${scrollingElement.scrollWidth}px`,
+          ease: "none",
+        });
+
+        t1.to(scrollingElement, {
+          scrollTrigger: {
+            trigger: scrollingElement,
+            start: "top top",
+            end: pinWrapWidth,
+            scroller: ".App",
+            scrub: true,
+            pin: true,
+            markers: true,
+          },
+          x: -pinWrapWidth,
+          ease: "none",
+        });
+        ScrollTrigger.refresh();
+      }, 1000);
+    } catch (e) {}
+  });
 
   return (
-    <Section>
+    <Section ref={ref}>
       <Title
         data-scroll
         data-scroll-speed="-2"
@@ -152,7 +196,7 @@ const Portfolio = () => {
         </p>
       </Text>
 
-      <RightSide>
+      <RightSide ref={horizontalRef}>
         <Product img={Img1} title="AFA Trasporti" />
         <Product img={Img2} title="AFA Trasporti" />
         <Product img={Img3} title="Confort Uno Mobili" />
