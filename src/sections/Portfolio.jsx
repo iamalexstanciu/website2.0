@@ -119,58 +119,7 @@ const Product = ({ img, title = "" }) => {
 };
 
 const Portfolio = () => {
-  gsap.registerPlugin(ScrollTrigger);
-
-  const ref = useRef(null);
-  const horRef = useRef(null);
-
-  useLayoutEffect(() => {
-    try {
-      let element = ref.current;
-
-      let scrollingElement = horRef.current;
-
-      let pinWrapWidth = scrollingElement.offsetWidth;
-      let t1 = gsap.timeline();
-
-      setTimeout(() => {
-        t1.to(element, {
-          scrollTrigger: {
-            trigger: element,
-            start: "top top",
-            end: `${pinWrapWidth} bottom`,
-            scroller: ".App", //locomotive-scroll
-            scrub: 1,
-            pin: true,
-          },
-          height: `${scrollingElement.scrollWidth}px`,
-          ease: "none",
-        });
-
-        t1.to(scrollingElement, {
-          scrollTrigger: {
-            trigger: scrollingElement,
-            start: "top top",
-            end: `${pinWrapWidth} bottom`,
-            scroller: ".App", //locomotive-scroll
-            scrub: 1,
-          },
-          x: -pinWrapWidth,
-
-          ease: "none",
-        });
-        ScrollTrigger.refresh();
-      }, 1000);
-      ScrollTrigger.refresh();
-
-      return () => {
-        t1.kill();
-        ScrollTrigger.kill();
-      };
-    } catch (error) {
-      console.error("ScrollTrigger Error:", error);
-    }
-  }, []);
+ 
 
   return (
     <Section>
@@ -203,7 +152,7 @@ const Portfolio = () => {
         </p>
       </Text>
 
-      <RightSide ref={horRef}>
+      <RightSide>
         <Product img={Img1} title="AFA Trasporti" />
         <Product img={Img2} title="AFA Trasporti" />
         <Product img={Img3} title="Confort Uno Mobili" />

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Section = styled.section`
-  min-height: 100vh;
+  height: 100vh;
   height: auto;
   width: 80vw;
   margin: 0 auto;
@@ -101,10 +101,7 @@ const Services = () => {
         data-scroll-direction="horizontal">
         Services
       </Title>
-      <LeftSide
-        data-scroll
-        data-scroll-sticky
-        data-scroll-target="#fixed-target">
+      <LeftSide>
         Website Development: At our web development agency, we specialize in
         creating stunning and highly functional websites tailored to your unique
         needs. Our expert team of designers and developers work closely with you
@@ -139,15 +136,11 @@ const Services = () => {
         />
         <img
           className="small-img-1"
-          data-scroll
-          data-scroll-speed="-2"
           src="https://images.unsplash.com/photo-1666698809123-44e998e93f23?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1854&q=80"
           alt="second services"
         />
         <img
           className="small-img-2"
-          data-scroll
-          data-scroll-speed="5"
           src="https://images.unsplash.com/photo-1688646551016-2db5e02f5c07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80"
           alt="third services"
         />
