@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import scroll from "locomotive-scroll";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";

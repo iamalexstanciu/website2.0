@@ -9,8 +9,9 @@ import Img2 from "../assets/images/project1.1.jpg";
 import Img3 from "../assets/images/project2.jpg";
 import Img4 from "../assets/images/project2.1.jpg";
 import Img5 from "../assets/images/project3.jpg";
-import Img6 from "../assets/images/project4.png";
-import Img7 from "../assets/images/project4.1.png";
+import Img6 from "../assets/images/project3.1.jpg";
+import Img7 from "../assets/images/project4.png";
+import Img8 from "../assets/images/project4.1.png";
 
 const Section = styled.div`
   min-height: 100vh;
@@ -72,17 +73,51 @@ const Text = styled.div`
 `;
 
 const RightSide = styled.div`
+  /* width: 65%; */
   position: absolute;
-  min-height: 100vh;
   padding-left: 30%;
+  background-color: ${(props) => props.theme.grey};
+  min-height: 100vh;
 
-  width: 65%;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  background-color: ${(props) => props.theme.grey};
 `;
+
+const Item = styled(motion.div)`
+  display: inline-block;
+  width: 20rem;
+  margin-right: 6rem;
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+
+  h1 {
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  @media (max-width: 48em) {
+    width: 15rem;
+  }
+`;
+
+const Product = ({ img, title = "" }) => {
+  return (
+    // x: 100, y: -100
+    <Item
+      initial={{ filter: "grayscale(100%)" }}
+      whileInView={{ filter: "grayscale(0%)" }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: false, amount: "all" }}>
+      <img width="400" height="600" src={img} alt={title} />
+      <h1>{title}</h1>
+    </Item>
+  );
+};
 
 const Portfolio = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -91,50 +126,51 @@ const Portfolio = () => {
   const horRef = useRef(null);
 
   useLayoutEffect(() => {
-    let element = ref.current;
-    let scrollElement = horRef.current;
+    try {
+      let element = ref.current;
 
-    let pinWrapWidth = scrollElement.offsetWidth;
+      let scrollingElement = horRef.current;
 
-    let t1 = gsap.timeline();
+      let pinWrapWidth = scrollingElement.offsetWidth;
+      let t1 = gsap.timeline();
 
-    setTimeout(() => {
-      t1.to(element, {
-        scrollTrigger: {
-          trigger: element,
-          start: "top top",
-          end: pinWrapWidth,
-          scroller: ".App",
-          scrub: true,
-          pin: true,
-          markers: true,
-        },
+      setTimeout(() => {
+        t1.to(element, {
+          scrollTrigger: {
+            trigger: element,
+            start: "top top",
+            end: `${pinWrapWidth} bottom`,
+            scroller: ".App", //locomotive-scroll
+            scrub: 1,
+            pin: true,
+          },
+          height: `${scrollingElement.scrollWidth}px`,
+          ease: "none",
+        });
 
-        // increase scrolling height of this section same as the scrolling element width
+        t1.to(scrollingElement, {
+          scrollTrigger: {
+            trigger: scrollingElement,
+            start: "top top",
+            end: `${pinWrapWidth} bottom`,
+            scroller: ".App", //locomotive-scroll
+            scrub: 1,
+          },
+          x: -pinWrapWidth,
 
-        height: `${scrollElement.scrollWidth}px`,
-        ease: "none",
-      });
-
-      // Horizontal Scrolling
-      t1.to(scrollElement, {
-        scrollTrigger: {
-          trigger: scrollElement,
-          start: "top top",
-          end: pinWrapWidth,
-          scroller: ".App",
-          scrub: true,
-          markers: true,
-        },
-
-        // increase scrolling height of this section same as the scrolling element width
-
-        x: pinWrapWidth,
-        ease: "none",
-      });
+          ease: "none",
+        });
+        ScrollTrigger.refresh();
+      }, 1000);
       ScrollTrigger.refresh();
-    }, 1000);
-    return () => {};
+
+      return () => {
+        t1.kill();
+        ScrollTrigger.kill();
+      };
+    } catch (error) {
+      console.error("ScrollTrigger Error:", error);
+    }
   }, []);
 
   return (
@@ -169,13 +205,14 @@ const Portfolio = () => {
       </Text>
 
       <RightSide ref={horRef}>
-        <img src={Img1} alt="project presentation client" />
-        <img src={Img2} alt="project presentation client" />
-        <img src={Img3} alt="project presentation client" />
-        <img src={Img4} alt="project presentation client" />
-        <img src={Img5} alt="project presentation client" />
-        <img src={Img6} alt="project presentation client" />
-        <img src={Img7} alt="project presentation client" />
+        <Product img={Img1} title="AFA Trasporti" />
+        <Product img={Img2} title="AFA Trasporti" />
+        <Product img={Img3} title="Confort Uno Mobili" />
+        <Product img={Img4} title="Confort Uno Mobili" />
+        <Product img={Img5} title="Upvision Media 1.0" />
+        <Product img={Img6} title="Upvision Media 1.0" />
+        <Product img={Img7} title="Portfolio" />
+        <Product img={Img8} title="Portfolio" />
       </RightSide>
     </Section>
   );
