@@ -20,7 +20,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
+  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
   background-color: ${(props) => props.theme.body};
   color: ${(props) => props.theme.text};
 `;
@@ -42,7 +42,7 @@ const textVariants = {
 };
 
 const Text = styled(motion.span)`
-  font-size: ${(props) => props.theme.fontxl};
+  font-size: ${(props) => props.theme.fontxxxl};
   color: ${(props) => props.theme.text};
   padding-top: 0.5rem;
 
@@ -54,9 +54,9 @@ const Text = styled(motion.span)`
 const Loader = () => {
   return (
     <Container
-      initial={{ y: 0, opacity: 1 }}
-      exit={{ y: "100%", opacity: 0 }}
-      transition={{ duration: 2 }}>
+      initial={{ y: 0.5, opacity: 1 }}
+      exit={{ y: "100%", opacity: 0.2 }}
+      transition={{ duration: 3 }}>
       <Text variants={textVariants} initial="hidden" animate="visible">
         upvisionMedia
       </Text>
