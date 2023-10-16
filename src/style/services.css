@@ -1,0 +1,38 @@
+.section-services{
+    width: 100vw;
+        height: 100vh;
+        z-index: 12;
+}
+
+.container-services{
+    display: grid;
+        grid-template-columns: 40% 70%;
+        position: relative;
+        top: 2.5%;
+        left: 2.5%;
+        border-radius: 30px;
+        width: 95vw;
+        height: 95vh;
+        background-color: rgba(211, 211, 211, 0.301);
+        border: 2px solid orange;
+        z-index: 20;
+}
+
+.title-services{
+    font-size: 95px;
+    color: orange; 
+}
+
+.content-services{
+    font-size: 14px;
+    color: white;
+}
+
+.image-services{
+    width: 40%;
+    z-index: 0;
+}
+
+.right-side-services{
+    width: 100%;
+}

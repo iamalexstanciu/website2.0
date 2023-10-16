@@ -11,35 +11,19 @@ import Img7 from "../assets/images/project4.png";
 import Img8 from "../assets/images/project4.1.png";
 
 const Portfolio = () => {
-  const scrollRef = useRef();
-  useEffect(() => {
-    const el = scrollRef.current;
-    if (el) {
-      const onWheel = (e) => {
-        if (e.deltaY == 0) return;
-        e.preventDefault();
-        el.scrollTo({
-          left: el.scrollLeft + e.deltaY,
-          behavior: "smooth",
-        });
-      };
-      el.addEventListener("wheel", onWheel);
-      return () => el.removeEventListener("wheel", onWheel);
-    }
-  }, []);
   return (
-    <div className="section" id="portfolio">
+    <div className="section-portfolio" id="portfolio">
       <div className="container-portfolio">
         <div className="left-side-portfolio">
           <h1
             className="section-name-portfolio"
             data-scroll
-            data-scroll-speed="-2"
+            data-scroll-speed="-1"
             data-scroll-direction="horizontal">
             Portfolio
           </h1>
 
-          <div className="content-portfolio" data-scroll data-scroll-speed="-4">
+          <div className="content-portfolio" data-scroll data-scroll-speed="-2">
             <p>
               Welcome to our Portfolio Showcase, where we proudly present a
               curated selection of our finest web development projects. Each
@@ -61,58 +45,104 @@ const Portfolio = () => {
             </p>
           </div>
         </div>
-        <div
-          className="right-side-portfolio"
-          ref={scrollRef}
-          style={{ overflow: "auto" }}>
-          <img
-            className="image-portfolio"
-            src={Img1}
-            title="AFA Trasporti"
-            alt="AFA Trasporti"
-          />
-          <img
-            className="image-portfolio"
-            src={Img2}
-            title="AFA Trasporti"
-            alt="AFA Trasporti"
-          />
-          <img
-            className="image-portfolio"
-            src={Img3}
-            title="Confort Uno Mobili"
-            alt="Confort Uno Mobili"
-          />
-          <img
-            className="image-portfolio"
-            src={Img4}
-            title="Confort Uno Mobili"
-            alt="Confort Uno Mobili"
-          />
-          <img
-            className="image-portfolio"
-            src={Img5}
-            title="Upvision Media 1.0"
-            alt="Upvision Media 1.0"
-          />
-          <img
-            className="image-portfolio"
-            src={Img6}
-            title="Upvision Media 1.0"
-            alt="Upvision Media 1.0"
-          />
-          <img
-            className="image-portfolio"
-            src={Img7}
-            title="Portfolio"
-            alt="portfolio alexstanciudev.com"
-          />
-          <img
-            className="image-portfolio"
-            src={Img8}
-            title="Portfolio"
-            alt="portfolio alexstanciudev.com"
-          />
+        <div class="external">
+          <div class="horizontal-scroll-wrapper">
+            <div class="img-wrapper slower">
+              <a href="#0" target="_blank" rel="noopener">
+                <img src={Img1} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper faster">
+              <a href="#0" target="_blank" rel="noopener">
+                <img src={Img2} />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower vertical">
+              <a href="#0" target="_blank" rel="noopener">
+                <img src={Img3} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower slower-down">
+              <a href="#0" target="_blank" rel="noopener">
+                <img src={Img4} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper">
+              <a
+                href="https://altphotos.com/photo/sidewalk-terrace-of-a-blue-facade-cafe-312/"
+                target="_blank"
+                rel="noopener">
+                <img src={Img5} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower">
+              <a
+                href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/"
+                target="_blank"
+                rel="noopener">
+                <img src={Img6} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper faster1">
+              <a
+                href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/"
+                target="_blank"
+                rel="noopener">
+                <img src={Img7} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower slower2">
+              <a
+                href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/"
+                target="_blank"
+                rel="noopener">
+                <img src={Img8} alt="" />
+              </a>
+            </div>
+
+            <div class="img-wrapper">
+              <a
+                href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/"
+                target="_blank"
+                rel="noopener">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower">
+              <a
+                href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/"
+                target="_blank"
+                rel="noopener">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div class="img-wrapper slower last">
+              <a
+                href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
+                target="_blank"
+                rel="noopener">
+                <img
+                  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg"
+                  alt=""
+                />
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

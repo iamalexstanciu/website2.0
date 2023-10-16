@@ -1,0 +1,19 @@
+.section-prices {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+}
+
+.container-prices {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: relative;
+    top: 2.5%;
+    left: 2.5%;
+    border-radius: 30px;
+    width: 95vw;
+    height: 95vh;
+    background-color: rgba(211, 211, 211, 0.26);
+    border: 2px solid orange;
+    z-index: 0;
+}
