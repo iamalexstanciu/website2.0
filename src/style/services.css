@@ -6,7 +6,7 @@
 
 .container-services{
     display: grid;
-        grid-template-columns: 40% 70%;
+        grid-template-columns: 40% 40% 20%;
         position: relative;
         top: 2.5%;
         left: 2.5%;
@@ -42,14 +42,11 @@
 
 
 .features-1,
-.features-2,
-.features-1 *,
-.features-2 * {
+.features-1 * {
     box-sizing: border-box;
 }
 
-.features-1,
-.features-2
+.features-1
 {
     display: flex;
     flex-direction: column;
@@ -95,7 +92,7 @@
     overflow: visible;
 }
 
-.highest-cpu-capacity-in-the-market {
+.title-card {
     color: #ffffff;
     text-align: left;
     font: 500 16px "Jost", sans-serif;
@@ -118,16 +115,18 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 65px;
+    width: 8%;
     height: 15px;
     position: absolute;
-    left: 8px;
-    top: 122px;
+    left: 1%;
+    top: 80%;
 }
 
 .read-more {
-    color: #000000;
+    color: #ffffff;
+    width: 100%;
     text-align: left;
-    font: 500 9px "Jost", sans-serif;
+    font: 600 10px "Jost", sans-serif;
     position: relative;
 }
+
