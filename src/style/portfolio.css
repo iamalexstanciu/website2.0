@@ -153,9 +153,8 @@ header {
 .img-wrapper a {
     overflow: hidden;
     display: block;
-    padding: 1vh;
-    background: #d3be46;
-    box-shadow: 0 10px 50px #5f2f1182;
+    padding: 0.2vh;
+    background-color: rgba(255, 255, 255, 0.767);
 }
 
 .external img {
