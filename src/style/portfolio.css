@@ -1,20 +1,57 @@
 .section {
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(187, 43, 43);
+width: 100vw;
+height: 100vh;
+background-color: rgb(0, 0, 0);
+z-index: 12;
 }
 
 .container-portfolio{
-    position: relative;
-    top: 2.5%;
-    left: 2.5%;
-    border-radius: 30px;
-    width: 95vw;
-    height: 95vh;
-    background-color: lightgray;
+display: grid;
+grid-template-columns: 30% 70%;
+position: relative;
+top: 2.5%;
+left: 2.5%;
+border-radius: 30px;
+width: 95vw;
+height: 95vh;
+background-color: lightgray;
+border: 2px solid orange;
 }
 
 .image-portfolio {
-    width: 15%;
-    height: 25rem;
+width: 20%;
+height: 25rem;
+border-radius: 30px;
+
+}
+
+.section-name-portfolio{
+font-size: 65px;
+color: white;
+}
+
+.content-portfolio{
+width: 70%;
+height: 80vh;
+font-size: 16px;
+padding: 15% 0 0 5%;
+z-index: 0;
+}
+
+.left-side-portfolio{
+height: 100%;
+}
+
+.right-side-portfolio{
+width: 100%;
+height: 100%;
+display: flex;
+flex-direction: row;
+gap: 2%;
+white-space: nowrap;
+overflow: auto;
+position: absolute;
+left: 25%;
+top: 20%;
+
 }
