@@ -23,7 +23,11 @@ const Portfolio = () => {
             Portfolio
           </h1>
 
-          <div className="content-portfolio" data-scroll data-scroll-speed="-2">
+          <div
+            className="content-portfolio"
+            data-scroll
+            data-scroll-speed="-2"
+            data-scroll-direction="vertical">
             <p>
               Welcome to our Portfolio Showcase, where we proudly present a
               curated selection of our finest web development projects. Each
