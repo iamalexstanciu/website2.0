@@ -23,7 +23,7 @@ const DarkOverlay = styled.div`
   width: 100%;
   height: 100vh;
   z-index: 1;
-  background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.8)`};
+  background-color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.6)`};
 `;
 
 const Title = styled.div`

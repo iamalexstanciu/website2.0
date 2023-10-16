@@ -48,14 +48,14 @@ const Portfolio = () => {
         <div class="external">
           <div class="horizontal-scroll-wrapper">
             <div class="img-wrapper slower">
-              <a href="#0" target="_blank" rel="noopener">
+              <a href="#0" target="_blank" rel="noreferrer">
                 <img src={Img1} alt="" />
               </a>
             </div>
 
             <div class="img-wrapper faster">
-              <a href="#0" target="_blank" rel="noopener">
-                <img src={Img2} />
+              <a href="#0" target="_blank" rel="noreferrer">
+                <img src={Img2} alt="" />
               </a>
             </div>
 
@@ -75,7 +75,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/sidewalk-terrace-of-a-blue-facade-cafe-312/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img src={Img5} alt="" />
               </a>
             </div>
@@ -84,7 +84,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/paris-waterfront-at-sunset-1555/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img src={Img6} alt="" />
               </a>
             </div>
@@ -93,7 +93,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/old-man-leaning-over-the-barrier-looking-at-the-river-265/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img src={Img7} alt="" />
               </a>
             </div>
@@ -102,7 +102,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/cafe-terrace-with-a-row-of-retro-tables-261/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img src={Img8} alt="" />
               </a>
             </div>
@@ -111,7 +111,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/street-scene-with-pedestrians-and-dogs-318/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/street-scene-people.jpg"
                   alt=""
@@ -123,7 +123,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/tourist-barge-on-the-river-seine-near-notre-dame-266/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/notre-dame-river-boat.jpg"
                   alt=""
@@ -135,7 +135,7 @@ const Portfolio = () => {
               <a
                 href="https://altphotos.com/photo/skulls-decoration-in-a-shop-window-331/"
                 target="_blank"
-                rel="noopener">
+                rel="noreferrer">
                 <img
                   src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/shop-window-reflection.jpg"
                   alt=""

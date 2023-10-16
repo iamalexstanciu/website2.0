@@ -49,7 +49,7 @@ function App() {
             containerRef={containerRef}>
             {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
             <main className="App" data-scroll-container ref={containerRef}>
-              
+
               <AnimatePresence>
                 <section id="home">
                   <Home />
