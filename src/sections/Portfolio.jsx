@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import React, { useLayoutEffect, useRef } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Img1 from "../assets/images/project1.jpg";
@@ -12,9 +10,8 @@ import Img5 from "../assets/images/project3.jpg";
 import Img6 from "../assets/images/project3.1.jpg";
 import Img7 from "../assets/images/project4.png";
 import Img8 from "../assets/images/project4.1.png";
-import _ScrollTrigger from "gsap/ScrollTrigger";
 
-const Section = styled.div`
+const Section = styled(motion.section)`
   min-height: 100vh;
   height: auto;
   width: 100%;
@@ -27,17 +24,18 @@ const Section = styled.div`
   position: relative;
 `;
 
-const Title = styled(motion.h1)`
+const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxxl};
   font-family: "Kaushan Script";
   font-weight: 300;
-  color: ${(props) => props.theme.body};
-  text-shadow: 1px 1px 1px ${(props) => props.theme.text};
+  /* text-transform: capitalize; */
+  color: ${(props) => props.theme.text};
+  text-shadow: 1px 1px 1px ${(props) => props.theme.body};
 
   position: absolute;
-  top: 5rem;
-  left: 5rem;
-  z-index: 15;
+  top: 1rem;
+  left: 5%;
+  z-index: 20;
 
   @media (max-width: 64em) {
     font-size: ${(props) => props.theme.fontxxl};
@@ -74,9 +72,11 @@ const Text = styled.div`
 `;
 
 const RightSide = styled.div`
+  /* width: 65%; */
   position: absolute;
+  left: 0%;
   padding-left: 30%;
-  background-color: ${(props) => props.theme.grey};
+  background-color: #0000004c;
   min-height: 100vh;
 
   display: flex;
@@ -87,6 +87,7 @@ const RightSide = styled.div`
 const Item = styled(motion.div)`
   display: inline-block;
   width: 20rem;
+  /* background-color: black; */
   margin-right: 6rem;
   img {
     width: 100%;
@@ -107,66 +108,21 @@ const Item = styled(motion.div)`
 
 const Product = ({ img, title = "" }) => {
   return (
+    // x: 100, y: -100
     <Item
       initial={{ filter: "grayscale(100%)" }}
       whileInView={{ filter: "grayscale(0%)" }}
       transition={{ duration: 0.5 }}
       viewport={{ once: false, amount: "all" }}>
-      <img src={img} alt={title} />
+      <img width="400" height="600" src={img} alt={title} />
       <h1>{title}</h1>
     </Item>
   );
 };
 
 const Portfolio = () => {
-  gsap.registerPlugin(_ScrollTrigger);
-
-  const ref = useRef(null);
-  const Horizontalref = useRef(null);
-
-  useLayoutEffect(() => {
-    let element = ref.current;
-    let scrollingElement = Horizontalref.current;
-    let pinWrapWidth = scrollingElement.offsetWidth;
-
-    let tl = gsap.timeline();
-    setTimeout(() => {
-      tl.to(element, {
-        scrollTrigger: {
-          trigger: element,
-          start: "top top",
-          end: `${pinWrapWidth} bottom`,
-          scroller: ".App", //locomotive-scroll
-          scrub: 1,
-          pin: true,
-        },
-        height: `${scrollingElement.scrollWidth}px`,
-        ease: "none",
-      });
-      tl.to(scrollingElement, {
-        scrollTrigger: {
-          trigger: scrollingElement,
-          start: "top top",
-          end: `${pinWrapWidth} bottom`,
-          scroller: ".App", //locomotive-scroll
-          scrub: 1,
-        },
-        x: -pinWrapWidth,
-
-        ease: "none",
-      });
-      ScrollTrigger.refresh();
-    }, 1000);
-    ScrollTrigger.refresh();
-
-    return () => {
-      tl.kill();
-      // ScrollerTrigger.kill(); throws me an error
-    };
-  }, []);
-
   return (
-    <Section ref={ref} id="portfolio">
+    <Section id="portfolio">
       <Title
         data-scroll
         data-scroll-speed="-2"
@@ -195,8 +151,7 @@ const Portfolio = () => {
           masterpieces.
         </p>
       </Text>
-
-      <RightSide ref={Horizontalref}>
+      <RightSide>
         <Product img={Img1} title="AFA Trasporti" />
         <Product img={Img2} title="AFA Trasporti" />
         <Product img={Img3} title="Confort Uno Mobili" />

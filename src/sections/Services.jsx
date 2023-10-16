@@ -67,7 +67,7 @@ const RightSide = styled.div`
 
 const Services = () => {
   return (
-    <Section id="fixed-target">
+    <Section id="services">
       <Title
         data-scroll
         data-scroll-speed="-2"
