@@ -6,14 +6,46 @@
 
 .container-team {
     display: grid;
-    grid-template-columns: 40% 20% 20% 20%;
+    grid-template-columns: 40% 60%;
     position: relative;
     top: 2.5%;
     left: 2.5%;
     border-radius: 30px;
     width: 95vw;
     height: 95vh;
-    background-color: #FFE6C7;
+    background-color: #5e5e5e;
     border: 2px solid white;
     z-index: 20;
 }
+
+.section-name-team {
+    width: 80%;
+    height: 80%;
+    position: relative;
+    left: 5%;
+    top: 10%;
+    font-size: 120px;
+    font-weight: bold;
+
+}
+
+.pictures-container {
+        width: 90%;
+        height: 90%;
+        position: relative;
+        top: 5%;
+        left: 5%;
+        display: flex;
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .picture-1 {
+        background-color: orange;
+        width: 45%;
+    }
+
+        .picture-2 {
+            background-color: pink;
+            width: 45%;
+        }

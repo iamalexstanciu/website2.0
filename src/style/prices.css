@@ -21,6 +21,14 @@
     z-index: 0;
 }
 
+.section-name{
+    position: absolute;
+            left: 10%;
+            top: 10%;
+            font: 600 56px/100% "General Sans", sans-serif;
+
+}
+
 .widget-price {
     background-color: white;
     border: 2px solid #fc4308;

@@ -29,11 +29,16 @@ border-radius: 30px;
 .section-name-portfolio{
 font-size: 65px;
 color: white;
+position: relative;
+    top: 5%;
+    left: 20%;
 }
 
 .content-portfolio{
 width: 70%;
-height: 80vh;
+position: relative;
+top: 10%;
+height:70vh;
 font-size: 16px;
 padding: 15% 0 0 5%;
 z-index: 0;

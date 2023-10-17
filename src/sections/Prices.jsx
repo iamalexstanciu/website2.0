@@ -6,12 +6,7 @@ function Prices() {
     <div className="section-prices" id="prices">
       <div className="container-prices">
         <h4
-          style={{
-            position: "absolute",
-            left: "10%",
-            top: "10%",
-            fontSize: "40px",
-          }}
+        className="section-name"
           data-scroll
           data-scroll-speed="2"
           data-scroll-direction="vertical">
