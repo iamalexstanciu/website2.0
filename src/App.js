@@ -73,7 +73,7 @@ function App() {
                 </section>
 
                 <div className="open-footer">
-                  Do you want to see our Footer?
+                  Hey there, curious soul, fancy a peek at our fancy footer?
                   <div className="buttons-footer">
                     <button className="button-no">No, I'm ok!</button>
                     <button className="button-yes">
