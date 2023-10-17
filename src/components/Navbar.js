@@ -60,7 +60,7 @@ const MenuBtn = styled.li`
 const MenuItems = styled(motion.ul)`
   position: relative;
   height: ${(props) => props.theme.navHeight};
-  
+
   color: ${(props) => props.theme.text};
   display: flex;
   justify-content: space-around;
@@ -127,6 +127,13 @@ const Navbar = () => {
           onClick={() => handleScroll("#services")}>
           {" "}
           <Link to="/">Services</Link>
+        </Item>
+        <Item
+          whileHover={{ scale: 1.1, y: -5 }}
+          whileTap={{ scale: 0.9, y: 0 }}
+          onClick={() => handleScroll("#prices")}>
+          {" "}
+          <Link to="/">Prices</Link>
         </Item>
         <Item
           whileHover={{ scale: 1.1, y: -5 }}

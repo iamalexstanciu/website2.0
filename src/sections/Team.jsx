@@ -6,7 +6,7 @@ function Team() {
     <div className="section-team" id="team">
       <div
         data-scroll
-        data-scroll-speed="-2"
+        data-scroll-speed="2"
         data-scroll-direction="vertical"
         className="container-team"></div>
     </div>
