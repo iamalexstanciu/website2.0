@@ -6,7 +6,7 @@
 
 .container-services{
     display: grid;
-        grid-template-columns: 40% 40% 20%;
+        grid-template-columns: 40% 20% 20% 20% ;
         position: relative;
         top: 2.5%;
         left: 2.5%;
@@ -54,13 +54,12 @@
     align-items: flex-start;
     justify-content: flex-start;
     position: relative;
-    top: 10%;
+    top: 45%;
 }
 
 .rectangle-10 {
     border-radius: 0px;
     flex-shrink: 0;
-
     position: relative;
     overflow: visible;
     
@@ -72,11 +71,10 @@
     border-color: #ffffff;
     border-width: 1px;
     flex-shrink: 0;
-    width: 126px;
-    height: 134px;
+    width: 90%;
     position: absolute;
-    left: 126px;
-    top: 45px;
+    left: 0;
+    top: 17%;
 }
 
 .frame-13 {
@@ -106,7 +104,7 @@
 .frame-14 {
     border-radius: 45px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #e00404;
     border-width: 1px;
     padding: 10px;
     display: flex;
@@ -115,11 +113,11 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    width: 8%;
-    height: 15px;
-    position: absolute;
-    left: 1%;
-    top: 80%;
+    width: 35%;
+    height: 5%;
+    position: relative;
+    left: 45%;
+    top: -22.5%;
 }
 
 .read-more {
@@ -128,5 +126,6 @@
     text-align: left;
     font: 600 10px "Jost", sans-serif;
     position: relative;
+    left: 10%;
 }
 

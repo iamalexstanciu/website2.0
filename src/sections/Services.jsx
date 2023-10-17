@@ -43,7 +43,6 @@ const Services = () => {
             mobile-friendliness is a key factor in search algorithms.
           </div>
         </div>
-        <div className="center-side-services">
           <div
             class="features-1"
             data-scroll
@@ -58,7 +57,7 @@ const Services = () => {
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                fill="#c00b0b"
+                fill="#000000"
                 fill-opacity="0.9"
               />
             </svg>
@@ -100,7 +99,7 @@ const Services = () => {
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                fill="#e9900a"
+                fill="#333333"
                 fill-opacity="0.9"
               />
             </svg>
@@ -142,7 +141,7 @@ const Services = () => {
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                fill="#86c909"
+                fill="#b3b3b3"
                 fill-opacity="0.9"
               />
             </svg>
@@ -165,18 +164,13 @@ const Services = () => {
               />
             </svg>
 
-            <div class="title-card">Landing Page</div>
+            <div class="title-card">Website Development</div>
             <div class="frame-14">
               <div class="read-more">Read More</div>
             </div>
           </div>
         </div>
-        <div className="right-side-services">
-        
-
-        </div>
       </div>
-    </div>
   );
 };
 

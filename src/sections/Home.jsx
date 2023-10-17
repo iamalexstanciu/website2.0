@@ -17,6 +17,7 @@ const Home = () => {
       <CoverVideo />
       <Logo />
       <Navbar />
+    
     </Section>
   );
 };

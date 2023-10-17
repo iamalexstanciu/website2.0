@@ -51,6 +51,7 @@ function App() {
             <main className="App" data-scroll-container ref={containerRef}>
 
               <AnimatePresence>
+                
                 <section id="home">
                   <Home />
                 </section>
