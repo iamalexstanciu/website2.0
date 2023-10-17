@@ -5,7 +5,11 @@ import Video from "../assets/video/smoke-orange.mp4"
 const Services = () => {
   return (
     <div className="section-services" id="services">
-      <div className="container-services">
+      <div
+        className="container-services"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-direction="vertical">
         <div className="left-side-services">
           <h1
             className="title-services"

@@ -11,6 +11,7 @@ import Portfolio from "./sections/Portfolio";
 import Loader from "./components/Loader";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Prices from "./sections/Prices";
+import Team from "./sections/Team";
 
 function App() {
   const containerRef = useRef(null);
@@ -49,9 +50,7 @@ function App() {
             containerRef={containerRef}>
             {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
             <main className="App" data-scroll-container ref={containerRef}>
-
               <AnimatePresence>
-                
                 <section id="home">
                   <Home />
                 </section>
@@ -63,6 +62,9 @@ function App() {
                 </section>
                 <section id="prices">
                   <Prices />
+                </section>
+                <section id="team">
+                  <Team />
                 </section>
               </AnimatePresence>
             </main>

@@ -13,7 +13,11 @@ import Img8 from "../assets/images/project4.1.png";
 const Portfolio = () => {
   return (
     <div className="section-portfolio" id="portfolio">
-      <div className="container-portfolio">
+      <div
+        className="container-portfolio"
+        data-scroll
+        data-scroll-speed="2"
+        data-scroll-direction="vertical">
         <div className="left-side-portfolio">
           <h1
             className="section-name-portfolio"
