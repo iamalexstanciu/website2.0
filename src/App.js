@@ -13,6 +13,7 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import Prices from "./sections/Prices";
 import Team from "./sections/Team";
 import Contact from "./sections/Contact";
+import "./style/footer.css";
 
 function App() {
   const containerRef = useRef(null);
@@ -70,6 +71,16 @@ function App() {
                 <section id="contact">
                   <Contact />
                 </section>
+
+                <div className="open-footer">
+                  Do you want to see our Footer?
+                  <div className="buttons-footer">
+                    <button className="button-no">No, I'm ok!</button>
+                    <button className="button-yes">
+                      Let's see what you've created!
+                    </button>
+                  </div>
+                </div>
               </AnimatePresence>
             </main>
           </LocomotiveScrollProvider>
