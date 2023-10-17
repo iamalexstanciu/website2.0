@@ -57,7 +57,7 @@ border-radius: 30px;
 
 .blur-wrapper {
 border-radius: 30px;
-transition: filter 500ms ease;
+transition: filter 100ms ease;
 }
 
 
@@ -71,7 +71,7 @@ border-radius: 30px;
 text-align: center;
 opacity: 0;
 background-color: rgba(0, 0, 0, 0.65);
-transition: opacity 500ms ease;
+transition: opacity 100ms ease;
 
 .description-role {
 width: 100%;
