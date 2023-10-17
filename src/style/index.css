@@ -1,5 +1,5 @@
-body {
-    background-image: url("../assets/images/background6.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
+html {
+            background-image: url("../assets/images/background6.jpg");
+                background-size: contain;
+                background-repeat: no-repeat;
 }

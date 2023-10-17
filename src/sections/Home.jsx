@@ -6,9 +6,12 @@ import Navbar from "../components/Navbar";
 
 const Section = styled.section`
   position: relative;
-  min-height: 100vh;
+  height: 95vh;
+  border-radius: 30px;
+  top: 0.5rem;
+  left: 2.5%;
   overflow: hidden;
-  
+  width: 95vw;
 `;
 
 const Home = () => {
@@ -17,7 +20,6 @@ const Home = () => {
       <CoverVideo />
       <Logo />
       <Navbar />
-    
     </Section>
   );
 };

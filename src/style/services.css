@@ -13,7 +13,7 @@
         border-radius: 30px;
         width: 95vw;
         height: 95vh;
-        background-color: rgba(211, 211, 211, 0.301);
+        background-color: rgb(97, 57, 207);
         border: 2px solid orange;
         z-index: 20;
 }
@@ -21,6 +21,7 @@
 .title-services{
     font-size: 95px;
     color: orange; 
+    text-shadow: 1px 1px 2px black;
 }
 
 .content-services{
@@ -57,6 +58,18 @@
     top: 45%;
 }
 
+.widget-services-1 {
+    top: 60%;
+}
+
+.widget-services-2 {
+    top: 40%;
+}
+
+.widget-services-3 {
+    top: 20%;
+}
+
 .rectangle-10 {
     border-radius: 0px;
     flex-shrink: 0;
@@ -75,6 +88,7 @@
     position: absolute;
     left: 0;
     top: 17%;
+    filter: opacity(0.9);
 }
 
 .frame-13 {
