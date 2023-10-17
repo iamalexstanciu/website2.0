@@ -12,6 +12,7 @@ import Loader from "./components/Loader";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Prices from "./sections/Prices";
 import Team from "./sections/Team";
+import Contact from "./sections/Contact";
 
 function App() {
   const containerRef = useRef(null);
@@ -65,6 +66,9 @@ function App() {
                 </section>
                 <section id="team">
                   <Team />
+                </section>
+                <section id="contact">
+                  <Contact />
                 </section>
               </AnimatePresence>
             </main>

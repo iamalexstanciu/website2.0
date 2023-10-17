@@ -1,51 +1,111 @@
 .section-team {
-    width: 100vw;
-    height: 100vh;
-    z-index: 12;
+width: 100vw;
+height: 100vh;
+z-index: 12;
 }
 
 .container-team {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    position: relative;
-    top: 2.5%;
-    left: 2.5%;
-    border-radius: 30px;
-    width: 95vw;
-    height: 95vh;
-    background-color: #5e5e5e;
-    border: 2px solid white;
-    z-index: 20;
+display: grid;
+grid-template-columns: 40% 60%;
+position: relative;
+top: 2.5%;
+left: 2.5%;
+border-radius: 30px;
+width: 95vw;
+height: 95vh;
+background-color: #808080;
+border: 2px solid white;
+z-index: 20;
 }
 
 .section-name-team {
-    width: 80%;
-    height: 80%;
-    position: relative;
-    left: 5%;
-    top: 10%;
-    font-size: 120px;
-    font-weight: bold;
+width: 80%;
+height: 80%;
+position: relative;
+left: 5%;
+top: 10%;
+font-size: 120px;
+font-weight: bold;
 
 }
 
 .pictures-container {
-        width: 90%;
-        height: 90%;
-        position: relative;
-        top: 5%;
-        left: 5%;
-        display: flex;
-        flex-direction: row;
-        gap: 5%;
-    }
+width: 90%;
+height: 90%;
+position: relative;
+top: 5%;
+left: 5%;
+display: flex;
+flex-direction: row;
+gap: 5%;
+}
 
-    .picture-1 {
-        background-color: orange;
-        width: 45%;
-    }
+.picture-1 {
+background-image: url("../assets/images/alex.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+border-radius: 30px;
+width: 45%;
+}
 
-        .picture-2 {
-            background-color: pink;
-            width: 45%;
-        }
+
+.picture-2 {
+background-color: pink;
+width: 45%;
+border-radius: 30px;
+}
+
+.blur-wrapper {
+border-radius: 30px;
+transition: filter 500ms ease;
+}
+
+
+.card-title {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+border-radius: 30px;
+text-align: center;
+opacity: 0;
+background-color: rgba(0, 0, 0, 0.65);
+transition: opacity 500ms ease;
+
+.description-role {
+width: 100%;
+position: absolute;
+top: 50%;
+border-radius: 30px;
+left: 50%;
+color: #fff;
+transform: translate(-50%, -50%);
+}
+
+.description-role h3 {
+font-weight: 700;
+font-style: normal;
+color: #fff;
+font-size: 40px;
+}
+
+.description-role h4 {
+font-weight: 100;
+color: #fff;
+font-size: 35px;
+font-style: normal;
+}
+}
+
+&:hover {
+.blur-wrapper {
+filter: blur(20px);
+
+}
+
+.card-title {
+opacity: 1;
+}
+
+}
