@@ -21,8 +21,8 @@ const NavContainer = styled.div`
   }
 `;
 const MenuBtn = styled.li`
-  background-color: ${(props) => `rgba(${props.theme.textRgba},0.8)`};
-  color: ${(props) => props.theme.body};
+  background-color: #fc4308;
+  color: white;
   width: 15rem;
   height: 2.5rem;
 
@@ -33,7 +33,7 @@ const MenuBtn = styled.li`
 
   position: absolute;
   top: 110%;
-  left: 50%;
+  left: 48%;
   transform: translateX(-50%);
 
   font-size: ${(props) => props.theme.fontmd};
@@ -79,7 +79,8 @@ const MenuItems = styled(motion.ul)`
 
 const Item = styled(motion.li)`
   text-transform: uppercase;
-  color: ${(props) => props.theme.text};
+  font-weight: 700;
+  color: #fc4308;
 
   @media (max-width: 40em) {
     flex-direction: column;

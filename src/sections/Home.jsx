@@ -12,7 +12,8 @@ const Section = styled.section`
   left: 2.5%;
   overflow: hidden;
   width: 95vw;
-  border: 2px solid white;
+  border: 2px solid 
+  #fc4308;
 `;
 
 const Home = () => {
