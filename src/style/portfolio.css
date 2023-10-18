@@ -28,7 +28,8 @@ border-radius: 30px;
 
 .section-name-portfolio{
 font-size: 65px;
-color: white;
+color: #fc4308;
+text-shadow: 1px 1px 6px black;
 position: relative;
     top: 5%;
     left: 20%;

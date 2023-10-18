@@ -37,13 +37,13 @@ const Title = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-shadow: 1px 1px 20px black;
   color: ${(props) => props.theme.text};
 
   h1 {
     font-family: "Rajdhani", sans-serif;
     font-size: ${(props) => props.theme.fontBig};
     text-align: center;
-    text-shadow: 4px -3px 2px rgba(231, 108, 0, 0.6);
   }
   h2 {
     font-family: "Zen Maru Gothic", sans-serif;

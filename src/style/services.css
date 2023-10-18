@@ -33,6 +33,7 @@ left: 2.5%;
 color: #fc4308; 
 font: 700 80px "Syncopate", sans-serif;
 position: relative;
+text-shadow: 1px 1px 6px black;
 left: 0;
 top: 40%;
 }

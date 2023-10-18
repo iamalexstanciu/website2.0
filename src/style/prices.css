@@ -26,7 +26,8 @@ background-color: #6d6d6d;
             left: 10%;
             top: 10%;
             font: 600 56px/100% "General Sans", sans-serif;
-
+color: #fc4308;
+text-shadow: 1px 1px 6px black;
 }
 
 .widget-price {
@@ -54,7 +55,7 @@ background-color: #6d6d6d;
 }
 
 .cost {
-    color: #000000;
+    color: #fc4308;
     text-align: left;
     font: 600 55px/100% "General Sans", sans-serif;
     position: relative;
