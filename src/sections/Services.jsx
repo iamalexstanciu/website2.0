@@ -53,14 +53,14 @@ const Services = () => {
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                  fill="#000000"
+                  fill="#fc4308"
                   fill-opacity="0.9"
                 />
               </svg>
 
               <img
                 class="image-1"
-                src="https://images.unsplash.com/photo-1657812160299-6b656decd5b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2067&q=80"
+                src="https://images.pexels.com/photos/4008335/pexels-photo-4008335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
               <svg
                 class="frame-13"
@@ -95,14 +95,14 @@ const Services = () => {
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                  fill="#333333"
+                  fill="#fc4308"
                   fill-opacity="0.9"
                 />
               </svg>
 
               <img
                 class="image-1"
-                src="https://images.unsplash.com/photo-1687727739807-08a19b70a664?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="https://images.pexels.com/photos/4295841/pexels-photo-4295841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
               />
               <svg
                 class="frame-13"
@@ -137,14 +137,14 @@ const Services = () => {
                 xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M0 21.5C0 9.62588 9.62588 0 21.5 0H29.25C39.3292 0 47.5 8.1708 47.5 18.25C47.5 28.3292 55.6708 36.5 65.75 36.5H233C249.569 36.5 263 49.9315 263 66.5V158C263 174.569 249.569 188 233 188H30C13.4315 188 0 174.569 0 158V21.5Z"
-                  fill="#b3b3b3"
+                  fill="#fc4308"
                   fill-opacity="0.9"
                 />
               </svg>
 
               <img
                 class="image-1"
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src="https://images.unsplash.com/photo-1510125964506-dc5a14f3ef4e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               />
               <svg
                 class="frame-13"
