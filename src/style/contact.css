@@ -13,7 +13,7 @@
     border-radius: 30px;
     width: 95vw;
     height: 95vh;
-    background-color: #5e5e5e;
-    border: 2px solid white;
+    background-color: #6d6d6d;
+    border: 2px solid #fc4308;
     z-index: 20;
 }

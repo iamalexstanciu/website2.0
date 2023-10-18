@@ -22,7 +22,7 @@ const NavContainer = styled.div`
 `;
 const MenuBtn = styled.li`
   background-color: #fc4308;
-  color: white;
+  color: #6d6d6d;
   width: 15rem;
   height: 2.5rem;
 

@@ -51,7 +51,8 @@ const Title = styled.div`
     text-align: center;
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
     text-transform: lowercase;
-    font-weight: 400;
+    font-weight: 600;
+    color: #6d6d6d;
   }
 
   div {
