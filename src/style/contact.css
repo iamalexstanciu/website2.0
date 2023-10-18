@@ -41,7 +41,8 @@ font-size: 30px;
 }
 
     .title-contact {
-        color: #ffffff;
+        color: #6d6d6d;
+        text-shadow: 1px 1px 4px #fc4308;
         text-align: left;
         font: 900 150px "Inter", sans-serif;
         position: absolute;
