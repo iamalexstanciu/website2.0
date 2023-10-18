@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import MainVideo from "../assets/video/cover1.mp4";
+import Location from "./Location";
 
 const VideoContainer = styled.section`
   width: 100%;
@@ -12,6 +13,8 @@ const VideoContainer = styled.section`
     height: 100vh;
     object-fit: cover;
   }
+
+
 `;
 
 const DarkOverlay = styled.div`
@@ -58,6 +61,8 @@ const Title = styled.div`
     display: flex;
     flex-direction: row;
   }
+
+  
 `;
 
 const CoverVideo = () => {
@@ -80,6 +85,7 @@ const CoverVideo = () => {
           Turning Ideas into Web Realities
         </h2>
       </Title>
+
       <video src={MainVideo} type="video/mp4" autoPlay muted loop />
     </VideoContainer>
   );

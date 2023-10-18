@@ -3,6 +3,8 @@ import styled from "styled-components";
 import CoverVideo from "../components/CoverVideo";
 import Logo from "../components/Logo";
 import Navbar from "../components/Navbar";
+import Location from "../components/Location";
+import ButtonStartAProject from "../components/ButtonStartAProject";
 
 const Section = styled.section`
   position: relative;
@@ -12,16 +14,17 @@ const Section = styled.section`
   left: 2.5%;
   overflow: hidden;
   width: 95vw;
-  border: 2px solid 
-  #fc4308;
+  border: 2px solid #fc4308;
 `;
 
 const Home = () => {
   return (
     <Section id="home">
       <CoverVideo />
+      <Location />
       <Logo />
       <Navbar />
+      <ButtonStartAProject />
     </Section>
   );
 };

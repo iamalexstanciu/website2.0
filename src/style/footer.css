@@ -140,7 +140,7 @@
         border-radius: 1em;
         color: #6d6d6d;
         font-weight: bolder;
-        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.4s;
+        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.s;
         box-shadow: -5px 5px 0px 0px #fc4308;
 }
 
