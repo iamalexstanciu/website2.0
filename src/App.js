@@ -14,9 +14,15 @@ import Prices from "./sections/Prices";
 import Team from "./sections/Team";
 import Contact from "./sections/Contact";
 import "./style/footer.css";
+import Footer from "./components/Footer";
 
 function App() {
   const containerRef = useRef(null);
+  const [showFooter, setShowFooter] = useState(false);
+
+  const handleFooter = (props) => {
+    setShowFooter(props);
+  };
 
   const [Loaded, setLoaded] = useState(false);
 
@@ -75,12 +81,19 @@ function App() {
                 <div className="open-footer">
                   Hey there, curious soul, fancy a peek at our fancy footer?
                   <div className="buttons-footer">
-                    <button className="button-no">No, I'm ok!</button>
-                    <button className="button-yes">
+                    <button
+                      className="button-no"
+                      onClick={() => handleFooter(false)}>
+                      No, I'm ok!
+                    </button>
+                    <button
+                      className="button-yes"
+                      onClick={() => handleFooter(true)}>
                       Let's see what you've created!
                     </button>
                   </div>
                 </div>
+                {showFooter ? <Footer /> : null}
               </AnimatePresence>
             </main>
           </LocomotiveScrollProvider>

@@ -1,3 +1,11 @@
+.footer-container{
+    width: auto;
+    height: 30vh;
+    border: 2px solid white;
+    border-radius: 30px;
+    margin: 2%;
+}
+
 .open-footer {
     color: #fc4308;
     width: fit-content;
