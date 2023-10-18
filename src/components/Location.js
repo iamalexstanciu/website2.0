@@ -11,7 +11,7 @@ const Loc = styled.div`
   left: 82.5rem;
   width: 20%;
   height: 20%;
-  z-index: 300;
+  z-index: 3;
   justify-content: center;
   align-items: center;
 
