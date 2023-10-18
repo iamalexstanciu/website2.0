@@ -12,14 +12,12 @@ function Team() {
           data-scroll-direction="vertical">
           Team
         </div>
-        <div className="pictures-container">
+        <div className="pictures-container" >
           <div
             className="picture-1"
             data-scroll
             data-scroll-speed="3"
             data-scroll-direction="horizontal">
-            <div class="blur-wrapper">
-            </div>
             <div class="card-title">
               <div class="description-role">
                 <h3>CEO</h3>
@@ -31,7 +29,14 @@ function Team() {
             className="picture-2"
             data-scroll
             data-scroll-speed="3"
-            data-scroll-direction="horizontal"></div>
+            data-scroll-direction="horizontal">
+            <div class="card-title">
+              <div class="description-role">
+                <h3>CEO</h3>
+                <h4>Razvan Tache</h4>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
