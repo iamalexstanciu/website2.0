@@ -13,20 +13,8 @@
     border-radius: 30px;
     width: 95vw;
     height: 45vh;
-    background-color: #6d6d6d;
-    border: 2px solid #fc4308;
     z-index: 20;
 }
-
-.title-contact{
-    color: #000000;
-        text-shadow: 1px 1px 2px #505050;
-        position: relative;
-        left: 5%;
-        top: 40%;
-        font-size: 80px;
-}
-
 .details-contact{
 display: flex;
 flex-direction: column;
@@ -34,6 +22,8 @@ gap: 5%;
 justify-content: center;
 align-items: center;
 color: #fc4308;
+position: relative;
+right: -170%;
 text-shadow: 1px 1px 4px black;
 font-size: 30px;
 }
@@ -49,3 +39,15 @@ font-size: 30px;
     align-items: center;
     text-transform: lowercase;
 }
+
+    .title-contact {
+        color: #ffffff;
+        text-align: left;
+        font: 900 150px "Inter", sans-serif;
+        position: absolute;
+        left: 2%;
+        top: 12.5%;
+        width: 80%;
+        text-transform: lowercase;
+    }
+

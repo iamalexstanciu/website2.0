@@ -12,7 +12,7 @@ function Team() {
           data-scroll-direction="vertical">
           Team
         </div>
-        <div className="pictures-container" >
+        <div className="pictures-container">
           <div
             className="picture-1"
             data-scroll

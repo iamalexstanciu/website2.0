@@ -11,7 +11,7 @@ import Portfolio from "./sections/Portfolio";
 import Loader from "./components/Loader";
 import { ParallaxProvider } from "react-scroll-parallax";
 import Prices from "./sections/Prices";
-import Team from "./sections/Team";
+// import Team from "./sections/Team";
 import Contact from "./sections/Contact";
 import "./style/footer.css";
 import Footer from "./components/Footer";
@@ -71,9 +71,9 @@ function App() {
                 <section id="prices">
                   <Prices />
                 </section>
-                <section id="team">
+                {/* <section id="team">
                   <Team />
-                </section>
+                </section> */}
                 <section id="contact">
                   <Contact />
                 </section>
