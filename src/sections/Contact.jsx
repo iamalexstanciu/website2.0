@@ -8,7 +8,7 @@ function Contact() {
         <h1 className="title-contact">Get in Touch!</h1>
         <div className="details-contact">
           <a className="email-address" href="mailto:info@upvisionmedia.com">
-            email us
+           let's start a project
           </a>
           <a href="tel:+40744497740">call us</a>
           <div className="mail-to-owners">
