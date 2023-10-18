@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
 const ButtonSAP = styled.div`
@@ -8,7 +8,8 @@ const ButtonSAP = styled.div`
   position: absolute;
   top: 85%;
   z-index: 200;
-  left: calc(90% - 100px);
+  width: 15%;
+  left: calc(90% - 130px);
 
   .btn {
     line-height: 1;
@@ -44,9 +45,20 @@ const ButtonSAP = styled.div`
 `;
 
 const ButtonStartAProject = () => {
+    const { scroll } = useLocomotiveScroll();
+  const handleScroll = (id) => {
+    let elem = document.querySelector(id);
+
+    scroll.scrollTo(elem, {
+      offset: "-100",
+      duration: "2000",
+      easing: [0.25, 0.0, 0.35, 1.0],
+    });
+  };
+
   return (
     <ButtonSAP>
-      <button class="btn">
+      <button class="btn" onClick={() => handleScroll("#contact")}>
         Start a Project
       </button>
     </ButtonSAP>
