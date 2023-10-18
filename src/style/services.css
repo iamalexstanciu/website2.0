@@ -1,145 +1,155 @@
 .section-services{
-    width: 100vw;
-        height: 100vh;
-        z-index: 12;
+width: 100vw;
+height: 100vh;
+z-index: 12;
 }
 
 .container-services{
-    display: grid;
-        grid-template-columns: 40% 20% 20% 20% ;
-        position: relative;
-        top: 2.5%;
-        left: 2.5%;
-        border-radius: 30px;
-        width: 95vw;
-        height: 95vh;
-        background-color: #454545;
-        border: 2px solid #fc4308;;
-        z-index: 20;
+display: flex;
+position: relative;
+top: 2.5%;
+left: 2.5%;
+border-radius: 30px;
+width: 95vw;
+height: 95vh;
+background-color: #454545;
+border: 2px solid #fc4308;;
+z-index: 20;
 }
 
+.title-container{
+    width: fit-content;
+    transform: rotate(-90deg);
+    width: 10%;
+}
+
+.content-services {
+display: flex;
+flex-direction: column;
+top: 2.5%;
+left: 2.5%;
+}
 .title-services{
-    font-size: 95px;
-    color: #fc4308; 
-    text-shadow: 1px 1px 2px black;
+color: #fc4308; 
+font: 700 80px "Syncopate", sans-serif;
+position: relative;
+left: 0;
+top: 40%;
 }
 
 .content-services{
-    font-size: 14px;
-    color: white;
+font-size: 14px;
+color: white;
+position: relative;
+top: 5%;
 }
 
 .image-services{
-    width: 40%;
-    position: relative;
-    left: 50%;
-    z-index: 0;
+width: 40%;
+position: relative;
+left: 50%;
+z-index: 0;
 }
 
-.left-side-services{
-    width: 70%;
-    padding: 0 0 0 10%;
+.top-services{
+width: 80%;
+padding: 0 0 0 10%;
 }
 
 
 .features-1,
 .features-1 * {
-    box-sizing: border-box;
+box-sizing: border-box;
 }
 
 .features-1
 {
-    display: flex;
-    flex-direction: column;
-    gap: 3%;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    top: 45%;
+display: flex;
+flex-direction: column;
+gap: 3%;
+align-items: flex-start;
+justify-content: flex-start;
+position: relative;
+top: 45%;
 }
 
-.widget-services-1 {
-    top: 60%;
+.widgets-services{
+display: flex;
+flex-direction: row;
+gap: 5%;
+justify-content: center;
+align-items: center;
 }
-
-.widget-services-2 {
-    top: 40%;
-}
-
-.widget-services-3 {
-    top: 20%;
-}
-
 .rectangle-10 {
-    border-radius: 0px;
-    flex-shrink: 0;
-    position: relative;
-    overflow: visible;
-    
+border-radius: 0px;
+flex-shrink: 0;
+position: relative;
+overflow: visible;
+
 }
 
 .image-1 {
-    border-radius: 30px;
-    border-style: solid;
-    border-color: #ffffff;
-    border-width: 1px;
-    flex-shrink: 0;
-    width: 90%;
-    position: absolute;
-    left: 0;
-    top: 17%;
-    filter: opacity(0.9);
+border-radius: 30px;
+border-style: solid;
+border-color: #ffffff;
+border-width: 1px;
+flex-shrink: 0;
+width: 100%;
+position: absolute;
+left: 0;
+top: 50%;
+filter: opacity(0.9);
 }
 
 .frame-13 {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: absolute;
-    left: 8px;
-    top: 6px;
-    overflow: visible;
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: flex-start;
+justify-content: flex-start;
+flex-shrink: 0;
+position: absolute;
+left: 8px;
+top: 6px;
+overflow: visible;
 }
 
 .title-card {
-    color: #ffffff;
-    text-align: left;
-    font: 500 16px "Jost", sans-serif;
-    position: absolute;
-    left: 8px;
-    top: 45px;
-    width: 104px;
-    height: 92px;
+color: #ffffff;
+text-align: left;
+font: 500 16px "Jost", sans-serif;
+position: absolute;
+left: 8px;
+top: 45px;
+width: 104px;
+height: 92px;
 }
 
 .frame-14 {
-    border-radius: 45px;
-    border-style: solid;
-    border-color: #fc4308;
-    border-width: 1px;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-    width: 35%;
-    height: 5%;
-    position: relative;
-    left: 45%;
-    top: -22.5%;
+border-radius: 45px;
+border-style: solid;
+border-color: #fc4308;
+border-width: 1px;
+padding: 10px;
+display: flex;
+flex-direction: row;
+gap: 10px;
+align-items: center;
+justify-content: center;
+flex-shrink: 0;
+width: 35%;
+height: 5%;
+position: relative;
+left: 55%;
+top: -10rem;
 }
 
 .read-more {
-    color: #ffffff;
-    width: 100%;
-    text-align: left;
-    font: 600 10px "Jost", sans-serif;
-    position: relative;
-    left: 10%;
+color: #ffffff;
+width: 100%;
+text-align: left;
+font: 600 10px "Jost", sans-serif;
+position: relative;
+left: 10%;
 }
 
