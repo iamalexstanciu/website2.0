@@ -1,9 +1,205 @@
 .footer-container{
     width: auto;
-    height: 30vh;
+    height: 40vh;
     border: 2px solid white;
     border-radius: 30px;
     margin: 2%;
+}
+
+.footer,
+.footer * {
+    box-sizing: border-box;
+}
+
+.footer {
+    background: var(--brand-colors-primary, #161616);
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.option-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 1079px;
+    top: 86px;
+}
+
+.newsletter {
+    color: #6d6d6d;
+    text-align: left;
+    font: 500 28px/30.21px "Urbanist", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.podcast {
+    color: #6d6d6d;
+    text-align: left;
+    font: 500 32px/30.21px "Urbanist", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.press {
+    color: #6d6d6d;
+    text-align: left;
+    font: 500 32px/30.21px "Urbanist", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-shrink: 0;
+    position: relative;
+}
+
+.twitter-negative {
+    flex-shrink: 0;
+    position: relative;
+    overflow: visible;
+}
+
+.instagram-negative {
+    flex-shrink: 0;
+    width: 26.85px;
+    height: 26.85px;
+    position: relative;
+    overflow: hidden;
+}
+
+.group {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.linked-in-negative {
+    flex-shrink: 0;
+    width: 26.85px;
+    height: 26.85px;
+    position: relative;
+    overflow: hidden;
+}
+
+.group2 {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+
+.buttons-redirect {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: absolute;
+    left: 768px;
+    top: 86px;
+}
+
+.buttons-redirect-btn {
+    color: #6d6d6d;
+    text-align: left;
+    font: 500 32px/30.21px "Urbanist", sans-serif;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.visit {
+    color: #6d6d6d;
+    text-align: left;
+    font: 800 16px/29.2px "Urbanist", sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 768px;
+    top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.data-policy {
+    color: #6d6d6d;
+    text-align: left;
+    font: 800 16px/29.2px "Urbanist", sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 768px;
+    top: 284px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.imprints {
+    color: #6d6d6d;
+    text-align: left;
+    font: 800 16px/29.2px "Urbanist", sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 884px;
+    top: 284px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.heading {
+    color: #6d6d6d;
+    text-align: left;
+    font: 800 16px/29.2px "Urbanist", sans-serif;
+    text-transform: uppercase;
+    position: absolute;
+    left: 70px;
+    top: 47px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.lorem-ipsum-dolor-sit-amet-consectetur-at-porttitor-ut-felis-nisl-ultrices-sed-sit-cras-nibh-quis-et-diam-justo-in-sollicitudin-enim-tincidunt-eros-mauris-senectus-neque {
+    color: #6d6d6d;
+    text-align: left;
+    font: 500 18px "Urbanist", sans-serif;
+    position: absolute;
+    left: 70px;
+    top: 89px;
+    width: 368px;
+}
+
+.help-menu {
+    color: #6d6d6d;
+    text-align: left;
+    font: 700 199.6px/229.6px "Urbanist", sans-serif;
+    position: absolute;
+    left: calc(50% - 650px);
+    bottom: 17.35px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .open-footer {
