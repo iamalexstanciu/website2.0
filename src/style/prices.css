@@ -32,8 +32,8 @@ text-shadow: 1px 1px 6px black;
 }
 
 .detailed-price{
-    display: grid;
-        grid-template-columns: 50% 50%;
+display: grid;
+    grid-template-columns: 50% 50%;
 position: relative;
 top: 2.5%;
 left: 2%;
@@ -42,16 +42,16 @@ height: 80%;
 }
 
 .title-price{
-    color: #FFF;
-        font-variant-numeric: slashed-zero;
-        text-shadow: 2px 0px 0px #F00, -2px 0px 0px #8FFF00;
-        font-family: monogram;
-        font-size: 92px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.5px;
-        transform: rotate(90deg);
+color: #FFF;
+    font-variant-numeric: slashed-zero;
+    text-shadow: 2px 0px 0px #F00, -2px 0px 0px #8FFF00;
+    font-family: monogram;
+    font-size: 92px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+    transform: rotate(90deg);
 position: relative;
 top: -5%;
 left: -50%;
@@ -73,9 +73,9 @@ margin: 0 auto;
 }
 
 .left-side-price{
-    display: flex;
-    flex-direction: column;
-    gap: 5%;
+display: flex;
+flex-direction: column;
+gap: 5%;
 }
 
 .btn-price {
@@ -114,59 +114,59 @@ box-shadow: 0 0 0 0 rgba(109, 109, 109, 0.63);
 }
 
 .description-price {
-    position: relative;
+position: relative;
 }
 
 .description-price h2 {
-    color: #fff;
-    font-weight: 700;
-    letter-spacing: 1px;
-    margin-bottom: 10px;
+color: #fff;
+font-weight: 700;
+letter-spacing: 1px;
+margin-bottom: 10px;
 }
 
 .description-price ul {
-    position: relative;
+position: relative;
 }
 
 .description-price ul li {
-    position: relative;
-    left: 0;
-    color: #fce4ec;
-    list-style: none;
-    margin: 4px 0;
-    border-left: 2px solid #fc4308;
-    transition: 0.5s;
-    cursor: pointer;
+position: relative;
+left: 0;
+color: #fce4ec;
+list-style: none;
+margin: 4px 0;
+border-left: 2px solid #fc4308;
+transition: 0.5s;
+cursor: pointer;
 }
 
 .description-price ul li:hover {
-    left: 10px;
+left: 10px;
 }
 
 .description-price ul li span {
-    position: relative;
-    padding: 8px;
-    padding-left: 12px;
-    display: inline-block;
-    z-index: 1;
-    transition: 0.5s;
+position: relative;
+padding: 8px;
+padding-left: 12px;
+display: inline-block;
+z-index: 1;
+transition: 0.5s;
 }
 
 .description-price ul li:hover span {
-    color: #111;
+color: #111;
 }
 
 .description-price ul li:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: #fc4308;
-    transform: scaleX(0);
-    transform-origin: left;
-    transition: 0.5s;
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+background: #fc4308;
+transform: scaleX(0);
+transform-origin: left;
+transition: 0.5s;
 }
 
 .description-price ul li:hover:before {
-    transform: scaleX(1);
+transform: scaleX(1);
 }
