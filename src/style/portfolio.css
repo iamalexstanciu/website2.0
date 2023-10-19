@@ -83,7 +83,6 @@ color: white;
 .project-widget:hover:after{
 position: inherit;
 z-index: 10;
-animation-name: my-animation;
 animation-duration: 2s;
 animation-direction: alternate;
 animation-iteration-count: infinite;
@@ -102,20 +101,25 @@ filter: opacity(0.8);
 
 .project1:hover:after{
 content: url("../assets/images/confort.jpg");
+animation-name: my-animation;
 }
 
 .project2:hover:after {
 content: url("../assets/images/afa.jpg");
+    animation-name: my-animation2;
 }
 .project3:hover:after {
     content: url("../assets/images/portfolio.png");
+    animation-name: my-animation;
 }
 
 .project4:hover:after {
     content: url("../assets/images/catalin.png");
+    animation-name: my-animation2;
 }
 .project5:hover:after {
     content: url("../assets/images/upvision.jpg");
+    animation-name: my-animation;
 }
 
 @keyframes my-animation {
@@ -130,3 +134,14 @@ top: 100px;
 }
 }
 
+@keyframes my-animation2 {
+    from {
+        width: -400px;
+        left: -200px;
+    }
+
+    to {
+        width: 0px;
+        left: 100px;
+    }
+}
