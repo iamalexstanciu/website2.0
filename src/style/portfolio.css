@@ -82,7 +82,7 @@ color: white;
 
 .project-widget:hover:after{
 position: inherit;
-z-index: 10;
+z-index: 20;
 animation-duration: 2s;
 animation-direction: alternate;
 animation-iteration-count: infinite;

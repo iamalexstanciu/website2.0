@@ -1,5 +1,5 @@
 import "../style/portfolio.css";
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 const Portfolio = () => {
   return (

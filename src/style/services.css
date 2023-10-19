@@ -43,6 +43,7 @@ font-size: 14px;
 color: white;
 position: relative;
 top: 5%;
+
 }
 
 .image-services{
@@ -76,8 +77,10 @@ top: 45%;
 
 .widgets-services{
 display: flex;
+width: fit-content;
 flex-direction: row;
 gap: 5%;
+margin: 0 auto;
 justify-content: center;
 align-items: center;
 }
@@ -136,6 +139,7 @@ height: 5%;
 position: relative;
 left: 55%;
 top: -10rem;
+
 }
 
 .read-more {

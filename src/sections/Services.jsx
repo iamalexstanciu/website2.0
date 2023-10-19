@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/services.css";
-import Video from "../assets/video/smoke-orange.mp4";
 
 const Services = () => {
   return (
@@ -61,6 +60,7 @@ const Services = () => {
               <img
                 class="image-1"
                 src="https://images.pexels.com/photos/4008335/pexels-photo-4008335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="service presentation upvisionmedia"
               />
               <svg
                 class="frame-13"
@@ -103,6 +103,7 @@ const Services = () => {
               <img
                 class="image-1"
                 src="https://images.pexels.com/photos/4295841/pexels-photo-4295841.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="service presentation upvisionmedia"
               />
               <svg
                 class="frame-13"
@@ -145,6 +146,7 @@ const Services = () => {
               <img
                 class="image-1"
                 src="https://images.unsplash.com/photo-1510125964506-dc5a14f3ef4e?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="service presentation upvisionmedia"
               />
               <svg
                 class="frame-13"
