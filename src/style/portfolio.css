@@ -71,6 +71,7 @@ position: relative;
 .project-widget:hover{
     background-color: rgb(255, 81, 0);
     cursor: pointer;
+    
 
     .short-description,
     .technologies-used
@@ -79,8 +80,7 @@ position: relative;
     }
 }
 
-.project1:hover:after{
-    content: url("../assets/images/confort.jpg");
+.project-widget:hover:after{
    position: inherit;
         height: 10rem;
         z-index: 10;
@@ -93,13 +93,21 @@ animation-name: my-animation;
     /* other properties */
     width: 300px;
     height: 100px;
-    border-radius: 10px;
-    position: absolute;
+    position: relative;
     left: 0;
     right: 0;
     margin-left: auto;
     margin-right: auto;
+    filter: opacity(0.8);
+    border-radius: 20%;
+}
 
+.project1:hover:after{
+    content: url("../assets/images/confort.jpg");
+}
+
+.project2:hover:after {
+    content: url("../assets/images/afa.jpg");
 }
 
 @keyframes my-animation {
@@ -113,3 +121,4 @@ animation-name: my-animation;
         top: 100px;
     }
 }
+
