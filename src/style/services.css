@@ -13,7 +13,9 @@ border-radius: 30px;
 width: 95vw;
 height: 95vh;
 background-color: #45454500;
-border: 2px solid #fc4308;;
+border-left: 2px solid #fc4308;;
+border-right: 2px solid #fc4308;
+    ;
 z-index: 20;
 }
 

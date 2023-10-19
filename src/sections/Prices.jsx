@@ -1,6 +1,5 @@
 import React from "react";
 import "../style/prices.css";
-import Developer from "../assets/images/coder.png";
 
 function Prices() {
   return (
@@ -8,11 +7,6 @@ function Prices() {
       <div className="container-prices">
         <div className="detailed-price">
           <div className="left-side-price">
-            <img
-              src={Developer}
-              className="coder-image"
-              alt="presentation prices upvisionmedia"
-            />
             <div className="description-price">
               <h2> This is the starting price of the project which includes</h2>
               <ul>
