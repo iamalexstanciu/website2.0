@@ -42,11 +42,12 @@ position: relative;
 .project-widget {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 120%;
+    width: 100%;
     height: 12%;
-    border: 1px solid white;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
     position: relative;
     top: 0%;
     text-align: left;
@@ -59,6 +60,7 @@ position: relative;
 .short-description{
     color: gray;
     font-size: 20px;
+
 }
 
 .technologies-used{
@@ -68,10 +70,46 @@ position: relative;
 
 .project-widget:hover{
     background-color: rgb(255, 81, 0);
-   
+    cursor: pointer;
+
     .short-description,
     .technologies-used
     {
         color: white;
+    }
+}
+
+.project1:hover:after{
+    content: url("../assets/images/confort.jpg");
+   position: inherit;
+        height: 10rem;
+        z-index: 10;
+animation-name: my-animation;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+    /* other properties */
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+@keyframes my-animation {
+    from {
+        width: 400px;
+        top: -200px;
+    }
+
+    to {
+        width: 0px;
+        top: 100px;
     }
 }
