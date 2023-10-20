@@ -38,8 +38,25 @@ const Services = () => {
               experience.
             </p>
           </div>
-          <div className="card-services third-card-services"></div>
-          <div className="card-services fourth-card-services"></div>
+          <div className="card-services third-card-services">
+            <p className="number-card-service">03</p>
+            <h3 className="title-card-service">SEO</h3>
+            <p className="description-card-service">
+              SEO (Search Engine Optimization) is the practice of optimizing a
+              website to improve its visibility in search engine results,
+              increasing organic traffic and online presence.
+            </p>
+          </div>
+          <div className="card-services fourth-card-services">
+            {" "}
+            <p className="number-card-service">04</p>
+            <h3 className="title-card-service">Development</h3>
+            <p className="description-card-service">
+              Website development involves designing, coding, and optimizing web
+              pages to create functional, user-friendly sites that cater to
+              specific goals and user needs.
+            </p>
+          </div>
         </div>
       </div>
     </div>
