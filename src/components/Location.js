@@ -8,7 +8,7 @@ const Loc = styled.div`
   color: #fc4308;
   position: absolute;
   top: -4%;
-  left: 82.5rem;
+  left: 80%;
   width: 20%;
   height: 20%;
   z-index: 3;
