@@ -28,7 +28,9 @@ const Portfolio = () => {
             <p className="short-description">
               Interior design website developed.
             </p>
-            <h4 className="technologies-used">react, js, css</h4>
+            <a href="https://www.confortunomobili.com" className="link-website">
+              visit website
+            </a>
           </div>
 
           <div className="project-widget project2">
@@ -42,7 +44,9 @@ const Portfolio = () => {
             <p className="short-description">
               Presentation website for a transport company.
             </p>
-            <h4 className="technologies-used">react, js, css</h4>
+            <a href="#0" className="link-website">
+              visit website
+            </a>
           </div>
 
           <div className="project-widget project3">
@@ -56,7 +60,9 @@ const Portfolio = () => {
             <p className="short-description">
               Designed and developed a personal portfolio.
             </p>
-            <h4 className="technologies-used">react, js, css</h4>
+            <a href="https://www.alexstanciudev.com" className="link-website">
+              visit website
+            </a>
           </div>
 
           <div className="project-widget project4">
@@ -70,7 +76,9 @@ const Portfolio = () => {
             <p className="short-description">
               Interesting project for a dentist website.
             </p>
-            <h4 className="technologies-used">react, parallax, js, css</h4>
+            <a href="#0" className="link-website">
+              visit website
+            </a>
           </div>
 
           <div className="project-widget project5">
@@ -84,7 +92,7 @@ const Portfolio = () => {
             <p className="short-description">
               First version of upvisionMedia website.
             </p>
-            <h4 className="technologies-used">react, js, css</h4>
+            <a href="#0" className="link-website">visit website</a>
           </div>
         </div>
       </div>
