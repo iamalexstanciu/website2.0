@@ -32,7 +32,7 @@ const MenuBtn = styled.li`
   clip-path: polygon(0 0, 100% 0, 80% 100%, 20% 100%);
 
   position: absolute;
-  top: 110%;
+  top: 100%;
   left: 48%;
   transform: translateX(-50%);
 

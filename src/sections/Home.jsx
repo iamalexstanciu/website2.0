@@ -8,13 +8,7 @@ import ButtonStartAProject from "../components/ButtonStartAProject";
 
 const Section = styled.section`
   position: relative;
-  height: 95vh;
-  border-radius: 30px;
-  top: 0.5rem;
-  left: 2.5%;
   overflow: hidden;
-  width: 95vw;
-  border: 2px solid #fc4308;
 `;
 
 const Home = () => {
