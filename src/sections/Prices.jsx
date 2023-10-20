@@ -55,9 +55,9 @@ function Prices() {
         <h4
           className="price-name"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="-2"
           data-scroll-direction="vertical">
-          €1000 + vat
+          €950 + vat
         </h4>
       </div>
     </div>
