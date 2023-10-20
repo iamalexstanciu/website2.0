@@ -28,7 +28,16 @@ const Services = () => {
               digital landscape.
             </p>
           </div>
-          <div className="card-services second-card-services"></div>
+          <div className="card-services second-card-services">
+            <p className="number-card-service">02</p>
+            <h3 className="title-card-service">UI/UX Design</h3>
+            <p className="description-card-service">
+              UI/UX graphic design enhances website aesthetics and usability,
+              focusing on intuitive layouts, appealing visuals, and seamless
+              interactions to create an engaging and user-friendly online
+              experience.
+            </p>
+          </div>
           <div className="card-services third-card-services"></div>
           <div className="card-services fourth-card-services"></div>
         </div>
