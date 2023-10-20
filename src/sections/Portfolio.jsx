@@ -12,7 +12,7 @@ const Portfolio = () => {
         <h1
           className="section-name-portfolio"
           data-scroll
-          data-scroll-speed="-1"
+          data-scroll-speed="1"
           data-scroll-direction="horizontal">
           Portfolio
         </h1>
@@ -92,7 +92,9 @@ const Portfolio = () => {
             <p className="short-description">
               First version of upvisionMedia website.
             </p>
-            <a href="#0" className="link-website">visit website</a>
+            <a href="#0" className="link-website">
+              visit website
+            </a>
           </div>
         </div>
       </div>

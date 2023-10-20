@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/mars-project');
+
 .section-portfolio {
 width: 100vw;
 height: 100vh;
@@ -19,12 +21,13 @@ z-index: 0;
 
 
 .section-name-portfolio{
-font: 700 80px "Syncopate", sans-serif;
+font: 700 80px 'Mars-Project', sans-serif;
 color: #fc4308;
+text-transform: lowercase;
 text-shadow: 1px 1px 6px black;
 position: relative;
 top: 0%;
-left: 10%;
+left: 5%;
 }
 
 .container-projects {

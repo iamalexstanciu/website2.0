@@ -1,3 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/mars-project');
+
+
 .section-services{
 width: 100vw;
 height: 100vh;
@@ -20,10 +23,13 @@ z-index: 20;
 
 .title-services{
 color: #fc4308; 
-font: 700 60px "Syncopate", sans-serif;
+font: 700 80px 'Mars-Project', sans-serif;
 position: relative;
-text-shadow: 1px 1px 6px black;
-left: 10%;
+text-shadow: 1px 1px 6px rgb(0, 0, 0);
+left: 5%;
+width: 10%;
+letter-spacing: 2px;
+text-transform: lowercase;
 top: 5%;
 width: fit-content;
 height: fit-content;

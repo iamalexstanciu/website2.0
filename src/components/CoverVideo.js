@@ -3,6 +3,8 @@ import styled from "styled-components";
 import MainVideo from "../assets/video/cover1.mp4";
 
 const VideoContainer = styled.section`
+  @import url("https://fonts.cdnfonts.com/css/mars-project");
+
   width: 100%;
   height: 100vh;
   position: relative;
@@ -33,6 +35,8 @@ const Title = styled.div`
   left: 0;
   right: 0;
   z-index: 1;
+  font-family: "Mars-Project", sans-serif;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -41,12 +45,13 @@ const Title = styled.div`
   color: ${(props) => props.theme.text};
 
   h1 {
-    font-family: "Rajdhani", sans-serif;
+    font-family: "Mars-Project", sans-serif;
+    text-transform: lowercase;
     font-size: ${(props) => props.theme.fontBig};
     text-align: center;
   }
   h2 {
-    font-family: "Zen Maru Gothic", sans-serif;
+    font-family: "Mars-Project", sans-serif;
     font-size: ${(props) => props.theme.fontlg};
     text-align: center;
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
@@ -79,11 +84,9 @@ const CoverVideo = () => {
         <h2 data-scroll data-scroll-delay="0.5" data-scroll-speed="4">
           Turning Ideas into Web Realities
         </h2>
-        
       </Title>
 
       <video src={MainVideo} type="video/mp4" autoPlay muted loop />
-     
     </VideoContainer>
   );
 };

@@ -3,18 +3,21 @@ import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
 
 const ButtonSAP = styled.div`
+  @import url("https://fonts.cdnfonts.com/css/mars-project");
+
   display: flex;
   flex-direction: column;
   position: absolute;
   top: 70%;
   z-index: 200;
   width: fit-content;
-  left: calc(75% - 130px);
+  left: calc(75% - 100px);
 
   .btn-home {
     border: none !important;
-    padding: 20px 30px;
-    font-size: 26px;
+    font-size: 22px;
+    font-family: "Mars-Project", sans-serif;
+
     background-color: transparent;
     color: #fc4308;
     opacity: 1;

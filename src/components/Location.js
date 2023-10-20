@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Loc = styled.div`
+  @import url("https://fonts.cdnfonts.com/css/mars-project");
+
   display: flex;
   flex-direction: column;
   gap: 2%;
@@ -18,6 +20,7 @@ const Loc = styled.div`
   p {
     color: lightgray;
     font-size: 20px;
+    font-family: "Mars-Project", sans-serif;
   }
 `;
 

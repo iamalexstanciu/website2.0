@@ -14,7 +14,7 @@ const Services = () => {
           data-scroll
           data-scroll-speed="1"
           data-scroll-direction="horizontal">
-          Services
+          services
         </h1>
 
         <div className="content-services">

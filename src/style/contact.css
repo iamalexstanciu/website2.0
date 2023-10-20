@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/mars-project');
+
 .section-contact {
     width: 100vw;
     height: 50vh;
@@ -44,8 +46,8 @@ font-size: 30px;
     color: #FFF;
         font-variant-numeric: slashed-zero;
         text-shadow: 2px 0px 0px #F00, -2px 0px 0px #8FFF00;
-        font-family: monogram;
-        font-size: 200px;
+        font-family: 'Mars-Project', sans-serif;
+        font-size: 180px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
@@ -53,7 +55,7 @@ font-size: 30px;
         text-align: left;
         position: absolute;
         left: 2%;
-        top: 15%;
+        top: 25%;
         width: 80%;
         text-transform: lowercase;
     }
