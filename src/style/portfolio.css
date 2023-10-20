@@ -104,7 +104,7 @@ height: 20rem;
 backdrop-filter: opacity(0.4);
 background-size: cover;
 background-repeat: no-repeat;
-transition: all 0.5s ease-in-out;
+transition: all 0.7s ease-in-out;
 
 
 .title-project,
@@ -113,12 +113,36 @@ transition: all 0.5s ease-in-out;
 {
 position: relative;
 top: 20%;
+color: #ffffff;
+font-size: 25px;
+font-weight: 600;
+padding: 1%;
 }
+}
+
+.project1:hover {
+    /* Change to the desired background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back3.png');
+
+}
+.project2:hover {
+    /* Change to the desired background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back5.png');
+}
+
+.project3:hover {
+    /* Change to the desired background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back4.png');
+}
+
+.project4:hover {
+    /* Change to the desired background color */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back2.png');
 }
 
 
 .project5:hover{
     /* Change to the desired background color */
-        background-image: url('../assets/images/back1.1.png');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back1.1.png');
 }
 
