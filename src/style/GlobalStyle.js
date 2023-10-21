@@ -11,9 +11,7 @@ const GlobalStyle = createGlobalStyle`
 body{
     font-family:  "Rajdhani";
     overflow-x: hidden;
-    background-color: ${(props) =>
-      props.theme === "dark" ? "#9f9f9f" : "#fff"};
-    color: ${(props) => (props.theme === "dark" ? "white" : "#fff")};
+    background-color: ${(props) => (props.theme === "dark" ? "#000" : "#fff")};
     transition: background-color 0.5s, color 0.5s;
 }
 
