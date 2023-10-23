@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p{
     color: ${(props) => (props.theme === "dark" ? "#fff" : "#000")};
 }
 
+li {
+     color: ${(props) => (props.theme === "dark" ? "#fff" : "#000")};
+}
+
 a{
     color: inherit;
     text-decoration: none;

@@ -76,7 +76,7 @@ const Portfolio = () => {
             <p className="short-description">
               Interesting project for a dentist website.
             </p>
-            <a href="#0" className="link-website">
+            <a href="https://www.catalinteodor.com" className="link-website">
               visit website
             </a>
           </div>

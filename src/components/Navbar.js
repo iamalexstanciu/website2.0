@@ -15,6 +15,7 @@ const NavContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fc4308;
 
   @media (max-width: 40em) {
     top: ${(props) => (props.click ? "0" : `calc(-50vh - 4rem)`)};
@@ -22,10 +23,9 @@ const NavContainer = styled.div`
 `;
 const MenuBtn = styled.li`
   background-color: #fc4308;
-  color: white;
   width: 15rem;
   height: 2.5rem;
-
+ 
   border: none;
   outline: none;
 
