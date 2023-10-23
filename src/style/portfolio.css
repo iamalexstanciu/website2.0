@@ -29,7 +29,6 @@ text-shadow: 1px 1px 6px black;
 position: relative;
 top: 0%;
 left: 5%;
-color:#9f9f9f;
 }
 
 .container-projects {
@@ -60,17 +59,14 @@ transition: all 0.7s ease-out;
 }
 
 .title-project {
-color: white;
 font-size: 20px;
 }
 .short-description{
-color: gray;
 font-size: 20px;
 
 }
 
 .link-website{
-color: gray;
 font-size: 20px;
 }
 
@@ -90,7 +86,6 @@ transition: all 0.7s ease-out;
 {
 position: relative;
 top: 20%;
-color: #ffffff;
 font-size: 25px;
 font-weight: 600;
 padding: 1%;

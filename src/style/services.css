@@ -41,7 +41,6 @@ flex-direction: row;
 height: 70%;
 margin: 0;
 padding: 0;
-color: white;
 position: relative;
 top: 20%;
 margin: 0 auto;
@@ -57,7 +56,6 @@ width: 100%;
 }
 
 .number-card-service{
-    color: gray;
     font-size: 25px;
     position: relative;
     left: 5%;
@@ -65,7 +63,6 @@ width: 100%;
 }
 
 .title-card-service{
-    color: gray;
         font-size: 25px;
         position: relative;
         left: 5%;
@@ -73,7 +70,6 @@ width: 100%;
 }
 
 .description-card-service{
-    color: gray;
     width: 90%;
     text-align: justify;
         font-size: 20px;
