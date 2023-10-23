@@ -3,12 +3,12 @@ import "../style/contact.css";
 
 function Contact() {
   return (
-    <div className="section-contact" id="contact">
+    <section className="section-contact" id="contact">
       <div className="container-contact">
         <h1 className="title-contact">Get in Touch!</h1>
         <div className="details-contact">
           <a className="email-address" href="mailto:info@upvisionmedia.com">
-           let's start a project
+            let's start a project
           </a>
           <a href="tel:+40744497740">call us</a>
           <div className="mail-to-owners">
@@ -37,7 +37,7 @@ function Contact() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

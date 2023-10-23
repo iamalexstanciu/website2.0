@@ -13,7 +13,7 @@ const Section = styled.section`
 
 const Home = () => {
   return (
-    <Section id="home">
+    <Section style={{ border: "none" }} id="home">
       <CoverVideo />
       <Location />
       <Logo />

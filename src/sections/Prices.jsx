@@ -3,7 +3,7 @@ import "../style/prices.css";
 
 function Prices() {
   return (
-    <div className="section-prices" id="prices">
+    <section className="section-prices" id="prices">
       <div className="container-prices">
         <div className="detailed-price">
           <div className="left-side-price">
@@ -60,7 +60,7 @@ function Prices() {
           €950 + vat
         </h4>
       </div>
-    </div>
+    </section>
   );
 }
 

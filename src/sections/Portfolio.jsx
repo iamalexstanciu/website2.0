@@ -3,7 +3,7 @@ import React from "react";
 
 const Portfolio = () => {
   return (
-    <div className="section-portfolio" id="portfolio">
+    <section className="section-portfolio" id="portfolio">
       <div
         className="container-portfolio"
         data-scroll
@@ -98,7 +98,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

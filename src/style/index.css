@@ -1,5 +1,14 @@
 @import url('https://fonts.cdnfonts.com/css/montreal');
 html, body {
 background-color: black;
+scroll-snap-type: y mandatory;
 font-family: 'Montreal', sans-serif;
+}
+
+section {
+    scroll-snap-align: start;
+    block-size: 100%;
+        scroll-snap-stop: always;
+        border-left: 2px solid #fc4308;
+            border-right: 2px solid #fc4308;
 }

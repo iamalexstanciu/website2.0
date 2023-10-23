@@ -3,7 +3,7 @@ import "../style/footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-container">
+    <section className="footer-container">
       <div class="buttons-redirect-2">
         <p class="buttons-redirect-2-btn">Newsletter</p>
         <p class="buttons-redirect-2-btn">Podcast</p>
@@ -82,7 +82,7 @@ const Footer = () => {
         </p>
       </div>
       <div class="logo-footer">upvisionMedia ©</div>
-    </div>
+    </section>
   );
 };
 

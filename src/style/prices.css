@@ -13,14 +13,11 @@ position: relative;
 position: relative;
 top: 2.5%;
 left: 2.5%;
-border-radius: 30px;
 width: 95vw;
 height: 95vh;
 justify-content: space-evenly;
 align-items: center;
 background-color: #6d6d6d00;
-border-top: 2px solid #fc4308;
-border-bottom: 2px solid #fc4308;
 z-index: 0;
 }
 

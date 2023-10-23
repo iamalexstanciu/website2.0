@@ -3,7 +3,7 @@ import "../style/team.css";
 
 function Team() {
   return (
-    <div className="section-team" id="team">
+    <section className="section-team" id="team">
       <div className="container-team">
         <div
           className="section-name-team"
@@ -39,7 +39,7 @@ function Team() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

@@ -21,13 +21,35 @@ const ButtonTheme = styled.button`
   position: absolute;
   top: 12.5%;
   right: 3%;
-  background-color: gray;
   padding: 0.3%;
   color: white;
   width: 7%;
-  border: none;
-  border-radius: 5%;
   z-index: 200;
+  border-radius: 30px;
+  background-color: gray;
+  color: ${(props) => (props.theme === "dark" ? "#000" : "#fff")};
+
+  .button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid white;
+    border-radius: 30px;
+    padding: 0.5em;
+    background: black;
+    color: ${(props) => (props.theme === "dark" ? "#000" : "#fff")};
+    transform: translateY(-0.1em);
+    transition: transform 0.1s ease;
+  }
+
+  button:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+  }
+
+  button:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+  }
 `;
 
 function App() {
@@ -67,7 +89,9 @@ function App() {
             position: "absolute",
             zIndex: 100,
           }}>
-          {theme === "dark" ? "More Light" : "Dark Side"}
+          <span class="button_top">
+            {theme === "dark" ? "More Light" : "Dark Side"}
+          </span>
         </ButtonTheme>
         <GlobalStyle theme={theme} />
         <ThemeProvider theme={dark}>
@@ -90,7 +114,7 @@ function App() {
               ]
             }
             containerRef={containerRef}>
-            {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
+            <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
               <AnimatePresence>
                 <section id="home">
@@ -111,24 +135,23 @@ function App() {
                 <section id="contact">
                   <Contact />
                 </section>
-
-                <div className="open-footer">
-                  Hey there, curious soul, fancy a peek at our fancy footer?
-                  <div className="buttons-footer">
-                    <button
-                      className="button-no"
-                      onClick={() => handleFooter(false)}>
-                      No, I'm ok!
-                    </button>
-                    <button
-                      className="button-yes"
-                      onClick={() => handleFooter(true)}>
-                      Let's see what you've created!
-                    </button>
-                  </div>
-                </div>
-                {showFooter ? <Footer /> : null}
               </AnimatePresence>
+              <div className="open-footer">
+                Hey there, curious soul, fancy a peek at our fancy footer?
+                <div className="buttons-footer">
+                  <button
+                    className="button-no"
+                    onClick={() => handleFooter(false)}>
+                    No, I'm ok!
+                  </button>
+                  <button
+                    className="button-yes"
+                    onClick={() => handleFooter(true)}>
+                    Let's see what you've created!
+                  </button>
+                </div>
+              </div>
+              {showFooter ? <Footer /> : null}
             </main>
           </LocomotiveScrollProvider>
         </ThemeProvider>
