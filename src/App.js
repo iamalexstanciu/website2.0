@@ -27,19 +27,7 @@ const ButtonTheme = styled.button`
   z-index: 200;
   border-radius: 30px;
   background-color: gray;
-  color: ${(props) => (props.theme === "dark" ? "#000" : "#fff")};
-
-  .button_top {
-    display: block;
-    box-sizing: border-box;
-    border: 2px solid white;
-    border-radius: 30px;
-    padding: 0.5em;
-    background: black;
-    color: ${(props) => (props.theme === "dark" ? "#000" : "#fff")};
-    transform: translateY(-0.1em);
-    transition: transform 0.1s ease;
-  }
+  color: ${(props) => (props.theme === "dark" ? "#fff" : "#000")};
 
   button:hover .button_top {
     /* Pull the button upwards when hovered */
@@ -84,14 +72,13 @@ function App() {
     <>
       <ParallaxProvider>
         <ButtonTheme
+          className="btn"
           onClick={toggleTheme}
           style={{
             position: "absolute",
             zIndex: 100,
           }}>
-          <span class="button_top">
-            {theme === "dark" ? "More Light" : "Dark Side"}
-          </span>
+          {theme === "dark" ? "More Light" : "Dark Side"}
         </ButtonTheme>
         <GlobalStyle theme={theme} />
         <ThemeProvider theme={dark}>

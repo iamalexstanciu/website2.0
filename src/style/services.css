@@ -47,7 +47,6 @@ margin: 0 auto;
 }
 
 .card-services{
-border-left: 0.5px solid white;
 position: relative;
 display: flex;
 flex-direction: column;
@@ -84,7 +83,6 @@ width: 100%;
     -webkit-transition: background-color 1000ms linear;
     -ms-transition: background-color 1000ms linear;
     transition: background-color 2000ms linear;
-    color: black;
     cursor: pointer;
 
     .title-card-service{
