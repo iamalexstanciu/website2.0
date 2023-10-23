@@ -19,10 +19,14 @@ import Footer from "./components/Footer";
 const ButtonTheme = styled.button`
   display: inline-block;
   position: absolute;
-  top: 25%;
-  left: 50%;
-  background-color: white;
-  color: black;
+  top: 12.5%;
+  right: 3%;
+  background-color: gray;
+  padding: 0.3%;
+  color: white;
+  width: 7%;
+  border: none;
+  border-radius: 5%;
   z-index: 200;
 `;
 
@@ -30,12 +34,12 @@ function App() {
   const containerRef = useRef(null);
   const [showFooter, setShowFooter] = useState(false);
 
-const [theme, setTheme] = useState("light"); // Default theme is light
+  const [theme, setTheme] = useState("dark"); // Default theme is dark
 
-const toggleTheme = () => {
-  // Toggle between light and dark themes
-  setTheme(theme === "light" ? "dark" : "light");
-};
+  const toggleTheme = () => {
+    // Toggle between light and dark themes
+    setTheme(theme === "dark" ? "light" : "dark");
+  };
 
   const handleFooter = (props) => {
     setShowFooter(props);
@@ -49,18 +53,21 @@ const toggleTheme = () => {
     }, 3000);
   }, []);
 
-   useEffect(() => {
-     // Apply the theme class to the body element
-     document.body.className = theme;
-   }, [theme]);
+  useEffect(() => {
+    // Apply the theme class to the body element
+    document.body.className = theme;
+  }, [theme]);
 
   return (
     <>
       <ParallaxProvider>
         <ButtonTheme
           onClick={toggleTheme}
-          style={{ position: "absolute", left: "10%", top: "10%", zIndex: 100}}>
-          Toggle Theme
+          style={{
+            position: "absolute",
+            zIndex: 100,
+          }}>
+          {theme === "dark" ? "More Light" : "Dark Side"}
         </ButtonTheme>
         <GlobalStyle theme={theme} />
         <ThemeProvider theme={dark}>

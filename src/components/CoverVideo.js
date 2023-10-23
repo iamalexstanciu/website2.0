@@ -49,6 +49,7 @@ const Title = styled.div`
     text-transform: lowercase;
     font-size: ${(props) => props.theme.fontBig};
     text-align: center;
+    color: white;
   }
   h2 {
     font-family: "Mars-Project", sans-serif;
@@ -56,7 +57,8 @@ const Title = styled.div`
     text-align: center;
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
     text-transform: lowercase;
-    font-weight: 400;
+    font-weight: 500;
+    color: white;
   }
 
   div {
