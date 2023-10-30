@@ -58,6 +58,27 @@ font-size: 30px;
         text-transform: lowercase;
     }
 
+        @media screen and (max-width: 1200px) {
+            .section-contact {
+                width: 100vw;
+                height: 100vh;
+            }
+    
+            .container-contact {
+                top: 55%;
+            }
+    
+            .title-contact {
+                font-size: 110px;
+            }
+    
+            .details-contact {
+                font-size: 25px;
+                right: -160%;
+            }
+        }
+
+
 @media screen and (max-width: 950px){
 .section-contact {
         width: 100vw;
@@ -66,7 +87,6 @@ font-size: 30px;
 
         .container-contact {
             top: 55%;
-            border: 1px solid white;
         }
 
         .title-contact{
