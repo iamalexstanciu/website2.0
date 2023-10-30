@@ -12,6 +12,12 @@ const Container = styled.div`
     width: 10%;
     z-index: 5;
   }
+
+  @media screen and (max-width: 950px) {
+    img {
+      width: 20%;
+    }
+  }
 `;
 
 const Logo = () => {

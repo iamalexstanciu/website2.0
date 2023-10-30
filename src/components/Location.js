@@ -22,6 +22,14 @@ const Loc = styled.div`
     font-size: 20px;
     font-family: "Mars-Project", sans-serif;
   }
+
+  @media screen and (max-width: 1200px) {
+    width: 30%;
+    left: 70%;
+    p {
+      font-size: 15px;
+    }
+  }
 `;
 
 const Location = () => {

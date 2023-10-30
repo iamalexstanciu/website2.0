@@ -36,7 +36,6 @@ const Title = styled.div`
   right: 0;
   z-index: 1;
   font-family: "Mars-Project", sans-serif;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -47,13 +46,13 @@ const Title = styled.div`
   h1 {
     font-family: "Mars-Project", sans-serif;
     text-transform: lowercase;
-    font-size: ${(props) => props.theme.fontBig};
+    font-size: 120px;
     text-align: center;
     color: white;
   }
   h2 {
     font-family: "Mars-Project", sans-serif;
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 20px;
     text-align: center;
     text-shadow: 1px 1px 1px ${(props) => props.theme.body};
     text-transform: lowercase;
@@ -64,6 +63,23 @@ const Title = styled.div`
   div {
     display: flex;
     flex-direction: row;
+  }
+
+  @media screen and (max-width: 950px) {
+    h1 {
+      font-size: 7rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 6rem;
+    }
+  }
+
+  @media screen and (max-width: 550px) {
+    h1 {
+      font-size: 4rem;
+    }
   }
 `;
 
