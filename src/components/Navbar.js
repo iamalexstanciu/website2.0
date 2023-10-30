@@ -39,9 +39,6 @@ const MenuBtn = styled.li`
   font-size: ${(props) => props.theme.fontmd};
   font-weight: 600;
 
-  /* border-end-start-radius: 50%; */
-
-  /* border-end-end-radius: 50%; */
 
   cursor: pointer;
 

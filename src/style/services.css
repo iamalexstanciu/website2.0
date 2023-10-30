@@ -96,3 +96,49 @@ width: 100%;
 
 }
 
+@media screen and (max-width:950px){
+    .section-services{
+        height: 200vh;
+    }
+    
+    .content-services{
+        flex-direction: column;
+        gap: 5%;
+    }
+
+    .card-services{
+        height: 35vh;
+        padding: 5%;
+        width: 90%;
+        left: 0;
+        border: 1px solid rgb(65, 65, 65);
+    }
+
+        .title-card-service {
+            font-size: 25px;
+            position: relative;
+            left: 5%;
+            top: 0%;
+        }
+    
+        .description-card-service {
+            width: 90%;
+            text-align: justify;
+            font-size: 20px;
+            position: relative;
+            left: 5%;
+            top: 10%;
+        }
+
+                .card-services:hover {
+                    background-color: #ffffff00;
+                    cursor: pointer;
+                }
+        
+                .card-services:hover+div {
+                    background: #fc450800;
+                    background-size: cover;
+        
+                }
+
+}
