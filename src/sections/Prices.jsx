@@ -47,7 +47,9 @@ function Prices() {
                 </li>
               </ul>
             </div>
-            <button className="btn-price">Start a Project</button>
+            <a className="btn-price" href="mailto:info@upvisionmedia.com">
+              Start a Project
+            </a>
           </div>
 
           <h2 className="title-price">project start</h2>
