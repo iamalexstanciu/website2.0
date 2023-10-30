@@ -1,8 +1,8 @@
 import styled, { ThemeProvider } from "styled-components";
 import GlobalStyle from "./style/GlobalStyle";
-import { dark } from "../src/style/Themes.js";
+import { dark, light } from "../src/style/Themes.js";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
-import { useEffect, useRef, useState } from "react";
+import { createContext, useEffect, useRef, useState } from "react";
 import Home from "./sections/Home";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 import { AnimatePresence } from "framer-motion";
@@ -15,42 +15,19 @@ import Prices from "./sections/Prices";
 import Contact from "./sections/Contact";
 import "./style/footer.css";
 import Footer from "./components/Footer";
+import ReactSwitch from "react-switch";
 
-const ButtonTheme = styled.button`
-  display: inline-block;
-  position: absolute;
-  top: 12.5%;
-  right: 3%;
-  padding: 0.3%;
-  color: white;
-  width: 7%;
-  z-index: 200;
-  border-radius: 30px;
-  background-color: gray;
-  color: orange;
-
-  button:hover .button_top {
-    /* Pull the button upwards when hovered */
-    transform: translateY(-0.33em);
-  }
-
-  button:active .button_top {
-    /* Push the button downwards when pressed */
-    transform: translateY(0);
-  }
-`;
+export const ThemeContext = createContext(null);
 
 function App() {
   const containerRef = useRef(null);
   const [showFooter, setShowFooter] = useState(false);
 
-  const [theme, setTheme] = useState("dark"); // Default theme is dark
+  const [theme, setTheme] = useState("dark");
 
   const toggleTheme = () => {
-    // Toggle between light and dark themes
-    setTheme(theme === "dark" ? "light" : "dark");
+    setTheme((curr) => (curr === "light" ? "dark" : "light"));
   };
-
   const handleFooter = (props) => {
     setShowFooter(props);
   };
@@ -63,25 +40,32 @@ function App() {
     }, 3000);
   }, []);
 
-  useEffect(() => {
-    // Apply the theme class to the body element
-    document.body.className = theme;
-  }, [theme]);
-
   return (
     <>
       <ParallaxProvider>
-        <ButtonTheme
-          className="btn"
-          onClick={toggleTheme}
-          style={{
-            position: "absolute",
-            zIndex: 100,
-          }}>
-          {theme === "dark" ? "More Light" : "Dark Side"}
-        </ButtonTheme>
+        <ThemeContext.Provider value={{ theme, toggleTheme }}>
+          <div className="App" id={theme}>
+            <div className="switch">
+              <ReactSwitch
+                onChange={toggleTheme}
+                checked={theme === "dark"}
+                onColor="#fc4308"
+                onHandleColor="#fc4308"
+                handleDiameter={30}
+                uncheckedIcon={false}
+                checkedIcon={false}
+                boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                height={20}
+                width={50}
+                className="react-switch"
+                id="material-switch"
+              />
+            </div>
+          </div>
+        </ThemeContext.Provider>
         <GlobalStyle theme={theme} />
-        <ThemeProvider theme={dark}>
+        <ThemeProvider theme={theme === "dark" ? dark : light}>
           <LocomotiveScrollProvider
             options={{
               smooth: true,

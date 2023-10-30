@@ -13,3 +13,13 @@ section {
         border-left: 2px solid #fc4308;
             border-right: 2px solid #fc4308;
 }
+
+.switch {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 95%;
+    z-index: 50;
+}
