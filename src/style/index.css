@@ -3,6 +3,7 @@ html, body {
 background-color: black;
 scroll-snap-type: y mandatory;
 font-family: 'Montreal', sans-serif;
+height: fit-content;
 }
 
 section {

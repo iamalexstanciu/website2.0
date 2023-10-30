@@ -164,3 +164,13 @@ transition: 0.5s;
 .description-price ul li:hover:before {
 transform: scaleX(1);
 }
+
+@media screen and (max-width: 950px) {
+    .container-prices {
+        height: 150vh;
+    }
+
+    .detailed-price {
+        top: 0%;
+    }
+}
