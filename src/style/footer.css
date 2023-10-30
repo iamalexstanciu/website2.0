@@ -10,58 +10,110 @@
 }
 
 
-.buttons-redirect-2 {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    left: 1079px;
-    top: 86px;
-}
 .buttons-redirect {
     display: flex;
     flex-direction: column;
-    gap: 9px;
+    gap: 1rem;
     align-items: flex-start;
     justify-content: flex-start;
     position: absolute;
     left: 50%;
-    top: 5%;
+    top: 10%;
 }
 
-.buttons-redirect-2-btn {
-    color: #6d6d6d;
-    text-align: left;
-    font: 500 22px/30.21px "Urbanist", sans-serif;
-    position: relative;
-    top: -5rem;
+.social-image{
+    width: 70%;
+
+}
+
+.wrapper {
     display: flex;
+    list-style: none;
+    height: 10%;
+    width: 30%;
+    padding-top: 40px;
+    position: relative;
+    left: 70%;
+    top: 3rem;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
-
-.socials {
+.wrapper .icon {
+    position: relative;
+    background-color: #fc4308;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
     display: flex;
-    flex-direction: row;
-    gap: 32px;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    position: relative;
-    top: -4rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.negative {
-    flex-shrink: 0;
-    width: 26.85px;
-    height: 26.85px;
-    position: relative;
-    overflow: hidden;
+.wrapper .tooltip {
+    position: absolute;
+    top: 0;
+    font-size: 14px;
+    background: #fff;
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 5px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
+.wrapper .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 8px;
+    width: 8px;
+    background: #fff;
+    bottom: -3px;
+    left: 50%;
+    transform: translate(-50%) rotate(45deg);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -45px;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+    text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .facebook:hover,
+.wrapper .facebook:hover .tooltip,
+.wrapper .facebook:hover .tooltip::before {
+    background: #1877F2;
+    color: #fff;
+}
+
+.wrapper .twitter:hover,
+.wrapper .twitter:hover .tooltip,
+.wrapper .twitter:hover .tooltip::before {
+    background: #1DA1F2;
+    color: #fff;
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+    background: #E4405F;
+    color: #fff;
+}
 
 .buttons-redirect-btn {
     color: #6d6d6d;
@@ -73,39 +125,43 @@
     justify-content: flex-start;
 }
 
-
-.heading-footer {
+.buttons-redirect-btn:hover{
     color: #fc4308;
-    text-align: left;
-    font: 800 16px/29.2px "Urbanist", sans-serif;
-    text-transform: uppercase;
-    position: absolute;
-    left: 70px;
-    top: 47px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    font-size: 24px;
 }
 
-.description-text {
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    top: -15%;
+    left: 5%;
+    position: relative;
+
+
+}
+.text-footer h3 {
+    color: #fc4308;
+    font-size: 30px;
+}
+
+.text-footer p {
     color: #6d6d6d;
-    text-align: left;
-    font: 500 18px "Urbanist", sans-serif;
-    position: absolute;
-    left: 70px;
-    top: 89px;
-    width: 368px;
+    font-size: 20px;
 }
 
 .logo-footer {
     color: #fc4308;
     text-align: left;
-    font: 700 160px/180px "Urbanist", sans-serif;
+    font-size: 180px;
     position: absolute;
     letter-spacing: 2px;
     width: fit-content;
     margin: 0 auto;
-    bottom: -3rem;
+    bottom: -4rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;

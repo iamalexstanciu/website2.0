@@ -77,31 +77,34 @@ function App() {
                 smooth: true,
               },
             }}
-            watch={
-              [
-              ]
-            }
-            containerRef={containerRef}>
+            watch={[]}
+            containerRef={containerRef}
+            onLocationChange={(scroll) =>
+              scroll.scrollTo(0, { duration: 0, disableLerp: true })
+            } // If you want to reset the scroll position to 0 for example
+            onUpdate={() =>
+              console.log("Updated, but not on location change!")
+            }>
             {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
             <main className="App" data-scroll-container ref={containerRef}>
-                <section id="home">
-                  <Home />
-                </section>
-                <section id="services">
-                  <Services />
-                </section>
-                <section id="portfolio">
-                  <Portfolio />
-                </section>
-                <section id="prices">
-                  <Prices />
-                </section>
-                {/* <section id="team">
+              <section id="home">
+                <Home />
+              </section>
+              <section id="services">
+                <Services />
+              </section>
+              <section id="portfolio">
+                <Portfolio />
+              </section>
+              <section id="prices">
+                <Prices />
+              </section>
+              {/* <section id="team">
                   <Team />
                 </section> */}
-                <section id="contact">
-                  <Contact />
-                </section>
+              <section id="contact">
+                <Contact />
+              </section>
               <div className="open-footer">
                 Hey there, curious soul, fancy a peek at our fancy footer?
                 <div className="buttons-footer">
