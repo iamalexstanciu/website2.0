@@ -23,3 +23,16 @@ section {
     left: 95%;
     z-index: 50;
 }
+
+@media (max-width: 1150px) {
+    .switch{
+        left: 85%;
+    }
+}
+
+@media (max-width: 600px) {
+    .switch {
+        left: 85%;
+        top: 2.5%;
+    }
+}
