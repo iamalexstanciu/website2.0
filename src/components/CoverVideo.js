@@ -65,20 +65,41 @@ const Title = styled.div`
     flex-direction: row;
   }
 
-  @media screen and (max-width: 950px) {
+  @media screen and (max-width: 1100px) {
     h1 {
       font-size: 7rem;
     }
   }
-  @media screen and (max-width: 768px) {
+
+  @media screen and (max-width: 950px) {
     h1 {
       font-size: 6rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 5rem;
     }
   }
 
   @media screen and (max-width: 550px) {
     h1 {
       font-size: 4rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+    h2{
+      font-size: 16px;
     }
   }
 `;

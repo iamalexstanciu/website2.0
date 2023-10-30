@@ -27,7 +27,7 @@ const ButtonTheme = styled.button`
   z-index: 200;
   border-radius: 30px;
   background-color: gray;
-  color: ${(props) => (props.theme === "dark" ? "#fff" : "#000")};
+  color: orange;
 
   button:hover .button_top {
     /* Pull the button upwards when hovered */

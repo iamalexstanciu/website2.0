@@ -17,10 +17,10 @@ const ButtonSAP = styled.div`
     border: none !important;
     font-size: 22px;
     font-family: "Mars-Project", sans-serif;
-
     background-color: transparent;
     color: #fc4308;
     opacity: 1;
+    width: fit-content;
     z-index: 200;
     transform: scale(1);
     text-transform: lowercase;
@@ -33,6 +33,75 @@ const ButtonSAP = styled.div`
       position: relative;
       top: 3rem;
       left: 5%;
+    }
+  }
+
+  @media screen and (max-width: 1150px) {
+    width: 100%;
+    left: 25%;
+
+    .btn-home {
+      width: 60%;
+      font-size: 18px;
+    }
+
+    .arrow-button-home {
+      width: 20%;
+    }
+  }
+
+  @media screen and (max-width: 950px) {
+    width: 100%;
+    left: 25%;
+
+    .btn-home {
+      width: 60%;
+      font-size: 18px;
+    }
+
+    .arrow-button-home {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    width: 90%;
+    left: 10%;
+
+    .btn-home {
+      width: 90%;
+      font-size: 18px;
+      height: 40%;
+    }
+
+    .arrow-button-home {
+      width: 20%;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    left: 10%;
+
+    .btn-home {
+      width: 80%;
+      font-size: 16px;
+    }
+
+    .arrow-button-home {
+      width: 15%;
+    }
+  }
+
+  @media screen and (max-width: 360px) {
+    width: 100%;
+    left: 2.5%;
+
+    .btn-home {
+      width: 95%;
+      font-size: 16px;
+    }
+
+    .arrow-button-home {
+      width: 15%;
     }
   }
 `;
