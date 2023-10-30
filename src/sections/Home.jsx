@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import CoverVideo from "../components/CoverVideo";
 import Logo from "../components/Logo";

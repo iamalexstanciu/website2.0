@@ -1,4 +1,4 @@
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 import GlobalStyle from "./style/GlobalStyle";
 import { dark, light } from "../src/style/Themes.js";
 import { LocomotiveScrollProvider } from "react-locomotive-scroll";
@@ -85,7 +85,7 @@ function App() {
             onUpdate={() =>
               console.log("Updated, but not on location change!")
             }>
-            {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
+            <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
               <section id="home">
                 <Home />
