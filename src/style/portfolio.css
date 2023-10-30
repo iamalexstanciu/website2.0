@@ -95,6 +95,12 @@ padding: 1%;
 }
 }
 
+.title-project,
+.short-description
+{
+    width: 80%;
+}
+
 .project1:hover {
     /* Change to the desired background color */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back3.png');
@@ -121,3 +127,26 @@ padding: 1%;
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/back1.1.png');
 }
 
+@media screen and (max-width:768px) {
+    .section-name-portfolio {
+            font-size: 50px;
+            color: #fc4308;
+            text-transform: lowercase;
+            text-shadow: 1px 1px 6px black;
+            position: relative;
+            top: 0%;
+            left: 5%;
+        }
+
+        .project-widget{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .title-project,
+        .short-description,
+        .link-project{
+            width: 100%;
+        }
+}
