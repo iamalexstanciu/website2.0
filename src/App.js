@@ -79,15 +79,11 @@ function App() {
             }}
             watch={
               [
-                //..all the dependencies you want to watch to update the scroll.
-                //  Basicaly, you would want to watch page/location changes
-                //  For exemple, on Next.js you would want to watch properties like `router.asPath` (you may want to add more criterias if the instance should be update on locations with query parameters)
               ]
             }
             containerRef={containerRef}>
             {/* <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence> */}
             <main className="App" data-scroll-container ref={containerRef}>
-              <AnimatePresence>
                 <section id="home">
                   <Home />
                 </section>
@@ -106,7 +102,6 @@ function App() {
                 <section id="contact">
                   <Contact />
                 </section>
-              </AnimatePresence>
               <div className="open-footer">
                 Hey there, curious soul, fancy a peek at our fancy footer?
                 <div className="buttons-footer">

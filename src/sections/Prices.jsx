@@ -47,7 +47,7 @@ function Prices() {
                 </li>
               </ul>
             </div>
-            <button class="btn-price">Start a Project</button>
+            <button className="btn-price">Start a Project</button>
           </div>
 
           <h2 className="title-price">project start</h2>

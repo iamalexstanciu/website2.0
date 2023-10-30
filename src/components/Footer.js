@@ -4,13 +4,13 @@ import "../style/footer.css";
 const Footer = () => {
   return (
     <section className="footer-container">
-      <div class="buttons-redirect-2">
-        <p class="buttons-redirect-2-btn">Newsletter</p>
-        <p class="buttons-redirect-2-btn">Podcast</p>
-        <p class="buttons-redirect-2-btn">Press</p>
-        <p class="socials">
+      <div className="buttons-redirect-2">
+        <p className="buttons-redirect-2-btn">Newsletter</p>
+        <p className="buttons-redirect-2-btn">Podcast</p>
+        <p className="buttons-redirect-2-btn">Press</p>
+        <p className="socials">
           <svg
-            class="negative"
+            className="negative"
             width="27"
             height="27"
             viewBox="0 0 27 27"
@@ -29,7 +29,7 @@ const Footer = () => {
             </defs>
           </svg>
 
-          <div class="negative">
+          <div className="negative">
             <svg
               width="28"
               height="27"
@@ -50,7 +50,7 @@ const Footer = () => {
               />
             </svg>
           </div>
-          <div class="negative">
+          <div className="negative">
             <svg
               width="28"
               height="27"
@@ -65,23 +65,23 @@ const Footer = () => {
           </div>
         </p>
       </div>
-      <div class="buttons-redirect">
-        <p class="buttons-redirect-btn">Home</p>
-        <p class="buttons-redirect-btn">Our Work</p>
-        <p class="buttons-redirect-btn">Who we are</p>
-        <p class="buttons-redirect-btn">Get in touch</p>
-        <p class="buttons-redirect-btn">Data Policy</p>
+      <div className="buttons-redirect">
+        <p className="buttons-redirect-btn">Home</p>
+        <p className="buttons-redirect-btn">Our Work</p>
+        <p className="buttons-redirect-btn">Who we are</p>
+        <p className="buttons-redirect-btn">Get in touch</p>
+        <p className="buttons-redirect-btn">Data Policy</p>
       </div>
       <div className="text-footer">
-        <h3 class="heading-footer">Web Solutions, Tailored for You</h3>
-        <p class="description-text">
+        <h3 className="heading-footer">Web Solutions, Tailored for You</h3>
+        <p className="description-text">
           We're dedicated to crafting exceptional web experiences. Our team of
           experts brings innovation and expertise to every project, turning your
           vision into reality. Let's collaborate to build the digital future
           together.
         </p>
       </div>
-      <div class="logo-footer">upvisionMedia ©</div>
+      <div className="logo-footer">upvisionMedia ©</div>
     </section>
   );
 };

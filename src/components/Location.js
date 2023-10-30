@@ -44,7 +44,7 @@ const Loc = styled.div`
 const Location = () => {
   return (
     <Loc>
-      <p class="location-p">
+      <p className="location-p">
         Bucharest ▪ Romania
         <br />
         44.4268° N / 26.1025° E

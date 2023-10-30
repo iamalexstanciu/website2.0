@@ -120,7 +120,7 @@ const ButtonStartAProject = () => {
 
   return (
     <ButtonSAP>
-      <button class="btn-home" onClick={() => handleScroll("#contact")}>
+      <button className="btn-home" onClick={() => handleScroll("#contact")}>
         Let's Build your Future on Web{" "}
         <svg
           className="arrow-button-home"
@@ -130,21 +130,21 @@ const ButtonStartAProject = () => {
           fill="black"
           xmlns="http://www.w3.org/2000/svg"
           stroke="#ffffff">
-          <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeLinecap="round"
+            strokeLinejoin="round"
             stroke="#CCCCCC"
-            stroke-width="0.192"></g>
+            strokeWidth="0.192"></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
             <path
               d="M7 17L17 7M17 7H8M17 7V16"
               stroke="#ffffff"
-              stroke-width="1.344"
-              stroke-linecap="round"
-              stroke-linejoin="round"></path>{" "}
+              strokeWidth="1.344"
+              strokeLinecap="round"
+              strokeLinejoin="round"></path>{" "}
           </g>
         </svg>
       </button>

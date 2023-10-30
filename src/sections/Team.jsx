@@ -18,8 +18,8 @@ function Team() {
             data-scroll
             data-scroll-speed="3"
             data-scroll-direction="horizontal">
-            <div class="card-title">
-              <div class="description-role">
+            <div className="card-title">
+              <div className="description-role">
                 <h3>CEO</h3>
                 <h4>Alexandru Stanciu</h4>
               </div>
@@ -30,8 +30,8 @@ function Team() {
             data-scroll
             data-scroll-speed="3"
             data-scroll-direction="horizontal">
-            <div class="card-title">
-              <div class="description-role">
+            <div className="card-title">
+              <div className="description-role">
                 <h3>CEO</h3>
                 <h4>Razvan Tache</h4>
               </div>
