@@ -20,7 +20,7 @@ section {
     justify-content: center;
     align-items: center;
     top: 10%;
-    left: 95%;
+    left: 90%;
     z-index: 50;
 }
 
@@ -30,9 +30,33 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 950px) {
     .switch {
         left: 85%;
-        top: 2.5%;
+        top: 10%;
     }
+}
+
+@media (max-width: 600px) {
+    .switch {
+        left: 80%;
+        top: 2%;
+    }
+}
+
+@media (max-width: 450px) {
+    .switch {
+        left: 75%;
+        top: 2%;
+    }
+}
+
+@media (max-width: 350px) {
+    .switch {
+        left: 75%;
+        top: 1%;
+        width: fit-content;
+    }
+
+
 }

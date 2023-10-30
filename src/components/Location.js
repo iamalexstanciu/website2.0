@@ -39,6 +39,14 @@ const Loc = styled.div`
       font-size: 15px;
     }
   }
+  @media screen and (max-width: 400px) {
+    width: 50%;
+    top: 0%;
+    left: 26%;
+    p {
+      font-size: 10px;
+    }
+  }
 `;
 
 const Location = () => {
