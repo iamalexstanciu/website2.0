@@ -452,3 +452,63 @@
     font-size: 20px;
 }
 }
+
+@media screen and (max-width: 395px) {
+
+    .footer-container {
+        display: flex;
+
+    }
+
+    .open-footer {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .button-no,
+    .button-yes {
+        font-size: 10px;
+    }
+
+    .text-footer {
+        top: -12%;
+    }
+
+    .logo-footer {
+        font-size: 30px;
+        top: 60%;
+        width: 90vw;
+        left: 10%;
+    }
+
+    .text-footer h3 {
+        font-size: 16px;
+    }
+
+    .text-footer p {
+        font-size: 11px;
+    }
+
+    .socials {
+        position: relative;
+        top: 70%;
+        left: -15%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .icon {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .buttons-redirect {
+        gap: 0.4rem;
+    }
+
+    .buttons-redirect p {
+        font-size: 16px;
+    }
+}
