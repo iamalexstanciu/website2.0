@@ -46,17 +46,25 @@ const Text = styled(motion.span)`
   padding-top: 0.5rem;
   text-shadow: 2px 2px gray;
 
-  @media (max-width: 48em) {
-    font-size: 35px;
+  @media (max-width: 768px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 36px;
   }
 `;
 
 const SubText = styled.div`
   font-size: 30px;
   padding-top: 0.5rem;
+  
+  @media (max-width: 768px) {
+    font-size: 25px;
+  }
 
-  @media (max-width: 48em) {
-    font-size: 35px;
+  @media (max-width: 480px) {
+    font-size: 20px;
   }
 `;
 
