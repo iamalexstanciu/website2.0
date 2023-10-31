@@ -1,21 +1,21 @@
 @import url('https://fonts.cdnfonts.com/css/mars-project');
 
 .section-contact {
-    width: 100vw;
-    height: 50vh;
-    z-index: 12;
+width: 100vw;
+height: 50vh;
+z-index: 12;
 }
 
 .container-contact {
-    display: grid;
-    grid-template-columns: 40% 60%;
-    position: relative;
-    top: 2.5%;
-    left: 2.5%;
-    border-radius: 30px;
-    width: 95vw;
-    height: 45vh;
-    z-index: 20;
+display: grid;
+grid-template-columns: 40% 60%;
+position: relative;
+top: 2.5%;
+left: 2.5%;
+border-radius: 30px;
+width: 95vw;
+height: 45vh;
+z-index: 20;
 }
 .details-contact{
 display: flex;
@@ -33,116 +33,117 @@ font-size: 30px;
 .mail-to-owners,
 .other-emails
 {
-    display: flex;
-    flex-direction: row;
-    gap: 10%;
-    justify-content: center;
-    align-items: center;
-    text-transform: lowercase;
+display: flex;
+flex-direction: row;
+gap: 10%;
+justify-content: center;
+align-items: center;
+text-transform: lowercase;
 }
 
-    .title-contact {
-        font-variant-numeric: slashed-zero;
-        text-shadow: 2px 0px 0px #F00, -2px 0px 0px #8FFF00;
-        font-family: 'Mars-Project', sans-serif;
-        font-size: 140px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        letter-spacing: 0.5px;
-        text-align: left;
-        position: absolute;
-        left: 2%;
-        top: 25%;
-        width: 80%;
-        text-transform: lowercase;
-    }
+.title-contact {
+font-variant-numeric: slashed-zero;
+text-shadow: 2px 0px 0px #F00, -2px 0px 0px #8FFF00;
+font-family: 'Mars-Project', sans-serif;
+font-size: 140px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.5px;
+text-align: left;
+position: absolute;
+left: 2%;
+top: 25%;
+width: 80%;
+text-transform: lowercase;
+}
 
-        @media screen and (max-width: 1200px) {
-            .section-contact {
-                width: 100vw;
-                height: 100vh;
-            }
-    
-            .container-contact {
-                top: 55%;
-            }
-    
-            .title-contact {
-                font-size: 110px;
-            }
-    
-            .details-contact {
-                font-size: 25px;
-                right: -160%;
-            }
-        }
+@media screen and (max-width: 1200px) {
+.section-contact {
+width: 100vw;
+height: 100vh;
+}
+
+.container-contact {
+top: 55%;
+}
+
+.title-contact {
+font-size: 100px;
+top: 30%;
+}
+
+.details-contact {
+font-size: 25px;
+right: -160%;
+}
+}
 
 
 @media screen and (max-width: 950px){
 .section-contact {
-        width: 100vw;
-        height: 100vh;
-    }
+width: 100vw;
+height: 100vh;
+}
 
-        .container-contact {
-            top: 55%;
-        }
+.container-contact {
+top: 55%;
+}
 
-        .title-contact{
-            font-size: 80px;
-        }
+.title-contact{
+font-size: 80px;
+}
 
-        .details-contact {
-            font-size: 25px;
-            right: -160%;
-        }
+.details-contact {
+font-size: 25px;
+right: -160%;
+}
 }
 
 @media screen and (max-width: 550px) {
-    .section-contact {
-        width: 100vw;
-        height: 100vh;
-    }
+.section-contact {
+width: 100vw;
+height: 100vh;
+}
 
-    .container-contact {
-        top: 55%;
-    }
+.container-contact {
+top: 55%;
+}
 
-    .title-contact {
-        font-size: 70px;
-    }
+.title-contact {
+font-size: 70px;
+}
 
-    .details-contact {
-        font-size: 18px;
-        right: -160%;
-    }
+.details-contact {
+font-size: 18px;
+right: -160%;
+}
 }
 
 @media screen and (max-width: 420px) {
-    .section-contact {
-        width: 100vw;
-    }
+.section-contact {
+width: 100vw;
+}
 
-    .container-contact {
-        top: 55%;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-    }
+.container-contact {
+top: 55%;
+display: grid;
+grid-template-rows: repeat(2, 1fr);
+}
 
-    .title-contact {
-        font-size: 2.5rem;
-        width: 90vw;
-        top: 5%;
-        left: 7.5%;
+.title-contact {
+font-size: 2.5rem;
+width: 90vw;
+top: 5%;
+left: 7.5%;
 
-        
-    }
 
-    .details-contact {
-        font-size: 20px;
-        right: 0%;
-        top: 65%;
-        width: 100vw;
-    }
+}
+
+.details-contact {
+font-size: 20px;
+right: 0%;
+top: 65%;
+width: 100vw;
+}
 }

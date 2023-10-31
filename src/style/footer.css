@@ -157,7 +157,7 @@
 .logo-footer {
     color: #fc4308;
     text-align: left;
-    font-size: 180px;
+    font-size: 150px;
     position: absolute;
     letter-spacing: 2px;
     width: fit-content;
@@ -216,13 +216,17 @@
     }
 
     .open-footer {
-        font-size: 20px;
-        width: 90%;
+        font-size: 22px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .button-no,
     .button-yes {
-        font-size: 10px;
+        font-size: 14px;
     }
 
     .text-footer {
@@ -308,8 +312,8 @@
 
     .socials {
         position: relative;
-        top: 40%;
-        left: 10%;
+        top: 70%;
+        left: 10.5%;
     }
 
     .wrapper {
@@ -370,8 +374,8 @@
 
     .socials {
         position: relative;
-        top: 35%;
-        left: 0%;
+        top: 70%;
+        left: 2.5%;
     }
 
     .wrapper {
