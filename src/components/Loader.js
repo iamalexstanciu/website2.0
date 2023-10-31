@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import styled from "styled-components";
+import Typewriter from "typewriter-effect";
 
 const Container = styled.div`
   position: absolute;
@@ -20,9 +21,8 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
-  background-color: ${(props) => props.theme.body};
-  color: ${(props) => props.theme.text};
+  transition: 0.4s opacity;
+  background-color: black;
 `;
 
 const textVariants = {
@@ -35,19 +35,28 @@ const textVariants = {
     transition: {
       duration: 1,
       yoyo: Infinity,
-
       ease: "easeInOut",
     },
   },
 };
 
 const Text = styled(motion.span)`
-  font-size: ${(props) => props.theme.fontxxxl};
-  color: ${(props) => props.theme.text};
+  font-size: 100px;
+  color: "#fc4308";
+  padding-top: 0.5rem;
+  text-shadow: 2px 2px gray;
+
+  @media (max-width: 48em) {
+    font-size: 35px;
+  }
+`;
+
+const SubText = styled.div`
+  font-size: 30px;
   padding-top: 0.5rem;
 
   @media (max-width: 48em) {
-    font-size: ${(props) => props.theme.fontlg};
+    font-size: 35px;
   }
 `;
 
@@ -55,11 +64,37 @@ const Loader = () => {
   return (
     <Container
       initial={{ y: 0.5, opacity: 1 }}
-      exit={{ y: "100%", opacity: 0.2 }}
-      transition={{ duration: 3 }}>
+      animate={{
+        opacity: 0.5, // This will smoothly fade out the component
+      }}
+      exit={{
+        opacity: 0, // This ensures the component remains hidden when it exits
+      }}
+      transition={{ duration: 7 }}>
       <Text variants={textVariants} initial="hidden" animate="visible">
-        upvisionMedia
+        <Typewriter
+          onInit={(typewriter) => {
+            typewriter
+              .typeString("upvisionMedia")
+              .callFunction(() => {
+                console.log("String typed out!");
+              })
+              .pauseFor(3000)
+              .deleteAll()
+              .callFunction(() => {
+                console.log("come to discover our world");
+              })
+              .start();
+          }}
+        />
       </Text>
+      <SubText
+        style={{ color: "#fc4308" }}
+        variants={textVariants}
+        initial="hidden"
+        animate="visible">
+        come to explore our world
+      </SubText>
     </Container>
   );
 };
