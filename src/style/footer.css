@@ -206,3 +206,59 @@
 {
     transform: translate(5px, -5px);
 }
+
+@media screen and (max-width: 400px) {
+
+    .footer-container{
+        display: flex;
+
+    }
+.open-footer{
+    font-size: 20px;
+    width: 90%;
+}
+    .button-no,
+.button-yes{
+    font-size: 10px;
+}
+
+.text-footer{
+    top: -6%;
+}
+
+.logo-footer{
+    font-size: 40px;
+    top: 60%;
+    width: 90vw;
+    left: 10%;
+}
+.text-footer h3 {
+    font-size: 20px;
+}
+.text-footer p {
+    font-size: 13px;
+}
+
+.socials{
+    position: relative;
+    top: 35%;
+    left: -25%;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.icon{
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.buttons-redirect{
+    gap: 0.4rem;
+}
+
+.buttons-redirect p{
+    font-size: 20px;
+}
+}

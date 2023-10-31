@@ -20,6 +20,15 @@ const Footer = () => {
 
   return (
     <section className="footer-container">
+      <div className="text-footer">
+        <h3>Web Solutions, Tailored for You</h3>
+        <p>
+          We're dedicated to crafting exceptional web experiences. Our team of
+          experts brings innovation and expertise to every project, turning your
+          vision into reality. Let's collaborate to build the digital future
+          together.
+        </p>
+      </div>
       <div className="buttons-redirect">
         <p
           onClick={() => handleScroll("#home")}
@@ -66,15 +75,6 @@ const Footer = () => {
             </span>
           </li>
         </ul>
-      </div>
-      <div className="text-footer">
-        <h3>Web Solutions, Tailored for You</h3>
-        <p>
-          We're dedicated to crafting exceptional web experiences. Our team of
-          experts brings innovation and expertise to every project, turning your
-          vision into reality. Let's collaborate to build the digital future
-          together.
-        </p>
       </div>
       <div className="logo-footer">upvisionMedia ©</div>
     </section>
