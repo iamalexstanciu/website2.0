@@ -199,7 +199,7 @@ top: 0%;
     }
 
     .detailed-price {
-        top: 0%;
+        top: -15%;
     }
 
     .btn-price {
@@ -236,7 +236,8 @@ top: 0%;
     .title-price{
         transform: rotate(0);
         top: -20%;
-        left: -60%;
+        left: -80%;
+        min-width: 80vw;
         
     }
     .detailed-price{
@@ -249,7 +250,7 @@ top: 0%;
         }
 
     .description-price h2{
-        width: 25rem;
+        width: 20rem;
     }
 
     .btn-price{
