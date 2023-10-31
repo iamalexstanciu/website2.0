@@ -46,6 +46,7 @@
     margin: 10px;
     width: 50px;
     height: 50px;
+    top: -8rem;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -137,7 +138,7 @@
     width: 40%;
     justify-content: center;
     align-items: center;
-    top: -15%;
+    top: 15%;
     left: 5%;
     position: relative;
 
@@ -205,6 +206,191 @@
 .button-yes:hover
 {
     transform: translate(5px, -5px);
+}
+
+@media screen and (max-width: 1110px) {
+
+    .footer-container {
+        display: flex;
+
+    }
+
+    .open-footer {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .button-no,
+    .button-yes {
+        font-size: 10px;
+    }
+
+    .text-footer {
+        top: -6%;
+    }
+
+    .logo-footer {
+        font-size: 90px;
+        top: 60%;
+        width: 90vw;
+        left: 2.5%;
+    }
+
+    .text-footer h3 {
+        font-size: 24px;
+    }
+
+    .text-footer p {
+        font-size: 15px;
+    }
+
+    .socials {
+        position: relative;
+        top: 35%;
+        left: 20%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .icon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .buttons-redirect {
+        gap: 0.4rem;
+        left: 60%;
+    }
+
+    .buttons-redirect p {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+
+    .footer-container {
+        display: flex;
+
+    }
+
+    .open-footer {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .button-no,
+    .button-yes {
+        font-size: 10px;
+    }
+
+    .text-footer {
+        top: -10%;
+    }
+
+    .logo-footer {
+        font-size: 65px;
+        top: 60%;
+        width: 90vw;
+        left: 2.5%;
+    }
+
+    .text-footer h3 {
+        font-size: 24px;
+    }
+
+    .text-footer p {
+        font-size: 15px;
+    }
+
+    .socials {
+        position: relative;
+        top: 40%;
+        left: 10%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .icon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .buttons-redirect {
+        gap: 0.4rem;
+        left: 65%;
+        text-justify: auto;
+    }
+
+    .buttons-redirect p {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .footer-container {
+        display: flex;
+
+    }
+
+    .open-footer {
+        font-size: 20px;
+        width: 90%;
+    }
+
+    .button-no,
+    .button-yes {
+        font-size: 10px;
+    }
+
+    .text-footer {
+        top: -6%;
+    }
+
+    .logo-footer {
+        font-size: 40px;
+        top: 60%;
+        width: 90vw;
+        left: 10%;
+    }
+
+    .text-footer h3 {
+        font-size: 24px;
+    }
+
+    .text-footer p {
+        font-size: 15px;
+    }
+
+    .socials {
+        position: relative;
+        top: 35%;
+        left: 0%;
+    }
+
+    .wrapper {
+        width: 100%;
+    }
+
+    .icon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .buttons-redirect {
+        gap: 0.4rem;
+        left: 60%;
+    }
+
+    .buttons-redirect p {
+        font-size: 22px;
+    }
 }
 
 @media screen and (max-width: 400px) {
