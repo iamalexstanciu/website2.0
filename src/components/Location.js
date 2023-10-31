@@ -25,7 +25,7 @@ const Loc = styled.div`
 
   @media screen and (max-width: 1200px) {
     width: 30%;
-    left: 70%;
+    left: 65%;
     p {
       font-size: 15px;
     }

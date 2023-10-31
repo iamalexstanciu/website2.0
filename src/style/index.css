@@ -13,41 +13,42 @@ height: fit-content;
     justify-content: center;
     align-items: center;
     top: 10%;
-    left: 90%;
     z-index: 40;
+    left: 95%;
 }
 
 @media (max-width: 1150px) {
     .switch{
-        left: 85%;
+        left: 95%;
+        top: 5%;
     }
 }
 
 @media (max-width: 950px) {
     .switch {
-        left: 85%;
-        top: 10%;
+        left: 95%;
+            top: 5%;
     }
 }
 
 @media (max-width: 600px) {
     .switch {
-        left: 80%;
-        top: 2%;
+        left: 90%;
+        top: 3.5%;
     }
 }
 
 @media (max-width: 450px) {
     .switch {
-        left: 75%;
-        top: 2%;
+        left: 85%;
+        top: 4%;
     }
 }
 
 @media (max-width: 350px) {
     .switch {
-        left: 75%;
-        top: 1%;
+        left: 85%;
+        top: 2.5%;
         width: fit-content;
     }
 

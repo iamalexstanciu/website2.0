@@ -55,10 +55,12 @@ const Footer = () => {
         <ul class="wrapper">
           <li class="icon facebook">
             <img className="social-image" src={Facebook} alt="social media" />
-            <span class="tooltip">Facebook</span>
-            <span>
-              <i class="fab fa-facebook-f"></i>
-            </span>
+            <a href="https://www.facebook.com/profile.php?id=100087936925363">
+              <span class="tooltip">Facebook</span>
+              <span>
+                <i class="fab fa-facebook-f"></i>
+              </span>
+            </a>
           </li>
           <li class="icon twitter">
             <img className="social-image" src={Twitter} alt="social media" />
@@ -69,10 +71,12 @@ const Footer = () => {
           </li>
           <li class="icon instagram">
             <img className="social-image" src={Instagram} alt="social media" />
-            <span class="tooltip">Instagram</span>
-            <span>
-              <i class="fab fa-instagram"></i>
-            </span>
+            <a href="https://www.instagram.com/upvisionmediagency/?hl=en">
+              <span class="tooltip">Instagram</span>
+              <span>
+                <i class="fab fa-instagram"></i>
+              </span>
+            </a>
           </li>
         </ul>
       </div>

@@ -92,12 +92,11 @@ const ButtonSAP = styled.div`
   }
 
   @media screen and (max-width: 360px) {
-    width: 100%;
-    left: 2.5%;
+    width: 100vw;
 
     .btn-home {
-      width: 95%;
-      font-size: 16px;
+      width: 100%;
+      font-size: 14px;
     }
 
     .arrow-button-home {
