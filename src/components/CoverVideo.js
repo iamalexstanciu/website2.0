@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MainVideo from "../assets/video/coverMount.mp4";
+import MainVideo from "../assets/video/cover4.mp4";
 
 const VideoContainer = styled.section`
   @import url("https://fonts.cdnfonts.com/css/mars-project");
@@ -98,7 +98,7 @@ const Title = styled.div`
     h1 {
       font-size: 2.5rem;
     }
-    h2{
+    h2 {
       font-size: 16px;
     }
   }
