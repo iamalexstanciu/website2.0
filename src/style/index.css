@@ -6,13 +6,6 @@ font-family: 'Montreal', sans-serif;
 height: fit-content;
 }
 
-section {
-    scroll-snap-align: start;
-    block-size: 100%;
-        scroll-snap-stop: always;
-        border-left: 2px solid #fc4308;
-            border-right: 2px solid #fc4308;
-}
 
 .switch {
     position: absolute;

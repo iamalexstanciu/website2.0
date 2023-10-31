@@ -26,7 +26,7 @@ color: #fc4308;
 text-transform: lowercase;
 text-shadow: 1px 1px 6px black;
 position: relative;
-top: 0%;
+top: -5%;
 left: 5%;
 }
 
@@ -149,6 +149,10 @@ padding: 1%;
         .short-description,
         .link-project{
             width: 100%;
+        }
+
+        .section-name-portfolio{
+            top: -10%;
         }
 }
 

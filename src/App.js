@@ -89,7 +89,7 @@ function App() {
               <section id="home">
                 <Home />
               </section>
-              <section className={`card-services ${theme}`} id="services">
+              <section className={`section-services ${theme}`} id="services">
                 <Services />
               </section>
               <section id="portfolio">
