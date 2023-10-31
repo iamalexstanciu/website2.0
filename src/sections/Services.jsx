@@ -1,9 +1,7 @@
 import React from "react";
 import "../style/services.css";
-import { useTheme } from "styled-components";
 
 const Services = () => {
-  const { theme, toggleTheme } = useTheme();
   return (
     <section className="section-services" id="services">
       <div
@@ -20,7 +18,7 @@ const Services = () => {
         </h1>
 
         <div className="content-services">
-          <div className={`card-services ${theme}`}>
+          <div className="card-services ">
             <p className="number-card-service">01</p>
             <h3 className="title-card-service">Responsive Design</h3>
             <p className="description-card-service">
