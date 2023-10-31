@@ -100,6 +100,27 @@ right: -160%;
 }
 }
 
+@media screen and (max-width: 768px) {
+    .section-contact {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container-contact {
+        top: 50%;
+    }
+
+    .title-contact {
+        font-size: 65px;
+        top: 40%;
+    }
+
+    .details-contact {
+        font-size: 18px;
+        right: -160%;
+    }
+}
+
 @media screen and (max-width: 550px) {
 .section-contact {
 width: 100vw;
@@ -112,6 +133,7 @@ top: 55%;
 
 .title-contact {
 font-size: 70px;
+top: 25%;
 }
 
 .details-contact {
@@ -133,9 +155,9 @@ grid-template-rows: repeat(2, 1fr);
 
 .title-contact {
 font-size: 2.5rem;
-width: 90vw;
-top: 5%;
-left: 7.5%;
+width: 70vw;
+top: 10%;
+left: 20%;
 
 
 }

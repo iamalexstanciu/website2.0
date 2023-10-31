@@ -375,7 +375,7 @@
     .socials {
         position: relative;
         top: 70%;
-        left: 2.5%;
+        left: 3%;
     }
 
     .wrapper {
@@ -397,7 +397,7 @@
     }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
 
     .footer-container{
         display: flex;
@@ -431,8 +431,8 @@
 
 .socials{
     position: relative;
-    top: 35%;
-    left: -25%;
+    top: 70%;
+    left: -7%;
 }
 
 .wrapper {
