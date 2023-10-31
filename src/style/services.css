@@ -1,6 +1,5 @@
 @import url('https://fonts.cdnfonts.com/css/mars-project');
 
-
 .section-services{
 width: 100vw;
 height: 100vh;
@@ -50,7 +49,44 @@ display: flex;
 flex-direction: column;
 padding: 5px;
 width: 100%;
-}
+    
+        &.dark {
+            background-color: #000000;
+           
+            .card-services:hover{
+                background-color: rgb(255, 255, 255);
+                .title-card-service,
+                    .description-card-service {
+                        color: #000000;
+                    }
+            }
+        }
+    
+        &.light {
+            background-color: #ffffff;
+            
+            .card-services:hover {
+                    background-color: rgb(0, 0, 0);
+                .title-card-service,
+                .description-card-service
+                {
+                        color: #fc4308;
+                    }
+                }
+                
+        }
+    
+        &:hover {
+            -webkit-transition: background-color 1000ms linear;
+            -ms-transition: background-color 1000ms linear;
+            transition: background-color 2000ms linear;
+            cursor: pointer;
+    
+            .title-card-service {
+                font-weight: 700;
+            }
+        }
+    }
 
 .number-card-service{
     font-size: 25px;
@@ -75,18 +111,6 @@ width: 100%;
         top: 50%;
 }
 
-
-.card-services:hover {
-    background-color: #ffffff;
-    -webkit-transition: background-color 1000ms linear;
-    -ms-transition: background-color 1000ms linear;
-    transition: background-color 2000ms linear;
-    cursor: pointer;
-
-    .title-card-service{
-        font-weight: 700;
-    }
-}
 
 .card-services:hover+div {
     background:#fc4308;

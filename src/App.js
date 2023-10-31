@@ -48,15 +48,15 @@ function App() {
               <ReactSwitch
                 onChange={toggleTheme}
                 checked={theme === "dark"}
-                onColor="#fc4308"
+                onColor="#fff"
                 onHandleColor="#fc4308"
-                handleDiameter={30}
+                handleDiameter={15}
                 uncheckedIcon={false}
                 checkedIcon={false}
                 boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
                 activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
-                height={20}
-                width={50}
+                height={10}
+                width={30}
                 className="react-switch"
                 id="material-switch"
               />
@@ -89,7 +89,7 @@ function App() {
               <section id="home">
                 <Home />
               </section>
-              <section id="services">
+              <section className={`card-services ${theme}`} id="services">
                 <Services />
               </section>
               <section id="portfolio">
