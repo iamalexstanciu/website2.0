@@ -58,6 +58,7 @@ const Text = styled(motion.span)`
 const SubText = styled.div`
   font-size: 30px;
   padding-top: 0.5rem;
+  margin: 0 auto;
   
   @media (max-width: 768px) {
     font-size: 25px;
