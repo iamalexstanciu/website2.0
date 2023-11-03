@@ -177,6 +177,8 @@ top: 0%;
 
 .btn-price{
     height: 5%;
+    margin: 0 auto;
+    width: 100%;
 
 }
 
@@ -218,7 +220,7 @@ top: 0%;
 
     .price-name {
         font-size: 40px;
-        top: 75%;
+        top: 55%;
     }
 }
 
@@ -258,6 +260,6 @@ top: 0%;
         width: 100%;
     }
     .price-name{
-        top: 75%;
+        top: 70%;
     }
 }
