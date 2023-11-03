@@ -25,7 +25,7 @@ const MenuBtn = styled.li`
   background-color: #fc4308;
   width: 15rem;
   height: 2.5rem;
- 
+
   border: none;
   outline: none;
 
@@ -38,7 +38,6 @@ const MenuBtn = styled.li`
 
   font-size: ${(props) => props.theme.fontmd};
   font-weight: 600;
-
 
   cursor: pointer;
 
@@ -94,9 +93,9 @@ const Navbar = () => {
     // console.log(elem);
     setIsOpen(!isOpen);
     scroll.scrollTo(elem, {
-      offset: "-100",
-      duration: "2000",
-      easing: [0.25, 0.0, 0.35, 1.0],
+      offset: "0",
+      duration: "4000",
+      easing: [0.75, 0.5, 0.5, 1.5],
     });
   };
 

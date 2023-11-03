@@ -15,6 +15,7 @@ import Contact from "./sections/Contact";
 import "./style/footer.css";
 import Footer from "./components/Footer";
 import ReactSwitch from "react-switch";
+import Navbar from "./components/Navbar.js";
 
 export const ThemeContext = createContext(null);
 
@@ -84,6 +85,7 @@ function App() {
             onUpdate={() =>
               console.log("Updated, but not on location change!")
             }>
+            <Navbar />
             <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
               <section id="home">

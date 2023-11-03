@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import CoverVideo from "../components/CoverVideo";
 import Logo from "../components/Logo";
-import Navbar from "../components/Navbar";
 import Location from "../components/Location";
 import ButtonStartAProject from "../components/ButtonStartAProject";
 
@@ -19,7 +18,6 @@ const Home = () => {
       <CoverVideo />
       <Location />
       <Logo />
-      <Navbar />
       <ButtonStartAProject />
     </Section>
   );
