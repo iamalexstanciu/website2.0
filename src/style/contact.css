@@ -29,12 +29,21 @@ text-shadow: 1px 1px 4px black;
 font-size: 30px;
 }
 
+.email-address:hover,
+.email-address-billing:hover,
+.email-address-support:hover,
+.phone-number:hover
+{
+    color:#F00;
+    transform: scale(1.5) translateY(-10px);
+}
+
 
 .other-emails
 {
 display: flex;
 flex-direction: row;
-gap: 10%;
+gap: 15%;
 justify-content: center;
 align-items: center;
 text-transform: lowercase;

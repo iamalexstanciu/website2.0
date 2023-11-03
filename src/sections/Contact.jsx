@@ -10,15 +10,15 @@ function Contact() {
           <a className="email-address" href="mailto:info@upvisionmedia.com">
             let's start a project
           </a>
-          <a href="tel:+40744497740">call us</a>
+          <a className="phone-number" href="tel:+40744497740">call us</a>
           <div className="other-emails">
             <a
-              className="email-address-razvan"
+              className="email-address-support"
               href="mailto:support@upvisionmedia.com">
               Support
             </a>
             <a
-              className="email-address-razvan"
+              className="email-address-billing"
               href="mailto:billing@upvisionmedia.com">
               Billing
             </a>
