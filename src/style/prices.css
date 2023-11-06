@@ -16,7 +16,7 @@ width: 95vw;
 height: 95vh;
 justify-content: space-evenly;
 align-items: center;
-background-color: #6d6d6d00;
+/* background-color: #6d6d6d00; */
 z-index: 0;
 }
 
@@ -82,7 +82,7 @@ position: relative;
 padding: 20px 30px;
 background-color: #fc4308;
 border-radius: 200px;
-color: black;
+color: rgb(255, 255, 255);
 font-size: 22px;
 outline: none;
 opacity: 1;

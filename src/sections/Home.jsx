@@ -9,7 +9,6 @@ const Section = styled.section`
   position: relative;
   overflow: hidden;
   min-height: 100vh;
-
 `;
 
 const Home = () => {

@@ -3,7 +3,7 @@
     border: 2px solid white;
     border-radius: 30px;
     margin: 2%;
-    background: var(--brand-colors-primary, #161616);
+    /* background: var(--brand-colors-primary, #161616); */
         height: 50vh;
         position: relative;
         overflow: hidden;

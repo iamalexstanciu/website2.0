@@ -1,6 +1,6 @@
 @import url('https://fonts.cdnfonts.com/css/montreal');
 html, body {
-background-color: black;
+/* background-color: black; */
 scroll-snap-type: y mandatory;
 font-family: 'Montreal', sans-serif;
 height: fit-content;
