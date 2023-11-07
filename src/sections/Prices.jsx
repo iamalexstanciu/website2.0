@@ -1,12 +1,7 @@
 import React from "react";
 import "../style/prices.css";
-import { useEffect } from "react";
-import gsap from "gsap";
 
 function Prices() {
-  useEffect(() => {
-    gsap.to(".price-name", { translateX: -10, x: 100, duration: 3 });
-  });
 
   return (
     <section className="section-prices" id="prices">
@@ -65,7 +60,7 @@ function Prices() {
           data-scroll
           data-scroll-speed="-2"
           data-scroll-direction="vertical">
-          €950 + vat
+          €550 + vat
         </h4>
       </div>
     </section>
