@@ -16,6 +16,7 @@ import "./style/footer.css";
 import Footer from "./components/Footer";
 import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
+import { animate, inView } from "motion";
 
 export const ThemeContext = createContext(null);
 
