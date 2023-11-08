@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/footer.css";
-import Twitter from "../assets/images/twitter.png";
+import Linkedin from "../assets/images/linkedin.png";
 import Facebook from "../assets/images/facebook.png";
 import Instagram from "../assets/images/instagram.png";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
@@ -54,24 +54,31 @@ const Footer = () => {
       <div className="socials">
         <ul class="wrapper">
           <li class="icon facebook">
-            <img className="social-image" src={Facebook} alt="social media" />
             <a href="https://www.facebook.com/profile.php?id=100087936925363">
+              <img className="social-image" src={Facebook} alt="social media" />
               <span class="tooltip">Facebook</span>
               <span>
                 <i class="fab fa-facebook-f"></i>
               </span>
             </a>
           </li>
-          <li class="icon twitter">
-            <img className="social-image" src={Twitter} alt="social media" />
-            <span class="tooltip">Twitter</span>
-            <span>
-              <i class="fab fa-twitter"></i>
-            </span>
+          <li class="icon linkedin">
+            <a href="https://www.linkedin.com/company/upvisionmedia/about/?viewAsMember=true">
+              <img className="social-image" src={Linkedin} alt="social media" />
+              <span class="tooltip">LinkedIn</span>
+              <span>
+                <i class="fab fa-linkedin"></i>
+              </span>
+            </a>
           </li>
           <li class="icon instagram">
-            <img className="social-image" src={Instagram} alt="social media" />
+            {" "}
             <a href="https://www.instagram.com/upvisionmediagency/?hl=en">
+              <img
+                className="social-image"
+                src={Instagram}
+                alt="social media"
+              />
               <span class="tooltip">Instagram</span>
               <span>
                 <i class="fab fa-instagram"></i>
