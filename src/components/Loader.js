@@ -59,7 +59,7 @@ const SubText = styled.div`
   font-size: 30px;
   padding-top: 0.5rem;
   margin: 0 auto;
-  
+
   @media (max-width: 768px) {
     font-size: 25px;
   }
@@ -80,30 +80,34 @@ const Loader = () => {
         opacity: 0, // This ensures the component remains hidden when it exits
       }}
       transition={{ duration: 7 }}>
-      <Text variants={textVariants} initial="hidden" animate="visible">
-        <Typewriter
-          onInit={(typewriter) => {
-            typewriter
-              .typeString("upvisionMedia")
-              .callFunction(() => {
-                console.log("String typed out!");
-              })
-              .pauseFor(3000)
-              .deleteAll()
-              .callFunction(() => {
-                console.log("come to discover our world");
-              })
-              .start();
-          }}
-        />
-      </Text>
-      <SubText
-        style={{ color: "#fc4308" }}
-        variants={textVariants}
-        initial="hidden"
-        animate="visible">
-        come to explore our world
-      </SubText>
+      <h1>
+        <Text variants={textVariants} initial="hidden" animate="visible">
+          <Typewriter
+            onInit={(typewriter) => {
+              typewriter
+                .typeString("upvisionMedia")
+                .callFunction(() => {
+                  console.log("String typed out!");
+                })
+                .pauseFor(3000)
+                .deleteAll()
+                .callFunction(() => {
+                  console.log("come to discover our world");
+                })
+                .start();
+            }}
+          />
+        </Text>
+      </h1>
+      <h2>
+        <SubText
+          style={{ color: "#fc4308" }}
+          variants={textVariants}
+          initial="hidden"
+          animate="visible">
+          come to explore our world
+        </SubText>
+      </h2>
     </Container>
   );
 };
