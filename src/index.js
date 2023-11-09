@@ -4,10 +4,10 @@ import App from "./App";
 import "./style/index.css";
 import { BrowserRouter } from "react-router-dom";
 
-import * as serviceWorker from "./serviceWorker";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-serviceWorker.register();
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -15,3 +15,4 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
