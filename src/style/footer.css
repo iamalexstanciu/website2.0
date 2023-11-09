@@ -9,6 +9,12 @@
         overflow: hidden;
 }
 
+.registered{
+    color: rgb(198, 198, 198);
+    font-size: 15px;
+    padding-top: 10px;
+}
+
 
 .buttons-redirect {
     display: flex;
@@ -172,6 +178,8 @@
     justify-content: flex-start;
 }
 
+
+
 .open-footer {
     color: #fc4308;
     width: fit-content;
@@ -256,6 +264,7 @@
         position: relative;
         top: 35%;
         left: 20%;
+        width: fit-content;
     }
 
     .wrapper {
@@ -318,6 +327,7 @@
         position: relative;
         top: 70%;
         left: 10.5%;
+        width: fit-content;
     }
 
     .wrapper {
@@ -380,6 +390,7 @@
         position: relative;
         top: 70%;
         left: 3%;
+        width: fit-content;
     }
 
     .wrapper {

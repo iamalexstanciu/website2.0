@@ -28,6 +28,7 @@ const Footer = () => {
           vision into reality. Let's collaborate to build the digital future
           together.
         </p>
+        <h5 className="registered">Registered Trademark upvisionMedia</h5>
       </div>
       <div className="buttons-redirect">
         <p
@@ -87,7 +88,7 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <div className="logo-footer">upvisionMedia ©</div>
+      <div className="logo-footer">upvisionMedia ®</div>
     </section>
   );
 };
