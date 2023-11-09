@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
 
+
 export const ThemeContext = createContext(null);
 
 function App() {
