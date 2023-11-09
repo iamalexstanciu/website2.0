@@ -25,7 +25,7 @@ const MenuBtn = styled.li`
   background-color: #fc4308;
   width: 15rem;
   height: 2.5rem;
-
+  
   border: none;
   outline: none;
 
@@ -36,8 +36,8 @@ const MenuBtn = styled.li`
   left: 48%;
   transform: translateX(-50%);
 
-  font-size: ${(props) => props.theme.fontmd};
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: bold;
 
   cursor: pointer;
 
