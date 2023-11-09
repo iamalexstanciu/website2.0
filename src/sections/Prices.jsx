@@ -55,13 +55,13 @@ function Prices() {
 
           <h2 className="title-price">project start</h2>
         </div>
-        <h4
+        <p
           className="price-name"
           data-scroll
           data-scroll-speed="-2"
           data-scroll-direction="vertical">
           €550 + vat
-        </h4>
+        </p>
       </div>
     </section>
   );
