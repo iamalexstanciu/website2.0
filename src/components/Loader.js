@@ -71,15 +71,7 @@ const SubText = styled.div`
 
 const Loader = () => {
   return (
-    <Container
-      initial={{ y: 0.5, opacity: 1 }}
-      animate={{
-        opacity: 0.5, // This will smoothly fade out the component
-      }}
-      exit={{
-        opacity: 0, // This ensures the component remains hidden when it exits
-      }}
-      transition={{ duration: 7 }}>
+    <Container>
       <h1>
         <Text variants={textVariants} initial="hidden" animate="visible">
           <Typewriter
@@ -89,7 +81,6 @@ const Loader = () => {
                 .callFunction(() => {
                   console.log("String typed out!");
                 })
-                .pauseFor(4000)
                 .deleteAll()
                 .callFunction(() => {
                   console.log("come to discover our world");
