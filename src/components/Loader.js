@@ -79,7 +79,7 @@ const Loader = () => {
       exit={{
         opacity: 0, // This ensures the component remains hidden when it exits
       }}
-      transition={{ duration: 3.5 }}>
+      transition={{ duration: 7 }}>
       <h1>
         <Text variants={textVariants} initial="hidden" animate="visible">
           <Typewriter
@@ -89,7 +89,7 @@ const Loader = () => {
                 .callFunction(() => {
                   console.log("String typed out!");
                 })
-                .pauseFor(2500)
+                .pauseFor(4000)
                 .deleteAll()
                 .callFunction(() => {
                   console.log("come to discover our world");
