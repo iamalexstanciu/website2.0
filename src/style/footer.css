@@ -271,3 +271,21 @@ transform: translate(5px, -5px);
  }
 
 }
+
+@media (max-width:950px){
+    .socials{
+        width: 20%;
+        left: 75%;
+        top: -100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .wrapper{
+        display: flex;
+            flex-direction: column;
+            top: -15%;
+            width: 100%;
+            height: 100%;
+    }
+}
