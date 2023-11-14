@@ -1,51 +1,149 @@
 .footer-container{
-    width: auto;
-    border: 2px solid white;
-    border-radius: 30px;
-    margin: 2%;
-    /* background: var(--brand-colors-primary, #161616); */
-        height: 50vh;
-        position: relative;
-        overflow: hidden;
+display: grid;
+grid-template-columns: repeat(2 1fr);
+width: auto;
+border: 2px solid white;
+border-radius: 30px;
+margin: 2%;
+height: 50vh;
+position: relative;
+overflow: hidden;
 }
 
 .registered{
-    color: rgb(198, 198, 198);
-    font-size: 15px;
-    padding-top: 10px;
+color: rgb(198, 198, 198);
+font-size: 15px;
+padding-top: 10px;
 }
 
 .business-info{
-    position: relative;
-    left: 70%;
-    top: -30%;
-    width: 30%;
-    text-align: center;
+position: relative;
+text-align: center;
 }
 
-  .socials {
-      position: relative;
-      top: -20%;
-      width: 50%;
-      left: 42.5%;
-  }
+.socials {
+position: relative;
+top: -150%;
+width: 20%;
+left: 70%;
+}
 
 .buttons-redirect {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: absolute;
-    left: 50%;
-    top: 10%;
+display: flex;
+flex-direction: column;
+gap: 1rem;
+align-items: flex-start;
+justify-content: flex-start;
+position: absolute;
+left: 50%;
+top: 10%;
 }
 
-.social-image{
-    width: 80%;
+
+.buttons-redirect-btn {
+color: #6d6d6d;
+text-align: left;
+font: 500 32px/30.21px "Urbanist", sans-serif;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.buttons-redirect-btn:hover{
+color: #fc4308;
+font-size: 24px;
+}
+
+.text-footer{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    height: 70%;
+    padding: 2%;
+}
+
+.text-up{
+display: flex;
+flex-direction: column;
+gap: 0.5em;
+justify-content: center;
+align-items: center;
+top: 10%;
+left: 0%;
+position: relative;
+
+
+}
+.text-footer h3 {
+color: #fc4308;
+font-size: 25px;
+}
+
+.text-footer p {
+color: #6d6d6d;
+font-size: 15px;
+}
+
+.logo-footer {
+color: #fc4308;
+text-align: left;
+font-size: 150px;
+position: absolute;
+letter-spacing: 2px;
+width: fit-content;
+margin: 0 auto;
+bottom: -4rem;
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.open-footer {
+color: #fc4308;
+width: fit-content;
+margin: 0 auto;
+font-size: 25px;
+font-weight: 800;
+padding: 0.5em 0 2rem 0;
+}
+
+.buttons-footer{
+padding-top: 0.9rem;
+display: flex;
+flex-direction: row;
+gap: 5%;
+justify-content: space-evenly;
+align-items: center;
+}
+
+
+.button-no,
+.button-yes
+{
+font-size: 1rem;
+padding: 0.7em 0.5rem;
+background-color: #000;
+border: 2px solid #fc4308;
+border-radius: 1em;
+color: white;
+font-weight: bolder;
+z-index: 20;
+transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.s;
+box-shadow: -5px 5px 0px 0px #fc4308;
+}
+
+.button-no:hover,
+.button-yes:hover
+{
+transform: translate(5px, -5px);
+}
+
+.social-image {
+    width: 60%;
     position: relative;
-    left: 10%;
-    top: 10%;    
+    left: 20%;
+    top: 10%;
 
 }
 
@@ -53,11 +151,10 @@
     display: flex;
     list-style: none;
     height: 10%;
-    width: 30%;
+    width: 100%;
     padding-top: 40px;
     position: relative;
-    left: 70%;
-    top: 3rem;
+    left: 0%;
     align-items: center;
     justify-content: center;
 }
@@ -69,7 +166,6 @@
     margin: 10px;
     width: 50px;
     height: 50px;
-    top: -8rem;
     font-size: 18px;
     display: flex;
     justify-content: center;
@@ -140,445 +236,355 @@
     color: #fff;
 }
 
-.buttons-redirect-btn {
-    color: #6d6d6d;
-    text-align: left;
-    font: 500 32px/30.21px "Urbanist", sans-serif;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
 
-.buttons-redirect-btn:hover{
-    color: #fc4308;
-    font-size: 24px;
-}
-
-.text-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
-    width: 40%;
-    justify-content: center;
-    align-items: center;
-    top: 15%;
-    left: 5%;
-    position: relative;
-
-
-}
-.text-footer h3 {
-    color: #fc4308;
-    font-size: 30px;
-}
-
-.text-footer p {
-    color: #6d6d6d;
-    font-size: 20px;
-}
-
-.logo-footer {
-    color: #fc4308;
-    text-align: left;
-    font-size: 150px;
-    position: absolute;
-    letter-spacing: 2px;
-    width: fit-content;
-    margin: 0 auto;
-    bottom: -4rem;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.open-footer {
-    color: #fc4308;
-    width: fit-content;
-    margin: 0 auto;
-    font-size: 25px;
-    font-weight: 800;
-    padding: 0.5em 0 2rem 0;
-}
-
-.buttons-footer{
-    padding-top: 0.9rem;
-    display: flex;
-    flex-direction: row;
-    gap: 5%;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-
-.button-no,
-.button-yes
-{
-    font-size: 1rem;
-        padding: 0.7em 0.5rem;
-        background-color: #000;
-        border: 2px solid #fc4308;
-        border-radius: 1em;
-        color: white;
-        font-weight: bolder;
-        z-index: 20;
-        transition: cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.s;
-        box-shadow: -5px 5px 0px 0px #fc4308;
-}
-
-.button-no:hover,
-.button-yes:hover
-{
-    transform: translate(5px, -5px);
-}
 
 @media screen and (max-width: 1110px) {
 
-    .footer-container {
-        display: flex;
+.footer-container {
+display: flex;
 
-    }
+}
 
-    .open-footer {
-        font-size: 22px;
-        width: 60%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+.open-footer {
+font-size: 22px;
+width: 60%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
-    
 
-    .button-no,
-    .button-yes {
-        font-size: 14px;
-    }
 
-    .text-footer {
-        top: -6%;
-    }
+.button-no,
+.button-yes {
+font-size: 14px;
+}
 
-    .logo-footer {
-        font-size: 90px;
-        top: 60%;
-        width: 90vw;
-        left: 2.5%;
-    }
+.text-footer {
+top: -6%;
+}
 
-    .text-footer h3 {
-        font-size: 24px;
-    }
+.logo-footer {
+font-size: 90px;
+top: 60%;
+width: 90vw;
+left: 2.5%;
+}
 
-    .text-footer p {
-        font-size: 15px;
-    }
+.text-footer h3 {
+font-size: 24px;
+}
 
-    .socials {
-        position: relative;
-        top: 25%;
-        left: 25%;
-        width: fit-content;
-    }
+.text-footer p {
+font-size: 15px;
+}
 
-        .business-info {
-            position: relative;
-            left: 5%;
-            top: 80%;
-            width: 40%;
-            text-align: center;
-        }
+.socials {
+position: relative;
+top: 25%;
+left: 25%;
+width: fit-content;
+}
 
-    .wrapper {
-        width: 100%;
-    }
+.business-info {
+position: relative;
+left: 5%;
+top: 80%;
+width: 40%;
+text-align: center;
+}
 
-    .icon {
-        width: 40px !important;
-        height: 40px !important;
-    }
+.wrapper {
+width: 100%;
+}
 
-    .buttons-redirect {
-        gap: 0.4rem;
-        left: 60%;
-    }
+.icon {
+width: 40px !important;
+height: 40px !important;
+}
 
-    .buttons-redirect p {
-        font-size: 22px;
-    }
+.buttons-redirect {
+gap: 0.4rem;
+left: 60%;
+}
+
+.buttons-redirect p {
+font-size: 22px;
+}
 }
 
 
 @media screen and (max-width: 950px) {
 
-    .footer-container {
-        display: flex;
+.footer-container {
+display: flex;
 
-    }
+}
 
-    .open-footer {
-        font-size: 20px;
-        width: 90%;
-    }
+.open-footer {
+font-size: 20px;
+width: 90%;
+}
 
-    .button-no,
-    .button-yes {
-        font-size: 10px;
-    }
+.button-no,
+.button-yes {
+font-size: 10px;
+}
 
-    .text-footer {
-        top: -10%;
-    }
+.text-footer {
+top: -10%;
+}
 
-    .logo-footer {
-        font-size: 65px;
-        top: 60%;
-        width: 90vw;
-        left: 2.5%;
-    }
+.logo-footer {
+font-size: 65px;
+top: 60%;
+width: 90vw;
+left: 2.5%;
+}
 
-    .text-footer h3 {
-        font-size: 24px;
-    }
+.text-footer h3 {
+font-size: 24px;
+}
 
-    .text-footer p {
-        font-size: 15px;
-    }
+.text-footer p {
+font-size: 15px;
+}
 
-    .socials {
-        position: relative;
-        top: 70%;
-        left: 10.5%;
-        width: fit-content;
-    }
+.socials {
+position: relative;
+top: 70%;
+left: 10.5%;
+width: fit-content;
+}
 
-          .business-info {
-              position: relative;
-              left: 5%;
-              top: 80%;
-              width: 30%;
-              text-align: center;
-          }
+.business-info {
+position: relative;
+left: 5%;
+top: 80%;
+width: 30%;
+text-align: center;
+}
 
-    .wrapper {
-        width: 100%;
-    }
+.wrapper {
+width: 100%;
+}
 
-    .icon {
-        width: 30px !important;
-        height: 30px !important;
-    }
+.icon {
+width: 30px !important;
+height: 30px !important;
+}
 
-    .buttons-redirect {
-        gap: 0.4rem;
-        left: 65%;
-        text-justify: auto;
-    }
+.buttons-redirect {
+gap: 0.4rem;
+left: 65%;
+text-justify: auto;
+}
 
-    .buttons-redirect p {
-        font-size: 22px;
-    }
+.buttons-redirect p {
+font-size: 22px;
+}
 }
 
 @media screen and (max-width: 768px) {
 
-    .footer-container {
-        display: flex;
+.footer-container {
+display: flex;
 
-    }
+}
 
-    .open-footer {
-        font-size: 20px;
-        width: 90%;
-    }
+.open-footer {
+font-size: 20px;
+width: 90%;
+}
 
-    .button-no,
-    .button-yes {
-        font-size: 10px;
-    }
+.button-no,
+.button-yes {
+font-size: 10px;
+}
 
-    .text-footer {
-        top: -6%;
-    }
+.text-footer {
+top: -6%;
+}
 
-    .logo-footer {
-        font-size: 40px;
-        top: 60%;
-        width: 90vw;
-        left: 10%;
-    }
+.logo-footer {
+font-size: 40px;
+top: 60%;
+width: 90vw;
+left: 10%;
+}
 
-    .text-footer h3 {
-        font-size: 24px;
-    }
+.text-footer h3 {
+font-size: 24px;
+}
 
-    .text-footer p {
-        font-size: 15px;
-    }
+.text-footer p {
+font-size: 15px;
+}
 
-    .socials {
-        position: relative;
-        top: 70%;
-        left: 3%;
-        width: fit-content;
-    }
+.socials {
+position: relative;
+top: 70%;
+left: 3%;
+width: fit-content;
+}
 
-          .business-info {
-              position: relative;
-              left: -5%;
-              top: 80%;
-              font-size: 12px;
-              width: 35%;
-              text-align: center;
-          }
+.business-info {
+position: relative;
+left: -5%;
+top: 80%;
+font-size: 12px;
+width: 35%;
+text-align: center;
+}
 
-    .wrapper {
-        width: 100%;
-    }
+.wrapper {
+width: 100%;
+}
 
-    .icon {
-        width: 30px !important;
-        height: 30px !important;
-    }
+.icon {
+width: 30px !important;
+height: 30px !important;
+}
 
-    .buttons-redirect {
-        gap: 0.4rem;
-        left: 60%;
-    }
+.buttons-redirect {
+gap: 0.4rem;
+left: 60%;
+}
 
-    .buttons-redirect p {
-        font-size: 22px;
-    }
+.buttons-redirect p {
+font-size: 22px;
+}
 }
 
 @media screen and (max-width: 480px) {
 
-    .footer-container{
-        display: flex;
-        height: 35rem;
-    }
-.open-footer{
-    font-size: 20px;
-    width: 90%;
+.footer-container{
+display: flex;
+height: 35rem;
 }
-    .button-no,
+.open-footer{
+font-size: 20px;
+width: 90%;
+}
+.button-no,
 .button-yes{
-    font-size: 10px;
+font-size: 10px;
 }
 
 .text-footer{
-    top: -20%;
+top: -20%;
 }
 
 .logo-footer{
-    font-size: 40px;
-    top: 70%;
-    width: 90vw;
-    left: 10%;
+font-size: 40px;
+top: 70%;
+width: 90vw;
+left: 10%;
 }
 .text-footer h3 {
-    font-size: 22px;
+font-size: 22px;
 }
 .text-footer p {
-    font-size: 12px;
+font-size: 12px;
 }
 
 .socials{
-    position: relative;
-    top: 52.5%;
-    left: -3%;
+position: relative;
+top: 52.5%;
+left: -3%;
 }
 
 .business-info{
-    top: 60%;
-    border: 2px solid white;
-    height: fit-content;
-    left: -30%;
-    width: 100%;
+top: 60%;
+border: 2px solid white;
+height: fit-content;
+left: -30%;
+width: 100%;
 }
 
 .wrapper {
-    width: 100%;
+width: 100%;
 }
 
 .icon{
-    width: 30px !important;
-    height: 30px !important;
+width: 30px !important;
+height: 30px !important;
 }
 
 .buttons-redirect{
-    gap: 0.4rem;
+gap: 0.4rem;
 }
 
 .buttons-redirect p{
-    font-size: 20px;
+font-size: 20px;
 }
 
 .text-footer{
-    width: 100%;
-    padding: 2%;
-    top: 5%;
-    height: 50%;
-    border: 2px solid green;
+width: 100%;
+padding: 2%;
+top: 5%;
+height: 50%;
+border: 2px solid green;
 }
 }
 
 @media screen and (max-width: 395px) {
 
-    .footer-container {
-        display: flex;
+.footer-container {
+display: flex;
 
-    }
+}
 
-    .open-footer {
-        font-size: 20px;
-        width: 90%;
-    }
+.open-footer {
+font-size: 20px;
+width: 90%;
+}
 
-    .button-no,
-    .button-yes {
-        font-size: 10px;
-    }
+.button-no,
+.button-yes {
+font-size: 10px;
+}
 
-    .text-footer {
-        top: -12%;
-    }
+.text-footer {
+top: -12%;
+}
 
-    .logo-footer {
-        font-size: 30px;
-        top: 60%;
-        width: 90vw;
-        left: 10%;
-    }
+.logo-footer {
+font-size: 30px;
+top: 60%;
+width: 90vw;
+left: 10%;
+}
 
-    .text-footer h3 {
-        font-size: 16px;
-    }
+.text-footer h3 {
+font-size: 16px;
+}
 
-    .text-footer p {
-        font-size: 11px;
-    }
+.text-footer p {
+font-size: 11px;
+}
 
-    .socials {
-        position: relative;
-        top: 70%;
-        left: -15%;
-    }
+.socials {
+position: relative;
+top: 70%;
+left: -15%;
+}
 
-    .wrapper {
-        width: 100%;
-    }
+.wrapper {
+width: 100%;
+}
 
-    .icon {
-        width: 20px !important;
-        height: 20px !important;
-    }
+.icon {
+width: 20px !important;
+height: 20px !important;
+}
 
-    .buttons-redirect {
-        gap: 0.4rem;
-    }
+.buttons-redirect {
+gap: 0.4rem;
+}
 
-    .buttons-redirect p {
-        font-size: 16px;
-    }
+.buttons-redirect p {
+font-size: 16px;
+}
 }

@@ -21,14 +21,21 @@ const Footer = () => {
   return (
     <section className="footer-container">
       <div className="text-footer">
-        <h3>Web Solutions, Tailored for You</h3>
-        <p>
-          We're dedicated to crafting exceptional web experiences. Our team of
-          experts brings innovation and expertise to every project, turning your
-          vision into reality. Let's collaborate to build the digital future
-          together.
-        </p>
-        <h5 className="registered">Registered Trademark upvisionMedia</h5>
+        <div className="text-up">
+          <h3>Web Solutions, Tailored for You</h3>
+          <p>
+            We're dedicated to crafting exceptional web experiences. Our team of
+            experts brings innovation and expertise to every project, turning
+            your vision into reality. Let's collaborate to build the digital
+            future together.
+          </p>
+        </div>
+        <div className="business-info">
+          <h3>upvisionMedia S.R.L</h3>
+          <p>Intrarea Gheorghe Simionescu, Nr. 19, Ap. B26</p>
+          <p>Bucuresti, Sector 1</p>
+          <h5 className="registered">Registered Trademark upvisionMedia</h5>
+        </div>
       </div>
       <div className="buttons-redirect">
         <p
@@ -87,11 +94,6 @@ const Footer = () => {
             </a>
           </li>
         </ul>
-      </div>
-      <div className="business-info">
-        <h3>upvisionMedia S.R.L</h3>
-        <p>Intrarea Gheorghe Simionescu, Nr. 19, Ap. B26</p>
-        <p>Bucuresti, Sector 1</p>
       </div>
       <div className="logo-footer">upvisionMedia ®</div>
     </section>
