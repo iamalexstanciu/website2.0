@@ -88,6 +88,11 @@ const Footer = () => {
           </li>
         </ul>
       </div>
+      <div className="business-info">
+        <h3>upvisionMedia S.R.L</h3>
+        <p>Intrarea Gheorghe Simionescu, Nr. 19, Ap. B26</p>
+        <p>Bucuresti, Sector 1</p>
+      </div>
       <div className="logo-footer">upvisionMedia ®</div>
     </section>
   );
