@@ -32,8 +32,8 @@ const Footer = () => {
         </div>
         <div className="business-info">
           <h3>upvisionMedia S.R.L</h3>
-          <p>Intrarea Gheorghe Simionescu, Nr. 19, Ap. B26</p>
-          <p>Bucuresti, Sector 1</p>
+          <h6>Intrarea Gheorghe Simionescu, Nr. 19, Ap. B26</h6>
+          <h6>Bucuresti, Sector 1</h6>
           <h5 className="registered">Registered Trademark upvisionMedia</h5>
         </div>
       </div>

@@ -19,6 +19,19 @@ padding-top: 10px;
 .business-info{
 position: relative;
 text-align: center;
+padding-top: 15px;
+width: 100%;
+
+}
+
+.business-info h3 {
+    color: rgb(198, 198, 198);
+    font-size: 20px;
+}
+
+.business-info h6 {
+    color: rgb(134, 134, 134);
+    font-size: 20px;
 }
 
 .socials {
@@ -36,7 +49,7 @@ align-items: flex-start;
 justify-content: flex-start;
 position: absolute;
 left: 50%;
-top: 10%;
+top: 15%;
 }
 
 
@@ -75,7 +88,7 @@ position: relative;
 
 
 }
-.text-footer h3 {
+.text-up h3 {
 color: #fc4308;
 font-size: 25px;
 }
@@ -238,353 +251,23 @@ transform: translate(5px, -5px);
 
 
 
+
+
+@media screen and (max-width: 1400px) {
+    .footer-container{
+        height: 60vh;
+    }
+
+    .business-info{
+        top: 15%;
+    }
+}
+
 @media screen and (max-width: 1110px) {
 
-.footer-container {
-display: flex;
+ .logo-footer{
+    font-size: 120px;
+    top: 65%;
+ }
 
-}
-
-.open-footer {
-font-size: 22px;
-width: 60%;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-}
-
-
-
-.button-no,
-.button-yes {
-font-size: 14px;
-}
-
-.text-footer {
-top: -6%;
-}
-
-.logo-footer {
-font-size: 90px;
-top: 60%;
-width: 90vw;
-left: 2.5%;
-}
-
-.text-footer h3 {
-font-size: 24px;
-}
-
-.text-footer p {
-font-size: 15px;
-}
-
-.socials {
-position: relative;
-top: 25%;
-left: 25%;
-width: fit-content;
-}
-
-.business-info {
-position: relative;
-left: 5%;
-top: 80%;
-width: 40%;
-text-align: center;
-}
-
-.wrapper {
-width: 100%;
-}
-
-.icon {
-width: 40px !important;
-height: 40px !important;
-}
-
-.buttons-redirect {
-gap: 0.4rem;
-left: 60%;
-}
-
-.buttons-redirect p {
-font-size: 22px;
-}
-}
-
-
-@media screen and (max-width: 950px) {
-
-.footer-container {
-display: flex;
-
-}
-
-.open-footer {
-font-size: 20px;
-width: 90%;
-}
-
-.button-no,
-.button-yes {
-font-size: 10px;
-}
-
-.text-footer {
-top: -10%;
-}
-
-.logo-footer {
-font-size: 65px;
-top: 60%;
-width: 90vw;
-left: 2.5%;
-}
-
-.text-footer h3 {
-font-size: 24px;
-}
-
-.text-footer p {
-font-size: 15px;
-}
-
-.socials {
-position: relative;
-top: 70%;
-left: 10.5%;
-width: fit-content;
-}
-
-.business-info {
-position: relative;
-left: 5%;
-top: 80%;
-width: 30%;
-text-align: center;
-}
-
-.wrapper {
-width: 100%;
-}
-
-.icon {
-width: 30px !important;
-height: 30px !important;
-}
-
-.buttons-redirect {
-gap: 0.4rem;
-left: 65%;
-text-justify: auto;
-}
-
-.buttons-redirect p {
-font-size: 22px;
-}
-}
-
-@media screen and (max-width: 768px) {
-
-.footer-container {
-display: flex;
-
-}
-
-.open-footer {
-font-size: 20px;
-width: 90%;
-}
-
-.button-no,
-.button-yes {
-font-size: 10px;
-}
-
-.text-footer {
-top: -6%;
-}
-
-.logo-footer {
-font-size: 40px;
-top: 60%;
-width: 90vw;
-left: 10%;
-}
-
-.text-footer h3 {
-font-size: 24px;
-}
-
-.text-footer p {
-font-size: 15px;
-}
-
-.socials {
-position: relative;
-top: 70%;
-left: 3%;
-width: fit-content;
-}
-
-.business-info {
-position: relative;
-left: -5%;
-top: 80%;
-font-size: 12px;
-width: 35%;
-text-align: center;
-}
-
-.wrapper {
-width: 100%;
-}
-
-.icon {
-width: 30px !important;
-height: 30px !important;
-}
-
-.buttons-redirect {
-gap: 0.4rem;
-left: 60%;
-}
-
-.buttons-redirect p {
-font-size: 22px;
-}
-}
-
-@media screen and (max-width: 480px) {
-
-.footer-container{
-display: flex;
-height: 35rem;
-}
-.open-footer{
-font-size: 20px;
-width: 90%;
-}
-.button-no,
-.button-yes{
-font-size: 10px;
-}
-
-.text-footer{
-top: -20%;
-}
-
-.logo-footer{
-font-size: 40px;
-top: 70%;
-width: 90vw;
-left: 10%;
-}
-.text-footer h3 {
-font-size: 22px;
-}
-.text-footer p {
-font-size: 12px;
-}
-
-.socials{
-position: relative;
-top: 52.5%;
-left: -3%;
-}
-
-.business-info{
-top: 60%;
-border: 2px solid white;
-height: fit-content;
-left: -30%;
-width: 100%;
-}
-
-.wrapper {
-width: 100%;
-}
-
-.icon{
-width: 30px !important;
-height: 30px !important;
-}
-
-.buttons-redirect{
-gap: 0.4rem;
-}
-
-.buttons-redirect p{
-font-size: 20px;
-}
-
-.text-footer{
-width: 100%;
-padding: 2%;
-top: 5%;
-height: 50%;
-border: 2px solid green;
-}
-}
-
-@media screen and (max-width: 395px) {
-
-.footer-container {
-display: flex;
-
-}
-
-.open-footer {
-font-size: 20px;
-width: 90%;
-}
-
-.button-no,
-.button-yes {
-font-size: 10px;
-}
-
-.text-footer {
-top: -12%;
-}
-
-.logo-footer {
-font-size: 30px;
-top: 60%;
-width: 90vw;
-left: 10%;
-}
-
-.text-footer h3 {
-font-size: 16px;
-}
-
-.text-footer p {
-font-size: 11px;
-}
-
-.socials {
-position: relative;
-top: 70%;
-left: -15%;
-}
-
-.wrapper {
-width: 100%;
-}
-
-.icon {
-width: 20px !important;
-height: 20px !important;
-}
-
-.buttons-redirect {
-gap: 0.4rem;
-}
-
-.buttons-redirect p {
-font-size: 16px;
-}
 }
