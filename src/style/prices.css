@@ -169,17 +169,18 @@ transform: scaleX(1);
 
 @media screen and (max-width: 950px) {
 .container-prices {
-height: 150vh;
+height: 170vh;
 }
 
 .detailed-price {
-top: 0%;
+top: -15%;
 }
 
 .btn-price{
     height: 5%;
     margin: 0 auto;
-    width: 100%;
+
+    width: 70%;
 
 }
 
@@ -192,27 +193,27 @@ top: 0%;
 
 .price-name{
     font-size: 60px;
-    top: 70%;
+    top: 60%;
 }
 }
 
 @media screen and (max-width: 650px) {
     .container-prices {
-        height: 200vh;
+        height: 300vh;
     }
 
     .detailed-price {
-        top: -15%;
+        top: -30%;
     }
 
     .btn-price {
-        height: 5%;
+        width: 100%;
 
     }
 
     .title-price {
         height: fit-content;
-        top: 35%;
+        top: 55%;
         left: -55%;
         width: 70vw;
         height: fit-content;
@@ -221,7 +222,7 @@ top: 0%;
 
     .price-name {
         font-size: 40px;
-        top: 55%;
+        top: 35%;
     }
 }
 
