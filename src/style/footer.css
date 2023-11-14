@@ -342,10 +342,20 @@ transform: translate(5px, -5px);
 
     .footer-container {
         height: 70vh;
+        
+    }
+
+    .business-info{
+        width: 100%;
+    }
+
+    .business-info h6{
+font-size: 16px;
+width: 100%;
     }
 
     .buttons-redirect {
-        top: 55%;
+        top: 60%;
         left: 0%;
         justify-content: center;
         flex-direction: row;
@@ -397,6 +407,8 @@ transform: translate(5px, -5px);
 
     .buttons-redirect p {
         font-size: 1.4rem;
+        color:#fc4308;
+        text-shadow: 2px 2px #4b4b4b;
     }
 
     .logo-footer {
@@ -405,4 +417,119 @@ transform: translate(5px, -5px);
         margin: 0 auto;
     }
 
+}
+
+@media (max-width:380px) {
+
+    .footer-container {
+        height: 75vh;
+
+    }
+
+    .business-info {
+        width: 100%;
+    }
+
+    .business-info h6 {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .buttons-redirect {
+        top: 60%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        left: 10%;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .socials {
+        top: 20%;
+        left: 0%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .text-up {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .text-up p {
+        width: 90%;
+        left: 5%;
+        text-align: justify;
+    }
+
+    .text-footer {
+        position: relative;
+        top: 10%;
+        padding: 0;
+        left: 0%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .wrapper {
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+        top: 0;
+        padding: 0;
+        height: fit-content;
+    }
+
+    .buttons-redirect p {
+        font-size: 1.2rem;
+        color: #fc4308;
+        text-shadow: 2px 2px #4b4b4b;
+    }
+
+    .logo-footer {
+        font-size: 35px;
+        top: 80%;
+        left: 12%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width:330px) {
+
+    .footer-container {
+        height: 75vh;
+
+    }
+
+    .business-info {
+        width: 100%;
+    }
+
+    .business-info h6 {
+        font-size: 15px;
+        width: 100%;
+    }
+
+    .buttons-redirect {
+        top: 65%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        left: 10%;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
 }
