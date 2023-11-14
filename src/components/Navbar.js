@@ -25,7 +25,6 @@ const MenuBtn = styled.li`
   background-color: #fc4308;
   width: 15rem;
   height: 2.5rem;
-  color: black;
   border: none;
   outline: none;
 
