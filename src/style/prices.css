@@ -270,3 +270,52 @@ top: -15%;
         height: fit-content;
     }
 }
+
+@media screen and (max-width: 350px) {
+
+    .section-prices {
+        height: 120vh;
+    }
+
+    .container-prices {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        position: relative;
+    }
+
+    .title-price {
+        transform: rotate(0);
+        top: -20%;
+        left: -80%;
+        font-size: 45px;
+        min-width: fit-content;
+
+    }
+
+    .detailed-price {
+        width: 90vw;
+        top: -5%;
+    }
+
+    .description-price ul li {
+        width: 80vw;
+    }
+
+    .description-price h2 {
+        width: 20rem;
+    }
+
+    .btn-price {
+        margin: 0 auto;
+        top: 22.5%;
+        width: 100%;
+    }
+
+    .price-name {
+        top: 75%;
+        left: 0;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
+    }
+}

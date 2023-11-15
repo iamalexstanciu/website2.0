@@ -183,6 +183,10 @@ background-size: cover;
 }
 
 @media screen and (max-width: 350px) {
+.section-services{
+    height: 130vh;
+}
+
 .title-services {
 font-size: 40px;
 width: fit-content;
