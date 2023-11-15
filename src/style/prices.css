@@ -246,7 +246,7 @@ top: -15%;
     }
     .detailed-price{
         width: 90vw;
-        top: 5%;
+        top: -5%;
     }
 
         .description-price ul li {
@@ -259,9 +259,14 @@ top: -15%;
 
     .btn-price{
         margin: 0 auto;
+        top: 22.5%;
         width: 100%;
     }
     .price-name{
-        top: 50%;
+        top: 75%;
+        left: 0;
+        margin: 0 auto;
+        width: fit-content;
+        height: fit-content;
     }
 }
