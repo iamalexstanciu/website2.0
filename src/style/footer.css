@@ -360,7 +360,7 @@ width: 100%;
     }
 
     .buttons-redirect {
-        top: 60%;
+        top: 55%;
         left: 0%;
         justify-content: center;
         flex-direction: row;
@@ -441,7 +441,7 @@ width: 100%;
     }
 
     .buttons-redirect {
-        top: 60%;
+        top: 50%;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -527,7 +527,7 @@ width: 100%;
     }
 
     .buttons-redirect {
-        top: 65%;
+        top: 55%;
         width: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
