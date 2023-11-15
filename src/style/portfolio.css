@@ -141,24 +141,21 @@ padding: 1%;
 
         .project-widget{
             display: flex;
-            flex-direction: column;
-            justify-content: center;
+            flex-direction: row;
+            justify-content: space-between;
             align-items: center;
             height: 10rem !important;
         }
         .title-project,
         .short-description,
-        .link-project{
+        .link-project,
+        .link-website {
             width: 100%;
         }
 
         .section-name-portfolio{
             top: -10%;
         }
-}
 
-@media screen and (max-width: 768px){
-    .project-widget{
-        height: 40%;
-    }
+      
 }
