@@ -60,11 +60,11 @@ function App() {
     <>
       <AnimatedCursor
         innerSize={15}
-        outerSize={40}
+        outerSize={45}
         color="253, 69, 8"
         outerAlpha={0.2}
         innerScale={0.7}
-        outerScale={5}
+        outerScale={8}
         clickables={[
           "a",
           'input[type="text"]',
