@@ -16,6 +16,7 @@ import "./style/footer.css";
 import Footer from "./components/Footer";
 import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
+import AnimatedCursor from "react-animated-cursor";
 
 
 export const ThemeContext = createContext(null);
@@ -43,6 +44,27 @@ function App() {
 
   return (
     <>
+      <AnimatedCursor
+        innerSize={15}
+        outerSize={40}
+        color="253, 69, 8"
+        outerAlpha={0.2}
+        innerScale={0.7}
+        outerScale={5}
+        clickables={[
+          "a",
+          'input[type="text"]',
+          'input[type="email"]',
+          'input[type="number"]',
+          'input[type="submit"]',
+          'input[type="image"]',
+          "label[for]",
+          "select",
+          "textarea",
+          "button",
+          ".link",
+        ]}
+      />
       <ParallaxProvider>
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
           <div className="App" id={theme}>
