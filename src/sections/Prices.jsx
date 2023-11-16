@@ -58,7 +58,7 @@ function Prices() {
         <p
           className="price-name"
           data-scroll
-          data-scroll-speed="1"
+          data-scroll-speed="2"
           data-scroll-direction="vertical">
           €550 + vat
         </p>
