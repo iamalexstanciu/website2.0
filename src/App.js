@@ -18,14 +18,28 @@ import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
 import AnimatedCursor from "react-animated-cursor";
 
-
 export const ThemeContext = createContext(null);
 
 function App() {
   const containerRef = useRef(null);
   const [showFooter, setShowFooter] = useState(false);
-
   const [theme, setTheme] = useState("dark");
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      document.title = document.hidden
+        ? "We really miss you! 😞"
+        : "upvisionMedia | your partner in web development.";
+    };
+
+    // Attach event listener to handle visibility changes
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    // Cleanup function to remove the event listener when the component unmounts
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
 
   const toggleTheme = () => {
     setTheme((curr) => (curr === "light" ? "dark" : "light"));
