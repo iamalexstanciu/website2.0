@@ -33,22 +33,16 @@ height: fit-content;
 
 @media (max-width: 600px) {
     .switch {
-        left: 90%;
-        top: 3.5%;
+        left: 84%;
+        top: 1.5%;
     }
 }
 
-@media (max-width: 450px) {
-    .switch {
-        left: 85%;
-        top: 4%;
-    }
-}
 
 @media (max-width: 350px) {
     .switch {
-        left: 85%;
-        top: 2.5%;
+        left: 80%;
+        top: 1.2%;
         width: fit-content;
     }
 
