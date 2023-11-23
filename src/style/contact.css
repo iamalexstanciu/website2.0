@@ -169,7 +169,7 @@ grid-template-rows: repeat(2, 1fr);
 font-size: clamp(2.5rem, 3.5rem, 4rem);
 width: 100vw;
 top: 15%;
-left: 7.5%;
+left: 5%;
 }
 
 .details-contact {
