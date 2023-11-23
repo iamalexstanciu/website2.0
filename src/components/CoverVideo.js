@@ -78,23 +78,23 @@ const Title = styled.div`
   }
   @media screen and (max-width: 768px) {
     h1 {
-      font-size: 5rem;
+      font-size: 4rem;
     }
   }
 
   @media screen and (max-width: 550px) {
     h1 {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 
   @media screen and (max-width: 480px) {
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
     }
   }
 
-  @media screen and (max-width: 350px) {
+  @media screen and (max-width: 360px) {
     h1 {
       font-size: 2.5rem;
     }
