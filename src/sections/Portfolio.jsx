@@ -39,12 +39,13 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 02
               </span>{" "}
-              AFA Trasporti
+              Psicologo e Psicoterapeuta LuigiCollivasone.it
             </h1>
             <p className="short-description">
-              Presentation website for a transport company.
+              Presentation website for an italian psychotherapist and
+              psychologist.
             </p>
-            <a href="#0" className="link-website">
+            <a href="https://www.luigicollivasone.it" className="link-website">
               visit website
             </a>
           </div>
