@@ -8,7 +8,7 @@ const Container = styled.div`
   img {
     position: absolute;
     top: 1rem;
-    left: 5rem;
+    right: 3.8rem;
     width: 3.5%;
     z-index: 5;
   }
@@ -16,6 +16,8 @@ const Container = styled.div`
   @media screen and (max-width: 950px) {
     img {
       width: 20%;
+
+      right: 2rem;
     }
   }
 `;
