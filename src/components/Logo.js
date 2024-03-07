@@ -1,15 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LogoHeader from "../assets/images/logo.png";
+import LogoHeader from "../assets/images/logo2.0.png";
 import { motion } from "framer-motion";
 
 const Container = styled.div`
   img {
     position: absolute;
     top: 1rem;
-    left: 1rem;
-    width: 10%;
+    left: 5rem;
+    width: 3.5%;
     z-index: 5;
   }
 

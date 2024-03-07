@@ -143,11 +143,11 @@ function App() {
               <div className="open-footer">
                 Hey there, curious soul, fancy a peek at our fancy footer?
                 <div className="buttons-footer">
-                  <button
+                  {/* <button
                     className="button-no"
                     onClick={() => handleFooter(false)}>
                     No, I'm ok!
-                  </button>
+                  </button> */}
                   <button
                     className="button-yes"
                     onClick={() => handleFooter(true)}>

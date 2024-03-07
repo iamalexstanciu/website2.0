@@ -48,9 +48,9 @@ function Prices() {
                 </li>
               </ul>
             </div>
-            <a className="btn-price" href="mailto:info@upvisionmedia.com">
+            {/* <a className="btn-price" href="mailto:info@upvisionmedia.com">
               Start a Project
-            </a>
+            </a> */}
           </div>
 
           <h2 className="title-price">project start</h2>
@@ -60,7 +60,7 @@ function Prices() {
           data-scroll
           data-scroll-speed="2"
           data-scroll-direction="vertical">
-          €550 + vat
+          €550
         </p>
       </div>
     </section>
