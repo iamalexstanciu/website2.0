@@ -11,7 +11,7 @@ const ButtonSAP = styled.div`
   top: 70%;
   z-index: 200;
   width: fit-content;
-  left: calc(75% - 100px);
+  left: calc(75% - 150px);
 
   .btn-home {
     border: none !important;

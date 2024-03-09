@@ -15,9 +15,9 @@ const Container = styled.div`
 
   @media screen and (max-width: 950px) {
     img {
-      width: 20%;
-
-      right: 2rem;
+      width: 10%;
+      right: 47%;
+      top: 2.3rem;
     }
   }
 `;
@@ -36,7 +36,8 @@ const Logo = () => {
           transition={{
             duration: 2,
             ease: "easeInOut",
-          }}>
+          }}
+        >
           <img src={LogoHeader} alt="upvisionmedia" />
         </motion.path>
       </Link>
