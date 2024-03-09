@@ -25,6 +25,8 @@ function App() {
   const [showFooter, setShowFooter] = useState(false);
   const [theme, setTheme] = useState("dark");
 
+ 
+
   useEffect(() => {
     const handleVisibilityChange = () => {
       document.title = document.hidden

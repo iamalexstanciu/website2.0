@@ -89,7 +89,6 @@ _segmentToRawPath = function _segmentToRawPath(plugin, segment, target, x, y, sl
 },
     _numExp = /[-+\.]*\d+\.?(?:e-|e\+)?\d*/g,
     _originToPoint = function _originToPoint(element, origin, parentMatrix) {
-  // origin is an array of normalized values (0-1) in relation to the width/height, so [0.5, 0.5] would be the center. It can also be "auto" in which case it will be the top left unless it's a <path>, when it will start at the beginning of the path itself.
   var m = getGlobalMatrix(element),
       x = 0,
       y = 0,
