@@ -17,11 +17,11 @@ const Section = styled.section`
 
 
 const ChatIconImage = styled.img`
-  width: 2vw;
+  width: 4vw;
 
   &&:hover {
     transition: 0.5s;
-    width: 5vw;
+    width: 6vw;
   }
 `;
 

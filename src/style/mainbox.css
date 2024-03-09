@@ -25,35 +25,47 @@
     width: 70%;
     overflow: scroll;
     padding: 20px;
-    color: orange;
     font-size: 15px;
         border-radius: 30px;
-}
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
 .prompt-area {
     width: 85%;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 
 .prompt-area input {
     width: 70%;
-    padding: 5px;
-    font-size: 15px;
+    padding: 2%;
+    font-size: 1em;
+    border-radius: 10px;
 }
 
 .prompt-area button {
     width: fit-content;
-    height: 50%;
+    height: 100%;
+    padding: 2%;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    color:#fc4308;
+    text-transform: lowercase;
 }
 
 .gpt-message {
     display: block;
     position: relative;
     float: left;
-    width: 100%;
+    color: #000000;
+    width: fit-content;
+    background-color: #ffffff;
     font-size: 15px;
+    padding: 1%;
+    border-radius: 10px;
 }
 
 .user-message {
@@ -62,9 +74,14 @@
     text-align: right;
     position: relative;
     float: right;
+    color: #fc4308;
+    padding: 1%;
+        border-radius: 10px;
+        width: fit-content;
+        background-color: #000000;
     font-size: 15px;
 }
 
 .message {
-    margin: 5px;
+    margin: 1%;
 }
