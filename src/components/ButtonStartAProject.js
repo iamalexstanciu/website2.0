@@ -29,7 +29,7 @@ const ButtonSAP = styled.div`
   .btn-home:hover {
     .arrow-button-home {
       transform: rotate(45deg);
-      transition: 300ms linear all;
+      transition: 0.5s;
       position: relative;
       top: 3rem;
       left: 5%;
@@ -128,14 +128,16 @@ const ButtonStartAProject = () => {
           viewBox="2 0 30 5"
           fill="black"
           xmlns="http://www.w3.org/2000/svg"
-          stroke="#ffffff">
+          stroke="#ffffff"
+        >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
             id="SVGRepo_tracerCarrier"
             strokeLinecap="round"
             strokeLinejoin="round"
             stroke="#CCCCCC"
-            strokeWidth="0.192"></g>
+            strokeWidth="0.192"
+          ></g>
           <g id="SVGRepo_iconCarrier">
             {" "}
             <path
@@ -143,7 +145,8 @@ const ButtonStartAProject = () => {
               stroke="#ffffff"
               strokeWidth="1.344"
               strokeLinecap="round"
-              strokeLinejoin="round"></path>{" "}
+              strokeLinejoin="round"
+            ></path>{" "}
           </g>
         </svg>
       </button>

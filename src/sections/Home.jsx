@@ -14,12 +14,24 @@ const Section = styled.section`
   min-height: 100vh;
 `;
 
+
+
 const ChatIconImage = styled.img`
-  width: 40px; // Set the desired width for your image
+  width: 2vw;
+
+  &&:hover {
+    transition: 0.5s;
+    width: 5vw;
+  }
 `;
 
 const CloseIconImage = styled.img`
-  width: 40px; // Set the desired width for your image
+  width: 2vw;
+
+  &&:hover {
+    transition: 0.5s;
+    width: 5vw;
+  }
 `;
 
 const ButtonChatbot = styled.button`

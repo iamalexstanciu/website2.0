@@ -2,6 +2,7 @@
 
 #main-container {
     display: flex;
+    transition: 0.5s;
 }
 
 .container {
