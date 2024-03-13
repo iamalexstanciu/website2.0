@@ -17,6 +17,7 @@ import Footer from "./components/Footer";
 import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
 import AnimatedCursor from "react-animated-cursor";
+import Testimonials from "./sections/Testimonials.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -121,9 +122,8 @@ function App() {
             onLocationChange={(scroll) =>
               scroll.scrollTo(0, { duration: 0, disableLerp: true })
             } // If you want to reset the scroll position to 0 for example
-            onUpdate={() =>
-              console.log("Updated, but not on location change!")
-            }>
+            onUpdate={() => console.log("Updated, but not on location change!")}
+          >
             <Navbar />
             <AnimatePresence>{Loaded ? null : <Loader />}</AnimatePresence>
             <main className="App" data-scroll-container ref={containerRef}>
@@ -139,6 +139,9 @@ function App() {
               <section id="prices">
                 <Prices />
               </section>
+              <section id="testimonials">
+                <Testimonials />
+              </section>
               <section id="contact">
                 <Contact />
               </section>
@@ -152,7 +155,8 @@ function App() {
                   </button> */}
                   <button
                     className="button-yes"
-                    onClick={() => handleFooter(true)}>
+                    onClick={() => handleFooter(true)}
+                  >
                     Let's see what you've created!
                   </button>
                 </div>

@@ -1,0 +1,91 @@
+.section-testimonials {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side-testimonials{
+    background-color: black;
+    width: 25vw;
+    height: 100vh;
+    display: flex;
+    font-size: 6rem;
+    padding: 0.2em;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-side-testimonials{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    height: 100vh;
+    flex-direction: row;
+    gap: 2%;
+    border-radius: 20px;
+    background-color: #fc4308;
+}
+
+
+.card-container-testimonials {
+    width: 20rem;
+    height: 50vh;
+    border-radius: 4px;
+    background: #212121;
+    display: flex;
+    gap: 2%;
+}
+
+.reveal-review{
+    display: none;
+}
+
+.card-container-testimonials p {
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all .5s;
+    border: 1px solid #ff5a91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container-testimonials p:hover {
+    flex: 4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-image: url("../assets//images/luigi.png");
+    background-size: cover;
+
+    .reveal-review{
+        display: block;
+        color: rgb(8, 6, 6);
+        width: 90%;
+        background-color: white;
+        
+    }
+}
+
+.card-container-testimonials p span {
+    min-width: 14em;
+    padding: .5em;
+    text-align: center;
+    transform: rotate(-90deg);
+    transition: all .5s;
+    text-transform: uppercase;
+    color: #ff568e;
+    letter-spacing: .1em;
+}
+
+.card-container-testimonials p:hover span {
+    transform: rotate(0);
+}
