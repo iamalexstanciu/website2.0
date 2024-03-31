@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
+import Logo from "../assets/images/logon.png";
 
 const NavContainer = styled.div`
   position: fixed;
@@ -32,7 +33,7 @@ const MenuBtn = styled.li`
 
   position: absolute;
   top: 100%;
-  left: 48%;
+  left: 50%;
   transform: translateX(-50%);
 
   font-size: 18px;
@@ -45,6 +46,12 @@ const MenuBtn = styled.li`
   align-items: center;
 
   transition: all 0.3s ease;
+
+  img {
+    width: 35%;
+    position: relative;
+    top: 10%;
+  }
 
   @media (max-width: 40em) {
     width: 10rem;
@@ -109,7 +116,9 @@ const Navbar = () => {
         dragConstraints={{ top: 0, bottom: 70 }}
         dragElastic={0.05}
         dragSnapToOrigin>
-        <MenuBtn onClick={() => setIsOpen(!isOpen)}>Menu</MenuBtn>
+        <MenuBtn onClick={() => setIsOpen(!isOpen)}>
+          <img src={Logo} alt="brand upvisionmedia" />
+        </MenuBtn>
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
