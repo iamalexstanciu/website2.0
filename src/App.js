@@ -139,9 +139,9 @@ function App() {
               <section id="prices">
                 <Prices />
               </section>
-              <section id="testimonials">
+              {/* <section id="testimonials">
                 <Testimonials />
-              </section>
+              </section> */}
               <section id="contact">
                 <Contact />
               </section>
