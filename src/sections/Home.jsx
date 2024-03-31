@@ -55,7 +55,7 @@ const Home = () => {
       {/* <Location /> */}
       <Logo />
       <ButtonStartAProject />
-      <ButtonChatbot
+      {/* <ButtonChatbot
         className="button-toggle-chatbot"
         onClick={handleToggleChatbot}
       >
@@ -70,7 +70,7 @@ const Home = () => {
           {console.log("Rendering MainBox component")}
           <MainBox />
         </>
-      ) : null}
+      ) : null} */}
     </Section>
   );
 };

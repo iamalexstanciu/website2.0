@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import LogoHeader from "../assets/images/logo2.0.png";
+import LogoHeader from "../assets/images/logo.webp";
 import { motion } from "framer-motion";
 
 const Container = styled.div`
