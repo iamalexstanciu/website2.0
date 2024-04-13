@@ -58,17 +58,16 @@ transition: all 0.7s ease-out;
 }
 
 
-.title-project {
-font-size: 20px;
-}
-.short-description{
-font-size: 20px;
+.title-project,
+.short-description,
+.link-website
 
+{
+    font-size: clamp(12px, 3vw, 25px);
+    margin: 0;
+    padding: 0;
 }
 
-.link-website{
-font-size: 20px;
-}
 
 .link-website:hover{
     transform: scale(1.5) translateX(-25px);
@@ -76,9 +75,11 @@ font-size: 20px;
 }
 
 
+
 .project-widget:hover {
-height: 20rem;
+height: 25rem;
 backdrop-filter: opacity(0.4);
+font-size: clamp(12px, 3vw, 25px);
 background-size: cover;
 background-repeat: no-repeat;
 transition: all 0.7s ease-out;
@@ -89,10 +90,9 @@ transition: all 0.7s ease-out;
 .link-website
 {
 position: relative;
-top: 20%;
-font-size: 25px;
 font-weight: 600;
-padding: 1%;
+padding: 0.5%;
+text-shadow: 2px 2px 4px black;
 }
 }
 
@@ -135,7 +135,6 @@ padding: 1%;
 
 @media screen and (max-width:768px) {
     .section-name-portfolio {
-            font-size: 50px;
             color: #fc4308;
             text-transform: lowercase;
             text-shadow: 1px 1px 6px black;
@@ -156,6 +155,7 @@ padding: 1%;
         .link-project,
         .link-website {
             width: 100%;
+
         }
 
         .section-name-portfolio{
