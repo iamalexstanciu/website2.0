@@ -71,7 +71,7 @@ const Footer = () => {
             </a>
           </li>
           <li class="icon linkedin">
-            <a href="https://www.linkedin.com/company/upvisionmedia/about/?viewAsMember=true">
+            <a href="https://ro.linkedin.com/company/upvisionmedia">
               <img className="social-image" src={Linkedin} alt="social media" />
               <span class="tooltip">LinkedIn</span>
               <span>

@@ -322,7 +322,7 @@ transform: translate(5px, -5px);
     }
 
     .logo-footer {
-        font-size: 80px;
+        font-size: 70px;
     }
 
     .wrapper {
@@ -338,11 +338,13 @@ transform: translate(5px, -5px);
 
     .footer-container {
         height: 80vh;
+        justify-content: center;
     }
 
     .logo-footer {
-        font-size: 60px;
+        font-size: 40px;
         top: 75%;
+        left: 10%;
     }
 
 }
@@ -421,7 +423,7 @@ width: 100%;
     }
 
     .logo-footer {
-        font-size: 50px;
+        font-size: 30px;
         top: 75%;
         margin: 0 auto;
     }
@@ -506,7 +508,7 @@ width: 100%;
     }
 
     .logo-footer {
-        font-size: 35px;
+        font-size: 20px;
         top: 80%;
         left: 12%;
         margin: 0 auto;

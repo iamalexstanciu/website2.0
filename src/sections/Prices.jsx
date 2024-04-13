@@ -2,7 +2,6 @@ import React from "react";
 import "../style/prices.css";
 
 function Prices() {
-
   return (
     <section className="section-prices" id="prices">
       <div className="container-prices">
@@ -38,7 +37,7 @@ function Prices() {
                   <span>3 revisions</span>
                 </li>
                 <li>
-                  <span>Creation of customized logo </span>
+                  <span>Branding elements (color palette, font)</span>
                 </li>
                 <li>
                   <span>

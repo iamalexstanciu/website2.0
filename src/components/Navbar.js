@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
-import Logo from "../assets/images/logon.png";
 
 const NavContainer = styled.div`
   position: fixed;
@@ -117,7 +116,7 @@ const Navbar = () => {
         dragElastic={0.05}
         dragSnapToOrigin>
         <MenuBtn onClick={() => setIsOpen(!isOpen)}>
-          <img src={Logo} alt="brand upvisionmedia" />
+          MENU
         </MenuBtn>
         <Item
           whileHover={{ scale: 1.1, y: -5 }}

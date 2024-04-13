@@ -1,47 +1,49 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import CoverVideo from "../components/CoverVideo";
-import Logo from "../components/Logo";
 // import Location from "../components/Location";
 import ButtonStartAProject from "../components/ButtonStartAProject";
-import MainBox from "../components/MainBox";
-import ChatIcon from "../assets/images/chat.png";
-import CloseIcon from "../assets/images/close.png";
+// import MainBox from "../components/MainBox";
+// import ChatIcon from "../assets/images/chat.png";
+// import CloseIcon from "../assets/images/close.png";
 
 const Section = styled.section`
   position: relative;
   overflow: hidden;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 
 
-const ChatIconImage = styled.img`
-  width: 4vw;
+// const ChatIconImage = styled.img`
+//   width: 4vw;
 
-  &&:hover {
-    transition: 0.5s;
-    width: 6vw;
-  }
-`;
+//   &&:hover {
+//     transition: 0.5s;
+//     width: 6vw;
+//   }
+// `;
 
-const CloseIconImage = styled.img`
-  width: 2vw;
+// const CloseIconImage = styled.img`
+//   width: 2vw;
 
-  &&:hover {
-    transition: 0.5s;
-    width: 5vw;
-  }
-`;
+//   &&:hover {
+//     transition: 0.5s;
+//     width: 5vw;
+//   }
+// `;
 
-const ButtonChatbot = styled.button`
-  position: absolute;
-  bottom: 3rem;
-  left: 2rem;
-  z-index: 10000;
-  background-color: transparent; // Set the background color to transparent
-  border: none;
-`;
+// const ButtonChatbot = styled.button`
+//   position: absolute;
+//   bottom: 3rem;
+//   left: 2rem;
+//   z-index: 10000;
+//   background-color: transparent; // Set the background color to transparent
+//   border: none;
+// `;
 
 const Home = () => {
   const [showChatbot, setShowChatbot] = useState(false);
@@ -53,7 +55,7 @@ const Home = () => {
     <Section style={{ border: "none" }} id="home">
       <CoverVideo />
       {/* <Location /> */}
-      <Logo />
+      {/* <Logo /> */}
       <ButtonStartAProject />
       {/* <ButtonChatbot
         className="button-toggle-chatbot"

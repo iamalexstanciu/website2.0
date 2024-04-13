@@ -23,12 +23,15 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 01
               </span>{" "}
-              Confort Uno Mobili
+              ConfortUnoMobili.com
             </h1>
             <p className="short-description">
               Interior design website developed.
             </p>
-            <a href="https://www.confortunomobili.com" className="link-website">
+            <a
+              href="https://www.confortunomobili.com"
+              target="blank"
+              className="link-website">
               visit website
             </a>
           </div>
@@ -39,13 +42,16 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 02
               </span>{" "}
-              Psicologo e Psicoterapeuta LuigiCollivasone.it
+              LuigiCollivasone.it
             </h1>
             <p className="short-description">
               Presentation website for an italian psychotherapist and
               psychologist.
             </p>
-            <a href="https://www.luigicollivasone.it" className="link-website">
+            <a
+              href="https://www.luigicollivasone.it"
+              target="blank"
+              className="link-website">
               visit website
             </a>
           </div>
@@ -56,12 +62,15 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 03
               </span>{" "}
-              Portfolio AlexStanciu
+             AlexStanciuDev.com
             </h1>
             <p className="short-description">
               Designed and developed a personal portfolio.
             </p>
-            <a href="https://www.alexstanciudev.com" className="link-website">
+            <a
+              href="https://www.alexstanciudev.com"
+              target="blank"
+              className="link-website">
               visit website
             </a>
           </div>
@@ -72,12 +81,15 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 04
               </span>{" "}
-              Dr. Catalin Teodor
+              CatalinTeodor.ro
             </h1>
             <p className="short-description">
               Interesting project for a dentist website.
             </p>
-            <a href="https://catalinteodor.ro/" className="link-website">
+            <a
+              href="https://catalinteodor.ro/"
+              target="blank"
+              className="link-website">
               visit website
             </a>
           </div>
@@ -88,12 +100,31 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 05
               </span>{" "}
-              upvisionMedia 1.0
+              Proiecte3D.ro
             </h1>
             <p className="short-description">
-              First version of upvisionMedia website.
+              Design and 3d projects website for a customer.
             </p>
-            <a href="#0" className="link-website">
+            <a
+              href="https://proiect3d.ro/"
+              target="blank"
+              className="link-website">
+              visit website
+            </a>
+          </div>
+          <div className="project-widget project6">
+            <h1 className="title-project">
+              <span
+                style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
+                06
+              </span>{" "}
+              CardForYou.it
+            </h1>
+            <p className="short-description">Our client from Italy, Sanremo.</p>
+            <a
+              href="https://www.cardforyou.it/"
+              target="blank"
+              className="link-website">
               visit website
             </a>
           </div>

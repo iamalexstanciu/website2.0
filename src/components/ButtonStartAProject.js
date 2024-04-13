@@ -1,106 +1,57 @@
 import React from "react";
 import { useLocomotiveScroll } from "react-locomotive-scroll";
 import styled from "styled-components";
+import Arrow from "../assets/images/arrow.png";
 
 const ButtonSAP = styled.div`
   @import url("https://fonts.cdnfonts.com/css/mars-project");
 
   display: flex;
-  flex-direction: column;
+  justify-content: center; // Center horizontally
+  align-items: center; // Center vertically
   position: absolute;
-  top: 70%;
+  top: 22.5rem;
+  left: 0;
+  height: 100vh; // Full viewport height
+  width: 100vw; // Full viewport width
   z-index: 200;
-  width: fit-content;
-  left: calc(75% - 150px);
 
   .btn-home {
+    display: flex; // To keep text and arrow inline
+    align-items: center; // Align text and arrow vertically
+    justify-content: center; // Center text and arrow within the button
+    padding: 0.5rem 1rem; // Padding around text and arrow
     border: none !important;
-    font-size: 22px;
+    font-size: clamp(18px, 5vw, 38px);
     font-family: "Mars-Project", sans-serif;
     background-color: transparent;
     color: #fc4308;
     opacity: 1;
-    width: fit-content;
-    z-index: 200;
     transform: scale(1);
     text-transform: lowercase;
+    cursor: pointer;
   }
 
-  .btn-home:hover {
-    .arrow-button-home {
-      transform: rotate(45deg);
-      transition: 0.5s;
-      position: relative;
-      top: 3rem;
-      left: 5%;
-    }
+  .arrow-button-home {
+    margin-left: 0.5rem; // Space between text and arrow
+    height: 2rem; // Fixed height
+    width: auto; // Maintain aspect ratio
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
 
-  @media screen and (max-width: 1150px) {
-    width: 100%;
-    left: 25%;
-
-    .btn-home {
-      width: 60%;
-      font-size: 18px;
-    }
-
-    .arrow-button-home {
-      width: 20%;
-    }
+  .btn-home:hover .arrow-button-home {
+    transform: rotate(45deg);
   }
 
-  @media screen and (max-width: 950px) {
-    width: 100%;
-    left: 25%;
-
-    .btn-home {
-      width: 60%;
-      font-size: 18px;
-    }
-
-    .arrow-button-home {
-      width: 20%;
-    }
-  }
   @media screen and (max-width: 600px) {
-    width: 90%;
-    left: 10%;
-
     .btn-home {
-      width: 90%;
       font-size: 18px;
-      height: 40%;
-    }
-
-    .arrow-button-home {
-      width: 20%;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    width: 100%;
-    left: 10%;
-
-    .btn-home {
-      width: 80%;
-      font-size: 16px;
-    }
-
-    .arrow-button-home {
-      width: 15%;
     }
   }
 
   @media screen and (max-width: 360px) {
-    width: 100vw;
-
     .btn-home {
-      width: 100%;
       font-size: 14px;
-    }
-
-    .arrow-button-home {
-      width: 15%;
     }
   }
 `;
@@ -109,7 +60,6 @@ const ButtonStartAProject = () => {
   const { scroll } = useLocomotiveScroll();
   const handleScroll = (id) => {
     let elem = document.querySelector(id);
-
     scroll.scrollTo(elem, {
       offset: "-100",
       duration: "2000",
@@ -121,34 +71,7 @@ const ButtonStartAProject = () => {
     <ButtonSAP>
       <button className="btn-home" onClick={() => handleScroll("#contact")}>
         Let's Build your Future on Web{" "}
-        <svg
-          className="arrow-button-home"
-          width="126px"
-          height="126px"
-          viewBox="2 0 30 5"
-          fill="black"
-          xmlns="http://www.w3.org/2000/svg"
-          stroke="#ffffff"
-        >
-          <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-          <g
-            id="SVGRepo_tracerCarrier"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            stroke="#CCCCCC"
-            strokeWidth="0.192"
-          ></g>
-          <g id="SVGRepo_iconCarrier">
-            {" "}
-            <path
-              d="M7 17L17 7M17 7H8M17 7V16"
-              stroke="#ffffff"
-              strokeWidth="1.344"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            ></path>{" "}
-          </g>
-        </svg>
+        <img className="arrow-button-home" src={Arrow} alt="arrow" />
       </button>
     </ButtonSAP>
   );
