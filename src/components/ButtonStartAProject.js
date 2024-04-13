@@ -30,6 +30,7 @@ const ButtonSAP = styled.div`
     transform: scale(1);
     text-transform: lowercase;
     cursor: pointer;
+    text-shadow: 2px 5px 3px #000000;
   }
 
   .arrow-button-home {
