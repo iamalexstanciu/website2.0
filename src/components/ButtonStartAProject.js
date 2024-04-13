@@ -10,7 +10,7 @@ const ButtonSAP = styled.div`
   justify-content: center; // Center horizontally
   align-items: center; // Center vertically
   position: absolute;
-  top: 22.5rem;
+  top: 15rem;
   left: 0;
   height: 100vh; // Full viewport height
   width: 100vw; // Full viewport width
@@ -20,7 +20,6 @@ const ButtonSAP = styled.div`
     display: flex; // To keep text and arrow inline
     align-items: center; // Align text and arrow vertically
     justify-content: center; // Center text and arrow within the button
-    padding: 0.5rem 1rem; // Padding around text and arrow
     border: none !important;
     font-size: clamp(18px, 5vw, 38px);
     font-family: "Mars-Project", sans-serif;
