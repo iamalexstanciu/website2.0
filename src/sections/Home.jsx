@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import CoverVideo from "../components/CoverVideo";
 // import Location from "../components/Location";
@@ -46,11 +46,11 @@ const Section = styled.section`
 // `;
 
 const Home = () => {
-  const [showChatbot, setShowChatbot] = useState(false);
+  // const [showChatbot, setShowChatbot] = useState(false);
 
-  const handleToggleChatbot = () => {
-    setShowChatbot(!showChatbot);
-  };
+  // const handleToggleChatbot = () => {
+  //   setShowChatbot(!showChatbot);
+  // };
   return (
     <Section style={{ border: "none" }} id="home">
       <CoverVideo />

@@ -14,10 +14,10 @@ import Prices from "./sections/Prices";
 import Contact from "./sections/Contact";
 import "./style/footer.css";
 import Footer from "./components/Footer";
-import ReactSwitch from "react-switch";
+// import ReactSwitch from "react-switch";
 import Navbar from "./components/Navbar.js";
 import AnimatedCursor from "react-animated-cursor";
-import Testimonials from "./sections/Testimonials.jsx";
+// import Testimonials from "./sections/Testimonials.jsx";
 
 export const ThemeContext = createContext(null);
 
@@ -85,7 +85,7 @@ function App() {
       <ParallaxProvider>
         <ThemeContext.Provider value={{ theme, toggleTheme }}>
           <div className="App" id={theme}>
-            <div className="switch">
+            {/* <div className="switch">
               <ReactSwitch
                 onChange={toggleTheme}
                 checked={theme === "dark"}
@@ -101,7 +101,7 @@ function App() {
                 className="react-switch"
                 id="material-switch"
               />
-            </div>
+            </div> */}
           </div>
         </ThemeContext.Provider>
         <GlobalStyle theme={theme} />
