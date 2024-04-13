@@ -34,7 +34,7 @@ const ButtonSAP = styled.div`
 
   .arrow-button-home {
     margin-left: 0.5rem; // Space between text and arrow
-    height: 2rem; // Fixed height
+    height: 4rem; // Fixed height
     width: auto; // Maintain aspect ratio
     transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
   }
@@ -46,6 +46,9 @@ const ButtonSAP = styled.div`
   @media screen and (max-width: 600px) {
     .btn-home {
       font-size: 18px;
+    }
+    .arrow-button-home {
+      height: 2rem;
     }
   }
 
