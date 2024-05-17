@@ -59,7 +59,7 @@ function Prices() {
           data-scroll
           data-scroll-speed="2"
           data-scroll-direction="vertical">
-          €550
+          €900
         </p>
       </div>
     </section>
