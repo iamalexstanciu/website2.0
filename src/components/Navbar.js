@@ -115,9 +115,7 @@ const Navbar = () => {
         dragConstraints={{ top: 0, bottom: 70 }}
         dragElastic={0.05}
         dragSnapToOrigin>
-        <MenuBtn onClick={() => setIsOpen(!isOpen)}>
-          MENU
-        </MenuBtn>
+        <MenuBtn onClick={() => setIsOpen(!isOpen)}>MENU</MenuBtn>
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
@@ -132,13 +130,13 @@ const Navbar = () => {
           {" "}
           <Link to="/">Services</Link>
         </Item>
-        <Item
+        {/* <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
           onClick={() => handleScroll("#prices")}>
           {" "}
           <Link to="/">Prices</Link>
-        </Item>
+        </Item> */}
         {/* <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}
