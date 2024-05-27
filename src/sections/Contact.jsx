@@ -13,7 +13,7 @@ function Contact() {
           >
             let's start a project
           </a>
-          <a className="phone-number" href="tel:+40744497740">
+          <a className="phone-number" href="tel:+40758256552">
             call us
           </a>
           <div className="other-emails">
