@@ -136,9 +136,9 @@ function App() {
               <section id="portfolio">
                 <Portfolio />
               </section>
-              <section id="prices">
+              {/* <section id="prices">
                 <Prices />
-              </section>
+              </section> */}
               {/* <section id="testimonials">
                 <Testimonials />
               </section> */}

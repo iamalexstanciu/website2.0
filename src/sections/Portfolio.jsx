@@ -62,7 +62,7 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 03
               </span>{" "}
-             AlexStanciuDev.com
+              AlexStanciuDev.com
             </h1>
             <p className="short-description">
               Designed and developed a personal portfolio.
@@ -100,7 +100,7 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 05
               </span>{" "}
-              Proiecte3D.ro
+              Proiect3D.ro
             </h1>
             <p className="short-description">
               Design and 3d projects website for a customer.
