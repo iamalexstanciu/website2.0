@@ -10,7 +10,7 @@ import Services from "./sections/Services";
 import Portfolio from "./sections/Portfolio";
 import Loader from "./components/Loader";
 import { ParallaxProvider } from "react-scroll-parallax";
-import Prices from "./sections/Prices";
+// import Prices from "./sections/Prices";
 import Contact from "./sections/Contact";
 import "./style/footer.css";
 import Footer from "./components/Footer";
