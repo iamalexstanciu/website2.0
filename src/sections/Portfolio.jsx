@@ -62,13 +62,14 @@ const Portfolio = () => {
                 style={{ color: "gray", fontWeight: 400, marginRight: "5px" }}>
                 03
               </span>{" "}
-              AlexStanciuDev.com
+              CautaDentist.ro
             </h1>
             <p className="short-description">
-              Designed and developed a personal portfolio.
+              Started from scratch a new Romanian startup where the main goal is
+              to connect patients with dentists.
             </p>
             <a
-              href="https://www.alexstanciudev.com"
+              href="https://www.cautadentist.ro"
               target="blank"
               className="link-website">
               visit website
