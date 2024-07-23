@@ -1,4 +1,4 @@
-const { SitemapStream, streamToPromise } = require("sitemap");
+const { SitemapStream } = require("sitemap");
 const { createWriteStream } = require("fs");
 const { resolve } = require("path");
 
