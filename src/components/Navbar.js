@@ -137,12 +137,12 @@ const Navbar = () => {
           {" "}
           <Link to="/">Prices</Link>
         </Item> */}
-        <Item
+        {/* <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}>
           {" "}
           <Link to="https://blog.upvisionmedia.com">Blog</Link>
-        </Item>
+        </Item> */}
         <Item
           whileHover={{ scale: 1.1, y: -5 }}
           whileTap={{ scale: 0.9, y: 0 }}

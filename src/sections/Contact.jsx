@@ -9,24 +9,21 @@ function Contact() {
         <div className="details-contact">
           <a
             className="email-address"
-            href="https://calendly.com/upvisionmedia/first-call"
-          >
+            href="https://calendly.com/upvisionmedia/first-call">
             let's start a project
           </a>
-          <a className="phone-number" href="tel:+40758256552">
+          <a className="phone-number" href="tel:+40744497740">
             call us
           </a>
           <div className="other-emails">
             <a
               className="email-address-support"
-              href="mailto:support@upvisionmedia.com"
-            >
-              Support
+              href="mailto:info@upvisionmedia.com">
+              info
             </a>
             <a
               className="email-address-billing"
-              href="mailto:billing@upvisionmedia.com"
-            >
+              href="mailto:billing@upvisionmedia.com">
               Billing
             </a>
           </div>
